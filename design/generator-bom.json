@@ -1,0 +1,375 @@
+{
+  "revision": "runtime-generator-heating-jacket",
+  "dimensions": {
+    "width_x": 33,
+    "length_z": 33,
+    "height_y": 129
+  },
+  "total_placed_blocks": 15472,
+  "structural_blocks": 15466,
+  "controller_and_hatches": 6,
+  "distinct_entries": 24,
+  "structural_variants": 20,
+  "existing_structural_variants": 19,
+  "new_structural_variants": 1,
+  "delta_from_previous": {
+    "total_blocks": 1632,
+    "heating_coil": 1648,
+    "frame": -8,
+    "conduit": -8
+  },
+  "controller_coordinate": [
+    0,
+    2,
+    -16
+  ],
+  "controller_front_normal": [
+    0,
+    0,
+    -1
+  ],
+  "scope": "Placed structure including full foundation and decoration; excludes air, recipes, tools, cables outside structure and controller inventory contents.",
+  "stack_note": "64-item groups are arithmetic equivalents, not a guarantee for unregistered controller stack size.",
+  "materials": [
+    {
+      "name_zh": "量子玻璃",
+      "name_en": "Quantum Glass",
+      "registry_name": "tectech:tile.quantumGlass",
+      "metadata": 0,
+      "quantity": 3628,
+      "roles": [
+        "glass"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 56,
+      "remainder": 44,
+      "stacks_64_equivalent": 57
+    },
+    {
+      "name_zh": "洁净不锈钢机械方块",
+      "name_en": "Clean Stainless Steel Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings4",
+      "metadata": 1,
+      "quantity": 1940,
+      "roles": [
+        "armor"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 30,
+      "remainder": 20,
+      "stacks_64_equivalent": 31
+    },
+    {
+      "name_zh": "加热线圈（默认白铜，可整层升级）",
+      "name_en": "Cupronickel Coil Block",
+      "registry_name": "gregtech:gt.blockcasings5",
+      "metadata": 0,
+      "quantity": 1648,
+      "roles": [
+        "heating_coil"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 25,
+      "remainder": 48,
+      "stacks_64_equivalent": 26
+    },
+    {
+      "name_zh": "聚变机械方块",
+      "name_en": "Fusion Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings4",
+      "metadata": 6,
+      "quantity": 1423,
+      "roles": [
+        "casing"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 22,
+      "remainder": 15,
+      "stacks_64_equivalent": 23
+    },
+    {
+      "name_zh": "坚固钢机械方块",
+      "name_en": "Solid Steel Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings2",
+      "metadata": 0,
+      "quantity": 1215,
+      "roles": [
+        "frame"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 18,
+      "remainder": 63,
+      "stacks_64_equivalent": 19
+    },
+    {
+      "name_zh": "防冻机械方块",
+      "name_en": "Frost Proof Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings2",
+      "metadata": 1,
+      "quantity": 894,
+      "roles": [
+        "alloy"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 13,
+      "remainder": 62,
+      "stacks_64_equivalent": 14
+    },
+    {
+      "name_zh": "工业高强度混凝土",
+      "name_en": "Superplasticizer-Treated High Strength Concrete",
+      "registry_name": "gregtech:gt.blockcasings9",
+      "metadata": 3,
+      "quantity": 648,
+      "roles": [
+        "foundation"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 10,
+      "remainder": 8,
+      "stacks_64_equivalent": 11
+    },
+    {
+      "name_zh": "蓝白共振导光外壳",
+      "name_en": "Blue-White Resonance Light Casing",
+      "registry_name": "benzenefuels:resonance_light_casing",
+      "metadata": 0,
+      "quantity": 621,
+      "roles": [
+        "light",
+        "beacon"
+      ],
+      "status": "new_block",
+      "groups_of_64": 9,
+      "remainder": 45,
+      "stacks_64_equivalent": 10
+    },
+    {
+      "name_zh": "格栅机械方块",
+      "name_en": "Grate Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings3",
+      "metadata": 10,
+      "quantity": 551,
+      "roles": [
+        "grating"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 8,
+      "remainder": 39,
+      "stacks_64_equivalent": 9
+    },
+    {
+      "name_zh": "高级过滤机械方块",
+      "name_en": "Advanced Filter Casing",
+      "registry_name": "gregtech:gt.blockcasings9",
+      "metadata": 1,
+      "quantity": 516,
+      "roles": [
+        "radiator"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 8,
+      "remainder": 4,
+      "stacks_64_equivalent": 9
+    },
+    {
+      "name_zh": "化学惰性机械方块",
+      "name_en": "Chemically Inert Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings8",
+      "metadata": 0,
+      "quantity": 514,
+      "roles": [
+        "shielding"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 8,
+      "remainder": 2,
+      "stacks_64_equivalent": 9
+    },
+    {
+      "name_zh": "冷却管道机械方块",
+      "name_en": "Coolant Duct",
+      "registry_name": "gregtech:gt.blockcasings10",
+      "metadata": 9,
+      "quantity": 440,
+      "roles": [
+        "coolant"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 6,
+      "remainder": 56,
+      "stacks_64_equivalent": 7
+    },
+    {
+      "name_zh": "遏制场机械方块",
+      "name_en": "Containment Field Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings2",
+      "metadata": 8,
+      "quantity": 369,
+      "roles": [
+        "core"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 5,
+      "remainder": 49,
+      "stacks_64_equivalent": 6
+    },
+    {
+      "name_zh": "魔法机械方块",
+      "name_en": "Magical Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings8",
+      "metadata": 8,
+      "quantity": 284,
+      "roles": [
+        "magic"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 4,
+      "remainder": 28,
+      "stacks_64_equivalent": 5
+    },
+    {
+      "name_zh": "超导线圈方块",
+      "name_en": "Superconducting Coil Block",
+      "registry_name": "gregtech:gt.blockcasings",
+      "metadata": 15,
+      "quantity": 276,
+      "roles": [
+        "technology"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 4,
+      "remainder": 20,
+      "stacks_64_equivalent": 5
+    },
+    {
+      "name_zh": "聚四氟乙烯管道方块",
+      "name_en": "PTFE Pipe Casing",
+      "registry_name": "gregtech:gt.blockcasings8",
+      "metadata": 1,
+      "quantity": 267,
+      "roles": [
+        "conduit"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 4,
+      "remainder": 11,
+      "stacks_64_equivalent": 5
+    },
+    {
+      "name_zh": "LuV气密机械方块",
+      "name_en": "Hermetic Casing VI",
+      "registry_name": "gregtech:gt.blockcasings6",
+      "metadata": 6,
+      "quantity": 116,
+      "roles": [
+        "capacitor"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 1,
+      "remainder": 52,
+      "stacks_64_equivalent": 2
+    },
+    {
+      "name_zh": "铁栏杆",
+      "name_en": "Iron Bars",
+      "registry_name": "minecraft:iron_bars",
+      "metadata": 0,
+      "quantity": 80,
+      "roles": [
+        "rail",
+        "antenna"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 1,
+      "remainder": 16,
+      "stacks_64_equivalent": 2
+    },
+    {
+      "name_zh": "数据存储机械方块",
+      "name_en": "Data Drive Machine Casing",
+      "registry_name": "gregtech:gt.blockcasings2",
+      "metadata": 7,
+      "quantity": 28,
+      "roles": [
+        "display"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 0,
+      "remainder": 28,
+      "stacks_64_equivalent": 1
+    },
+    {
+      "name_zh": "青铜齿轮箱机械方块",
+      "name_en": "Bronze Gear Box Casing",
+      "registry_name": "gregtech:gt.blockcasings2",
+      "metadata": 2,
+      "quantity": 8,
+      "roles": [
+        "busbar"
+      ],
+      "status": "existing_block",
+      "groups_of_64": 0,
+      "remainder": 8,
+      "stacks_64_equivalent": 1
+    },
+    {
+      "name_zh": "LuV输入仓",
+      "name_en": "Input Hatch (LuV)",
+      "registry_name": "gregtech:gt.blockmachines",
+      "metadata": 56,
+      "quantity": 3,
+      "roles": [
+        "fuel_port",
+        "tech_port",
+        "magic_port"
+      ],
+      "status": "existing_mte",
+      "groups_of_64": 0,
+      "remainder": 3,
+      "stacks_64_equivalent": 1
+    },
+    {
+      "name_zh": "共振燃料发电塔主机",
+      "name_en": "Resonance Fuel Generator",
+      "registry_name": "gregtech:gt.blockmachines",
+      "metadata": 32240,
+      "quantity": 1,
+      "roles": [
+        "controller"
+      ],
+      "status": "existing_mte",
+      "groups_of_64": 0,
+      "remainder": 1,
+      "stacks_64_equivalent": 1
+    },
+    {
+      "name_zh": "LuV动力仓",
+      "name_en": "LuV Dynamo Hatch",
+      "registry_name": "gregtech:gt.blockmachines",
+      "metadata": 36,
+      "quantity": 1,
+      "roles": [
+        "output_port"
+      ],
+      "status": "existing_mte",
+      "groups_of_64": 0,
+      "remainder": 1,
+      "stacks_64_equivalent": 1
+    },
+    {
+      "name_zh": "维护仓",
+      "name_en": "Maintenance Hatch",
+      "registry_name": "gregtech:gt.blockmachines",
+      "metadata": 90,
+      "quantity": 1,
+      "roles": [
+        "maintenance"
+      ],
+      "status": "existing_mte",
+      "groups_of_64": 0,
+      "remainder": 1,
+      "stacks_64_equivalent": 1
+    }
+  ]
+}

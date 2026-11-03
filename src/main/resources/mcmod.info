@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "${modId}",
+    "name": "${modName}",
+    "description": "Eight staged benzene fuels and the Resonance Fuel Generator for GTNH 2.9.0.",
+    "version": "${modVersion}",
+    "mcversion": "${minecraftVersion}",
+    "authorList": ["GPT-6 (Codex)", "arturia-Xayah"],
+    "dependencies": ["gregtech", "GoodGenerator", "miscutils"]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "target": "GTNH 2.9.0-RC-2 / GT5 5.09.54.205",
+  "resolution": [
+    64,
+    64
+  ],
+  "base_casing": "gregtech:gt.blockcasings8:0",
+  "border_unchanged_px": 8,
+  "idle_and_active_border_matches_native": true,
+  "controller_registered": true,
+  "source_license": "LGPL-3.0",
+  "source_textures": [
+    {
+      "resource": "assets/gregtech/textures/blocks/iconsets/MACHINE_CASING_CHEMICALLY_INERT.png",
+      "sha256": "53a91b68420eb632031b68b0b82f35c51777bbd800de09fd1805fa2254a9c3e8",
+      "use": "derived casing background"
+    },
+    {
+      "resource": "assets/gregtech/textures/blocks/iconsets/OVERLAY_FRONT_DIESEL_ENGINE.png",
+      "sha256": "24bb8dfbdaef8c2f7eb3b0f117790fffad65371785358825818ecdc811cfc19d",
+      "use": "visual reference only"
+    },
+    {
+      "resource": "assets/gregtech/textures/blocks/iconsets/OVERLAY_FRONT_DIESEL_ENGINE_ACTIVE.png",
+      "sha256": "d94a57a4ca55bd839d4ea7ebb5c417e6364a828a76d6fb5f40cb71bbea3d9c83",
+      "use": "visual reference only"
+    },
+    {
+      "resource": "assets/gregtech/textures/blocks/iconsets/LARGETURBINE_NEW5.png",
+      "sha256": "8f55dc84d66f83c11d1ebec73d6c81a5c1a08938a5c0933be336973578983669",
+      "use": "visual reference only"
+    },
+    {
+      "resource": "assets/gregtech/textures/blocks/iconsets/LARGETURBINE_NEW_ACTIVE5.png",
+      "sha256": "6ac73bee7a2935869964f0500fad6fd38d307bc71039e9c2f21be4a8fa44555d",
+      "use": "visual reference only"
+    }
+  ],
+  "layers": "Native casing + transparent idle/active front overlay + separate glow overlay.",
+  "rendering_note": "No animation or shader bloom. Native glow rendering is used; light casings switch their light value with machine state."
+}

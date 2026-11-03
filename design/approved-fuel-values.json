@@ -1,0 +1,55 @@
+{
+  "status": "implemented_in_0.2.0_alpha",
+  "base": {
+    "fluid": "nitrobenzene",
+    "eu_per_liter": 1600
+  },
+  "formula": "next = previous * 4.4 ** (1 + destination_voltage_tier / 13)",
+  "tier_numbering": "LV=1, LuV=6, ZPM=7, ..., UXV=13",
+  "rounding": "After each upgrade, truncate to four significant digits; pad remaining decimal positions with zeros. Use the resulting rounded value as the next input.",
+  "fuel_upgrade_volume_ratio": "1:1",
+  "generator_exponent_formula": "under_design",
+  "implementation_note": "Implemented in 0.2.0-alpha. Fuel heat values use long; only values within int range register native gas recipes. The dedicated generator is a structure preview, not a runtime machine.",
+  "stages": [
+    {
+      "key": "luv",
+      "voltage_tier": 6,
+      "eu_per_liter": 13940
+    },
+    {
+      "key": "zpm",
+      "voltage_tier": 7,
+      "eu_per_liter": 136200
+    },
+    {
+      "key": "uv",
+      "voltage_tier": 8,
+      "eu_per_liter": 1491000
+    },
+    {
+      "key": "uhv",
+      "voltage_tier": 9,
+      "eu_per_liter": 18290000
+    },
+    {
+      "key": "uev",
+      "voltage_tier": 10,
+      "eu_per_liter": 251500000
+    },
+    {
+      "key": "uiv",
+      "voltage_tier": 11,
+      "eu_per_liter": 3876000000
+    },
+    {
+      "key": "umv",
+      "voltage_tier": 12,
+      "eu_per_liter": 66950000000
+    },
+    {
+      "key": "uxv",
+      "voltage_tier": 13,
+      "eu_per_liter": 1296000000000
+    }
+  ]
+}

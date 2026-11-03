@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.benzenefuels.GeneratorMathTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-03T10:51:48.263Z" hostname="D9CH4WN6T3" time="0.003">
+  <properties/>
+  <testcase name="coilHeatSubtracts901AndUsesIntegralParallels" classname="dev.benzenefuels.GeneratorMathTest" time="0.0"/>
+  <testcase name="wholeLitresAndCap" classname="dev.benzenefuels.GeneratorMathTest" time="0.0"/>
+  <testcase name="exactMultiplierAndLargeNumbers" classname="dev.benzenefuels.GeneratorMathTest" time="0.0"/>
+  <testcase name="evenlyDistributesAllEnergy" classname="dev.benzenefuels.GeneratorMathTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

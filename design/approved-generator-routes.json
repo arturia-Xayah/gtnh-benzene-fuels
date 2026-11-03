@@ -1,0 +1,161 @@
+{
+  "status": "items_and_fluids_registered_recipes_pending",
+  "updated_date": "2026-10-27",
+  "scope": "Base multiplier fluids for the proposed fuel generator",
+  "formula": "E = fuel_liters * F * (H * B_technology^e_technology * B_magic^e_magic)^x",
+  "base_material_form": "fluid",
+  "route_count": 2,
+  "tiers_per_route": 5,
+  "routes": {
+    "technology": {
+      "design_intent": "Smaller bases, higher exponents",
+      "tiers": [
+        {
+          "tier": "mk1",
+          "base": "1.01",
+          "unlock_voltage": "LuV"
+        },
+        {
+          "tier": "mk2",
+          "base": "1.02",
+          "unlock_voltage": "UV"
+        },
+        {
+          "tier": "mk3",
+          "base": "1.05",
+          "unlock_voltage": "UEV"
+        },
+        {
+          "tier": "mk4",
+          "base": "1.07",
+          "unlock_voltage": "UMV"
+        },
+        {
+          "tier": "mk5",
+          "base": "1.1",
+          "unlock_voltage": "UXV"
+        }
+      ],
+      "exponent_progression": [
+        {
+          "tier": "mk1",
+          "exponent": 2
+        },
+        {
+          "tier": "mk2",
+          "exponent": 4
+        },
+        {
+          "tier": "mk3",
+          "exponent": 8
+        },
+        {
+          "tier": "mk4",
+          "exponent": 16
+        },
+        {
+          "tier": "mk5",
+          "exponent": 32
+        }
+      ],
+      "exponent_material_tiers": 5,
+      "exponent_material_form": null,
+      "exponent_unlock_requirements": null,
+      "exponent_upgrade_recipes": null
+    },
+    "magic": {
+      "design_intent": "Larger bases, lower exponents",
+      "tiers": [
+        {
+          "tier": "mk1",
+          "base": "1.01",
+          "unlock_voltage": null
+        },
+        {
+          "tier": "mk2",
+          "base": "1.05",
+          "unlock_voltage": null
+        },
+        {
+          "tier": "mk3",
+          "base": "1.1",
+          "unlock_voltage": null
+        },
+        {
+          "tier": "mk4",
+          "base": "1.2",
+          "unlock_voltage": null
+        },
+        {
+          "tier": "mk5",
+          "base": "1.3",
+          "unlock_voltage": null
+        }
+      ],
+      "exponent_progression": [
+        {
+          "tier": "mk1",
+          "exponent": 2
+        },
+        {
+          "tier": "mk2",
+          "exponent": 4
+        },
+        {
+          "tier": "mk3",
+          "exponent": 6
+        },
+        {
+          "tier": "mk4",
+          "exponent": 8
+        },
+        {
+          "tier": "mk5",
+          "exponent": 10
+        }
+      ],
+      "exponent_material_tiers": 5,
+      "exponent_material_form": null,
+      "exponent_unlock_requirements": null,
+      "exponent_upgrade_recipes": null
+    }
+  },
+  "supersedes": [
+    "The earlier three-route technology, Thaumcraft, and blood magic demonstration",
+    "The earlier illustrative fixed route exponents of 20, 15, and 10"
+  ],
+  "unchanged_defaults": {
+    "base_without_consumable_boost": "1",
+    "route_exponent_without_upgrades": "1"
+  },
+  "pending": [
+    "Magic base fluid unlock requirements",
+    "Exponent material form, unlock requirements, and upgrade recipes for both routes",
+    "Base fluid names, recipes, and consumption per liter of fuel",
+    "Selection and stacking rules for different Mk fluids and exponent materials in the same route"
+  ],
+  "implementation_note": "0.2.0-alpha registers ten base fluids with cells and ten exponent cores. Their survival production recipes, consumption and generator integration remain undecided.",
+  "calculation_assumptions": {
+    "status": "Assumptions for comparison only, not confirmed unlock or stacking rules",
+    "flow_liters_per_second": 1000,
+    "flow_liters_per_tick": 50,
+    "fuel_volume_per_100_tick_cycle": 5000,
+    "synchronized_mk_unlocks": [
+      "LuV",
+      "UV",
+      "UEV",
+      "UMV",
+      "UXV"
+    ],
+    "intermediate_stages": "Retain previous Mk tier",
+    "selection": "Use one highest available base and exponent tier in each route; no cumulative stacking of Mk1 through Mk5",
+    "outer_exponent": "x=1+0.01*k, k=0 at LuV and 7 at UXV",
+    "game_factor": "F=0.9+0.05*k",
+    "single_route": "The inactive route has base 1",
+    "excludes": "Fuel and additive production power, buffer loss, and undefined additive consumption"
+  },
+  "survival_recipe_decision": {
+    "confirmed_date": "2026-10-27",
+    "choice": "Register items and fluids now; leave survival production recipes pending."
+  }
+}

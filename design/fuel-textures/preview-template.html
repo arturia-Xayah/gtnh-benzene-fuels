@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>八级苯燃料 · 动画贴图</title>
+<style>
+:root{color-scheme:dark;font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:#080f1a;color:#edf5ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#173a57 0,transparent 50%),#080f1a}main{max-width:1380px;margin:auto;padding:34px 30px 50px}.eyebrow{font:11px ui-monospace,monospace;letter-spacing:3px;color:#80c9f5}h1{font-size:34px;font-weight:650;margin:9px 0 7px;letter-spacing:-1px}.intro{color:#91a8c1;margin:0 0 25px}.toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 0 20px;border-top:1px solid #23364c}.toolbar label{display:flex;align-items:center;gap:9px;color:#a6bad0}button,select{font:inherit;border:1px solid #35516c;border-radius:7px;background:#14273b;color:#e5f5ff;padding:6px 13px;cursor:pointer}button:hover{background:#244963}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #84d6ff;outline-offset:4px}input{accent-color:#8fd7ff}#frame{width:180px}#status{font:12px ui-monospace,monospace;color:#7acddf;margin-left:auto}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{min-width:0;background:linear-gradient(145deg,#122237,#0e1a2a);border:1px solid #253a51;border-radius:14px;overflow:hidden}.card-head{padding:17px 18px 9px}.tier{color:var(--accent);font:600 12px ui-monospace,monospace;letter-spacing:2px}h2{font-size:18px;font-weight:600;line-height:1.4;margin:6px 0}.visual{display:flex;gap:10px;align-items:center;justify-content:center;padding:7px 14px 17px}.fluid-wrap{position:relative;width:160px;height:160px;flex-shrink:1;border-radius:3px;overflow:hidden;border:1px solid #344257;box-shadow:0 8px 30px #0005}canvas{image-rendering:pixelated;display:block}.fluid{width:100%;height:100%}.item-wrap{width:80px;flex-shrink:0;display:grid;place-items:center;gap:7px}.item{width:80px;height:80px;filter:drop-shadow(0 6px 5px #0006)}.caption{color:#6c8aa7;font-size:11px}.detail{padding:13px 18px 18px;border-top:1px solid #24374b;min-height:108px}.motif{color:#d7e7f7;margin:0 0 5px;font-size:13px}.ingredients{font-size:12px;color:#839db8;margin:0}.footer{font-size:12px;color:#6d89a7;margin:20px 0 0}.error{color:#ff9b9b}body.tiled .fluid-wrap{width:160px;height:160px}.paused #status{color:#b9a477}@media(max-width:1120px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visual{gap:22px}}@media(max-width:600px){main{padding:22px 16px}.grid{grid-template-columns:1fr}.toolbar{gap:11px}h1{font-size:28px}#status{margin-left:0}.visual{gap:30px}.fluid-wrap{width:192px;height:192px}}
+</style>
+<main>
+<div class="eyebrow">BENZENE FUELS / MATERIAL STUDIES</div>
+<h1>八级苯燃料</h1>
+<p class="intro">从铂族银蓝，到受磁约束的恒星物质。每一级都保留本级原料的色彩与纹理。</p>
+<div class="toolbar">
+ <button id="pause" aria-pressed="false">暂停动画</button>
+ <label>速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+ <label><input type="checkbox" id="tile"> 查看 2×2 平铺</label>
+ <label>帧 <input id="frame" aria-label="动画帧" type="range" min="0" max="63" value="0"></label>
+ <span id="status">正在加载…</span>
+</div>
+<section class="grid" id="grid" aria-label="八种燃料与对应单元"></section>
+<p class="footer">预览直接读取打包的动画帧；流体与单元内部同步播放。游戏内采用原生 PNG＋mcmeta 动画，不依赖额外动画模组。</p>
+</main>
+<script>
+const FUELS=__FUEL_DATA__;
+const accents=['#a6daff','#c1d2e7','#ca98ff','#e6b3ee','#f18bc5','#bca1f2','#80e7e7','#f4db9f'];
+const grid=document.querySelector('#grid');
+let paused=false,playhead=0,lastTime=null,loaded=false;
+const state={errors:[],draws:0};
+const images=[];
+function imageFor(source){return new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error('无法加载贴图'));im.src=source;});}
+FUELS.forEach((fuel,i)=>{
+ const card=document.createElement('article');card.className='card';card.style.setProperty('--accent',accents[i]);
+ card.innerHTML=`<div class="card-head"><span class="tier">${fuel.tier}</span><h2>${fuel.name}</h2></div><div class="visual"><div class="fluid-wrap"><canvas class="fluid" width="128" height="128" aria-label="${fuel.name}流体"></canvas></div><div class="item-wrap"><canvas class="item" width="64" height="64" aria-label="${fuel.name}燃料单元"></canvas><span class="caption">燃料单元</span></div></div><div class="detail"><p class="motif">${fuel.motif}</p><p class="ingredients">${fuel.ingredients}</p></div>`;
+ grid.append(card);
+ images.push({fuel,fluid:card.querySelector('.fluid'),cell:card.querySelector('.item')});
+});
+const status=document.querySelector('#status'),range=document.querySelector('#frame');
+function draw(){
+ const index=Math.floor(playhead)%64,tile=document.querySelector('#tile').checked;
+ images.forEach(row=>{
+  const ctx=row.fluid.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,128,128);
+  const count=tile?2:1,extent=128/count;
+  for(let y=0;y<count;y++)for(let x=0;x<count;x++)ctx.drawImage(row.fluidImage,0,index*64,64,64,x*extent,y*extent,extent,extent);
+  const ic=row.cell.getContext('2d');ic.imageSmoothingEnabled=false;ic.clearRect(0,0,64,64);ic.drawImage(row.cellImage,0,index*64,64,64,0,0,64,64);
+ });
+ range.value=index;status.textContent=`${paused?'已暂停':'循环播放'} · ${String(index+1).padStart(2,'0')} / 64`;state.draws++;
+}
+document.querySelector('#pause').onclick=()=>{paused=!paused;document.body.classList.toggle('paused',paused);document.querySelector('#pause').textContent=paused?'继续播放':'暂停动画';document.querySelector('#pause').setAttribute('aria-pressed',String(paused));if(loaded)draw();};
+range.oninput=()=>{playhead=Number(range.value);paused=true;document.querySelector('#pause').textContent='继续播放';document.querySelector('#pause').setAttribute('aria-pressed','true');document.body.classList.add('paused');if(loaded)draw();};
+document.querySelector('#tile').onchange=()=>{if(loaded)draw();};
+function tick(now){if(lastTime!==null&&loaded&&!paused){playhead=(playhead+Math.min(now-lastTime,250)/100*Number(document.querySelector('#speed').value))%64;draw();}lastTime=now;requestAnimationFrame(tick);}
+Promise.all(images.map(async row=>{[row.fluidImage,row.cellImage]=await Promise.all([imageFor(row.fuel.fluidData),imageFor(row.fuel.cellData)]);})).then(()=>{loaded=true;draw();requestAnimationFrame(tick);}).catch(error=>{state.errors.push(error.message);status.textContent=error.message;status.classList.add('error');});
+window.fuelPreviewState=()=>({loaded,paused,frame:Math.floor(playhead)%64,speed:Number(document.querySelector('#speed').value),tiled:document.querySelector('#tile').checked,cards:images.length,draws:state.draws,errors:state.errors,dimensions:images.map(r=>r.fluidImage?{key:r.fuel.key,width:r.fluidImage.width,height:r.fluidImage.height}:null)});
+</script>
+</html>

@@ -1,0 +1,142 @@
+{
+  "foundation": {
+    "registry": "gregtech:gt.blockcasings9",
+    "metadata": 3,
+    "displayName": "Superplasticizer-Treated High Strength Concrete"
+  },
+  "casing": {
+    "registry": "gregtech:gt.blockcasings4",
+    "metadata": 6,
+    "displayName": "Fusion Machine Casing"
+  },
+  "frame": {
+    "registry": "gregtech:gt.blockcasings2",
+    "metadata": 0,
+    "displayName": "Solid Steel Machine Casing"
+  },
+  "armor": {
+    "registry": "gregtech:gt.blockcasings4",
+    "metadata": 1,
+    "displayName": "Clean Stainless Steel Machine Casing"
+  },
+  "shielding": {
+    "registry": "gregtech:gt.blockcasings8",
+    "metadata": 0,
+    "displayName": "Chemically Inert Machine Casing"
+  },
+  "alloy": {
+    "registry": "gregtech:gt.blockcasings2",
+    "metadata": 1,
+    "displayName": "Frost Proof Machine Casing"
+  },
+  "glass": {
+    "registry": "tectech:tile.quantumGlass",
+    "metadata": 0,
+    "displayName": "Quantum Glass"
+  },
+  "heating_coil": {
+    "registry": "gregtech:gt.blockcasings5",
+    "metadata": 0,
+    "displayName": "Cupronickel Coil Block"
+  },
+  "technology": {
+    "registry": "gregtech:gt.blockcasings",
+    "metadata": 15,
+    "displayName": "Superconducting Coil Block"
+  },
+  "magic": {
+    "registry": "gregtech:gt.blockcasings8",
+    "metadata": 8,
+    "displayName": "Magical Machine Casing"
+  },
+  "conduit": {
+    "registry": "gregtech:gt.blockcasings8",
+    "metadata": 1,
+    "displayName": "PTFE Pipe Casing"
+  },
+  "core": {
+    "registry": "gregtech:gt.blockcasings2",
+    "metadata": 8,
+    "displayName": "Containment Field Machine Casing"
+  },
+  "coolant": {
+    "registry": "gregtech:gt.blockcasings10",
+    "metadata": 9,
+    "displayName": "Coolant Duct"
+  },
+  "radiator": {
+    "registry": "gregtech:gt.blockcasings9",
+    "metadata": 1,
+    "displayName": "Advanced Filter Casing"
+  },
+  "grating": {
+    "registry": "gregtech:gt.blockcasings3",
+    "metadata": 10,
+    "displayName": "Grate Machine Casing"
+  },
+  "rail": {
+    "registry": "minecraft:iron_bars",
+    "metadata": 0,
+    "displayName": "Iron Bars"
+  },
+  "capacitor": {
+    "registry": "gregtech:gt.blockcasings6",
+    "metadata": 6,
+    "displayName": "Hermetic Casing VI"
+  },
+  "busbar": {
+    "registry": "gregtech:gt.blockcasings2",
+    "metadata": 2,
+    "displayName": "Bronze Gear Box Casing"
+  },
+  "display": {
+    "registry": "gregtech:gt.blockcasings2",
+    "metadata": 7,
+    "displayName": "Data Drive Machine Casing"
+  },
+  "antenna": {
+    "registry": "minecraft:iron_bars",
+    "metadata": 0,
+    "displayName": "Iron Bars"
+  },
+  "light": {
+    "registry": "benzenefuels:resonance_light_casing",
+    "metadata": 0,
+    "displayName": "Blue-White Resonance Light Casing"
+  },
+  "beacon": {
+    "registry": "benzenefuels:resonance_light_casing",
+    "metadata": 0,
+    "displayName": "Blue-White Resonance Light Casing"
+  },
+  "fuel_port": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 56,
+    "displayName": "Input Hatch (LuV)"
+  },
+  "tech_port": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 56,
+    "displayName": "Input Hatch (LuV)"
+  },
+  "magic_port": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 56,
+    "displayName": "Input Hatch (LuV)"
+  },
+  "output_port": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 36,
+    "displayName": "LuV Dynamo Hatch"
+  },
+  "maintenance": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 90,
+    "displayName": "Maintenance Hatch"
+  },
+  "controller": {
+    "registry": "gregtech:gt.blockmachines",
+    "metadata": 32240,
+    "displayName": "Resonance Fuel Generator"
+  }
+}

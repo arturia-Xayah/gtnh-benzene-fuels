@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-27",
+  "revision": "technology-decoration",
+  "dimensions": {
+    "width_x": 33,
+    "length_z": 33,
+    "height_y": 129
+  },
+  "blocks": 13793,
+  "materialKinds": 27,
+  "uniqueCoordinates": true,
+  "withinBounds": true,
+  "portsPreserved": true,
+  "browserConsoleErrors": 0,
+  "verifiedViews": [
+    "exterior",
+    "technology close-up"
+  ],
+  "runtimeModChanged": false,
+  "previewBytes": 282977
+}

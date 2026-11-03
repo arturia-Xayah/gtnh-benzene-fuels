@@ -1,0 +1,26 @@
+{
+  "revision": "flush-controller-materials",
+  "blocks": 13798,
+  "dimensions": {
+    "width_x": 33,
+    "length_z": 33,
+    "height_y": 129
+  },
+  "unique_coordinates": true,
+  "all_eight_controller_neighbors_flush": true,
+  "controller_coordinate": [
+    0,
+    2,
+    -16
+  ],
+  "face_normal": [
+    0,
+    0,
+    -1
+  ],
+  "clientLaunched": false,
+  "source_art_only_no_new_runtime_machine": true,
+  "browser_textures_loaded": 24,
+  "browser_console_errors": 0,
+  "screenshot": "controller-seam-preview.png"
+}

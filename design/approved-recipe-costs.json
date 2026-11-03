@@ -1,0 +1,239 @@
+{
+  "status": "implemented_in_0.2.0_alpha",
+  "date": "2026-10-26",
+  "scope": "Recurring consumables for the eight-stage fuel upgrade chain, including activator manufacture.",
+  "batch_liters": 50000,
+  "multipliers": {
+    "consumed_raw_solids": 1024,
+    "helium_tin_americium_plasma": 16384,
+    "molten_infinity_spacetime_universium_mhdcsm_and_raw_star_matter": 124
+  },
+  "unchanged": [
+    "fuel inputs and outputs",
+    "activator quantities between recipes",
+    "molten eternity",
+    "molten shirabon",
+    "molten white dwarf matter",
+    "nonconsumable quantum catalyst and its construction recipe",
+    "base nitrobenzene recipe",
+    "heat values and generator formula"
+  ],
+  "notes": [
+    "Raw star matter uses the explicitly requested 124 multiplier, not the generic plasma multiplier.",
+    "Item quantities are per material; intermediate activators must not be multiplied a second time.",
+    "Large solid quantities require compatible machine input handling when implementing this design; ordinary recipe builder APIs can clamp stacks above 64."
+  ],
+  "recipes": [
+    {
+      "id": "luv.activator",
+      "duration_ticks": 200,
+      "eu_per_tick": 32768,
+      "item_inputs": {
+        "Platinum Dust": 1024,
+        "Rhodium Dust": 1024,
+        "Palladium Dust": 1024,
+        "Iridium Dust": 1024,
+        "Ruthenium Dust": 1024
+      },
+      "fluid_inputs_liters": {
+        "plasma.helium": 16384
+      },
+      "fluid_outputs_liters": {},
+      "item_outputs": {
+        "Benzene Ring Activator": 1
+      }
+    },
+    {
+      "id": "upgrade.luv",
+      "duration_ticks": 200,
+      "eu_per_tick": 32768,
+      "item_inputs": {
+        "Benzene Ring Activator": 1
+      },
+      "fluid_inputs_liters": {
+        "nitrobenzene": 50000
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.luv": 50000
+      }
+    },
+    {
+      "id": "upgrade.zpm",
+      "duration_ticks": 200,
+      "eu_per_tick": 131072,
+      "item_inputs": {},
+      "fluid_inputs_liters": {
+        "benzenefuels.luv": 50000,
+        "plasma.tin": 163840
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.zpm": 50000
+      }
+    },
+    {
+      "id": "uv.activator",
+      "duration_ticks": 200,
+      "eu_per_tick": 524288,
+      "item_inputs": {
+        "Neutronium Dust": 1024,
+        "Cosmic Neutronium Dust": 1024
+      },
+      "fluid_inputs_liters": {
+        "plasma.americium": 16384
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uv_activator": 144
+      }
+    },
+    {
+      "id": "upgrade.uv",
+      "duration_ticks": 200,
+      "eu_per_tick": 524288,
+      "item_inputs": {},
+      "fluid_inputs_liters": {
+        "benzenefuels.zpm": 50000,
+        "benzenefuels.uv_activator": 144
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uv": 50000
+      }
+    },
+    {
+      "id": "upgrade.uhv",
+      "duration_ticks": 200,
+      "eu_per_tick": 2097152,
+      "item_inputs": {
+        "Infinity Catalyst Dust": 1024,
+        "Atomic Separation Catalyst Dust": 1024
+      },
+      "fluid_inputs_liters": {
+        "benzenefuels.uv": 50000,
+        "molten.infinity": 17856
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uhv": 50000
+      }
+    },
+    {
+      "id": "upgrade.uev",
+      "duration_ticks": 200,
+      "eu_per_tick": 8388608,
+      "item_inputs": {
+        "Transcendent Metal Dust": 1024,
+        "Hypogen Dust": 1024
+      },
+      "fluid_inputs_liters": {
+        "benzenefuels.uhv": 50000,
+        "molten.infinity": 17856
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uev": 50000
+      }
+    },
+    {
+      "id": "upgrade.uiv",
+      "duration_ticks": 200,
+      "eu_per_tick": 33554432,
+      "item_inputs": {
+        "Transcendent Metal Dust": 2048,
+        "Hypogen Dust": 2048
+      },
+      "fluid_inputs_liters": {
+        "benzenefuels.uev": 50000,
+        "molten.spacetime": 17856
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uiv": 50000
+      }
+    },
+    {
+      "id": "upgrade.umv",
+      "duration_ticks": 200,
+      "eu_per_tick": 134217728,
+      "item_inputs": {},
+      "fluid_inputs_liters": {
+        "benzenefuels.uiv": 50000,
+        "molten.shirabon": 144,
+        "molten.eternity": 144,
+        "molten.whitedwarfmatter": 16
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.umv": 50000
+      }
+    },
+    {
+      "id": "upgrade.uxv",
+      "duration_ticks": 200,
+      "eu_per_tick": 536870912,
+      "item_inputs": {},
+      "fluid_inputs_liters": {
+        "benzenefuels.umv": 50000,
+        "molten.universium": 124,
+        "molten.magnetohydrodynamicallyconstrainedstarmatter": 124,
+        "rawstarmatter": 1984,
+        "molten.eternity": 144
+      },
+      "fluid_outputs_liters": {
+        "benzenefuels.uxv": 50000
+      }
+    }
+  ],
+  "direct_consumables_per_50000_liters_uxv": {
+    "item:Platinum Dust": 1024,
+    "item:Rhodium Dust": 1024,
+    "item:Palladium Dust": 1024,
+    "item:Iridium Dust": 1024,
+    "item:Ruthenium Dust": 1024,
+    "fluid:plasma.helium": 16384,
+    "fluid:nitrobenzene": 50000,
+    "fluid:plasma.tin": 163840,
+    "item:Neutronium Dust": 1024,
+    "item:Cosmic Neutronium Dust": 1024,
+    "fluid:plasma.americium": 16384,
+    "item:Infinity Catalyst Dust": 1024,
+    "item:Atomic Separation Catalyst Dust": 1024,
+    "fluid:molten.infinity": 35712,
+    "item:Transcendent Metal Dust": 3072,
+    "item:Hypogen Dust": 3072,
+    "fluid:molten.spacetime": 17856,
+    "fluid:molten.shirabon": 144,
+    "fluid:molten.eternity": 288,
+    "fluid:molten.whitedwarfmatter": 16,
+    "fluid:molten.universium": 124,
+    "fluid:molten.magnetohydrodynamicallyconstrainedstarmatter": 124,
+    "fluid:rawstarmatter": 1984
+  },
+  "capacity": {
+    "basis": "80% of cited Wiki UXV upper power, with H=1296000000000 EU/L, F=1.25, x=1.07, route boost=1.02^20*1.015^15*1.01^10",
+    "required_liters_per_second": "13731.9013174251690667056085326877893187549284451355533841384",
+    "recommended_liters_per_second": 14000,
+    "rates_at_recommended_flow": {
+      "item:Platinum Dust": "286.72",
+      "item:Rhodium Dust": "286.72",
+      "item:Palladium Dust": "286.72",
+      "item:Iridium Dust": "286.72",
+      "item:Ruthenium Dust": "286.72",
+      "fluid:plasma.helium": "4587.52",
+      "fluid:nitrobenzene": "14000.00",
+      "fluid:plasma.tin": "45875.20",
+      "item:Neutronium Dust": "286.72",
+      "item:Cosmic Neutronium Dust": "286.72",
+      "fluid:plasma.americium": "4587.52",
+      "item:Infinity Catalyst Dust": "286.72",
+      "item:Atomic Separation Catalyst Dust": "286.72",
+      "fluid:molten.infinity": "9999.36",
+      "item:Transcendent Metal Dust": "860.16",
+      "item:Hypogen Dust": "860.16",
+      "fluid:molten.spacetime": "4999.68",
+      "fluid:molten.shirabon": "40.32",
+      "fluid:molten.eternity": "80.64",
+      "fluid:molten.whitedwarfmatter": "4.48",
+      "fluid:molten.universium": "34.72",
+      "fluid:molten.magnetohydrodynamicallyconstrainedstarmatter": "34.72",
+      "fluid:rawstarmatter": "555.52"
+    },
+    "generator_boost_consumables": "Not defined yet; excluded.",
+    "validity_note": "Historical three-route calculation. Superseded for generator power by approved-generator-routes.json and two-route-power-comparison.json; recipe quantities and costs themselves are unchanged."
+  },
+  "implementation_note": "Implemented in 0.2.0-alpha; exact registered quantities are exported by the dedicated-server fixture."
+}

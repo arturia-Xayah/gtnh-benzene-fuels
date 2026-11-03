@@ -1,0 +1,38 @@
+{
+  "version": "0.4.3-alpha",
+  "target": "GTNH 2.9.0",
+  "date": "2026-11-03",
+  "artifact": "benzenefuels-0.4.3-alpha-GTNH-2.9.0.jar",
+  "bytes": 6108798,
+  "sha256": "3af3dc19d44582fb08e721d209e3ab058af1eeec297d3d4bb97bd9e1a0fe2318",
+  "runtimeClasses": 22,
+  "javaClassMajor": 52,
+  "matchesTestedRuntimeClasses": true,
+  "matchesTestedAssets": true,
+  "unitTestsPassed": 18,
+  "serverChecksPassed": 821,
+  "serverExit": 0,
+  "dependencies": {
+    "gregtech": "5.09.54.265",
+    "appliedenergistics2": "rv3-beta-1095-GTNH",
+    "structurelib": "1.4.47",
+    "modularui2": "2.3.94-1.7.10",
+    "gtnhlib": "0.11.54",
+    "Waila": "1.19.34"
+  },
+  "animatedSprites": 16,
+  "frameSize": 64,
+  "framesPerSprite": 64,
+  "ticksPerFrame": 2,
+  "loopSeconds": 6.4,
+  "gameplayExportComparison": {
+    "registered-recipes.json": true,
+    "native-material-palette.json": true,
+    "fuel-tooltips.json": true
+  },
+  "clientLaunched": false,
+  "testFixturesInRuntime": false,
+  "sourceArchive": "benzene-fuel-animations-64px.zip",
+  "sourceArchiveSha256": "788956199c8e71b863abc4309d77c26a8e72bb5452b69e59504c97b3a7eddaed",
+  "download": "https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.3-alpha-GTNH-2.9.0/benzenefuels-0.4.3-alpha-GTNH-2.9.0.jar"
+}

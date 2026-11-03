@@ -1,0 +1,479 @@
+[
+  {
+    "id": "fuel.luv",
+    "durationTicks": 0,
+    "euPerTick": 0,
+    "specialValue": 13940,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Hyper-Enriched Platinum-Group Benzene Cell x 1"
+    ]
+  },
+  {
+    "id": "fuel.zpm",
+    "durationTicks": 0,
+    "euPerTick": 0,
+    "specialValue": 136200,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "ZPM Benzene Cell x 1"
+    ]
+  },
+  {
+    "id": "fuel.uv",
+    "durationTicks": 0,
+    "euPerTick": 0,
+    "specialValue": 1491000,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Neutron-Supersaturated Benzene Cell x 1"
+    ]
+  },
+  {
+    "id": "fuel.uhv",
+    "durationTicks": 0,
+    "euPerTick": 0,
+    "specialValue": 18290000,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "UHV Benzene Cell x 1"
+    ]
+  },
+  {
+    "id": "fuel.uev",
+    "durationTicks": 0,
+    "euPerTick": 0,
+    "specialValue": 251500000,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "UEV Benzene Cell x 1"
+    ]
+  },
+  {
+    "id": "luv.activator",
+    "durationTicks": 200,
+    "euPerTick": 32768,
+    "specialValue": 0,
+    "fluidInputs": {
+      "plasma.helium": 16384
+    },
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Platinum Dust x 1024",
+      "Rhodium Dust x 1024",
+      "Palladium Dust x 1024",
+      "Iridium Dust x 1024",
+      "Ruthenium Dust x 1024"
+    ]
+  },
+  {
+    "id": "upgrade.luv",
+    "durationTicks": 200,
+    "euPerTick": 32768,
+    "specialValue": 0,
+    "fluidInputs": {
+      "nitrobenzene": 50000
+    },
+    "fluidOutputs": {
+      "benzenefuels.luv": 50000
+    },
+    "itemInputs": [
+      "Benzene Ring Activator x 1"
+    ]
+  },
+  {
+    "id": "upgrade.zpm",
+    "durationTicks": 200,
+    "euPerTick": 131072,
+    "specialValue": 0,
+    "fluidInputs": {
+      "benzenefuels.luv": 50000,
+      "plasma.tin": 163840
+    },
+    "fluidOutputs": {
+      "benzenefuels.zpm": 50000
+    },
+    "itemInputs": []
+  },
+  {
+    "id": "uv.activator",
+    "durationTicks": 200,
+    "euPerTick": 524288,
+    "specialValue": 0,
+    "fluidInputs": {
+      "plasma.americium": 16384
+    },
+    "fluidOutputs": {
+      "benzenefuels.uv_activator": 144
+    },
+    "itemInputs": [
+      "Neutronium Dust x 1024",
+      "Cosmic Neutronium Dust x 1024"
+    ]
+  },
+  {
+    "id": "upgrade.uv",
+    "durationTicks": 200,
+    "euPerTick": 524288,
+    "specialValue": 0,
+    "fluidInputs": {
+      "benzenefuels.zpm": 50000,
+      "benzenefuels.uv_activator": 144
+    },
+    "fluidOutputs": {
+      "benzenefuels.uv": 50000
+    },
+    "itemInputs": []
+  },
+  {
+    "id": "upgrade.uhv",
+    "durationTicks": 200,
+    "euPerTick": 2097152,
+    "specialValue": 1,
+    "fluidInputs": {
+      "benzenefuels.uv": 50000,
+      "molten.infinity": 17856
+    },
+    "fluidOutputs": {
+      "benzenefuels.uhv": 50000
+    },
+    "itemInputs": [
+      "Infinity Catalyst Dust x 1024",
+      "Atomic Separation Catalyst Dust x 1024"
+    ]
+  },
+  {
+    "id": "quantum.catalyst",
+    "durationTicks": 200,
+    "euPerTick": 8388608,
+    "specialValue": 0,
+    "fluidInputs": {
+      "molten.infinity": 144
+    },
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Platinum Dust x 8",
+      "Palladium Dust x 8",
+      "Iridium Dust x 8",
+      "Field Generator (UEV) x 1"
+    ]
+  },
+  {
+    "id": "upgrade.uev",
+    "durationTicks": 200,
+    "euPerTick": 8388608,
+    "specialValue": 2,
+    "fluidInputs": {
+      "benzenefuels.uhv": 50000,
+      "molten.infinity": 17856
+    },
+    "fluidOutputs": {
+      "benzenefuels.uev": 50000
+    },
+    "itemInputs": [
+      "Transcendent Metal Dust x 1024",
+      "Hypogen Dust x 1024"
+    ]
+  },
+  {
+    "id": "upgrade.uiv",
+    "durationTicks": 200,
+    "euPerTick": 33554432,
+    "specialValue": 3,
+    "fluidInputs": {
+      "benzenefuels.uev": 50000,
+      "molten.spacetime": 17856
+    },
+    "fluidOutputs": {
+      "benzenefuels.uiv": 50000
+    },
+    "itemInputs": [
+      "Transcendent Metal Dust x 2048",
+      "Hypogen Dust x 2048"
+    ]
+  },
+  {
+    "id": "upgrade.umv",
+    "durationTicks": 200,
+    "euPerTick": 134217728,
+    "specialValue": 4,
+    "fluidInputs": {
+      "benzenefuels.uiv": 50000,
+      "molten.shirabon": 144,
+      "molten.eternity": 144,
+      "molten.whitedwarfmatter": 16
+    },
+    "fluidOutputs": {
+      "benzenefuels.umv": 50000
+    },
+    "itemInputs": []
+  },
+  {
+    "id": "upgrade.uxv",
+    "durationTicks": 200,
+    "euPerTick": 536870912,
+    "specialValue": 4,
+    "fluidInputs": {
+      "benzenefuels.umv": 50000,
+      "molten.universium": 124,
+      "molten.magnetohydrodynamicallyconstrainedstarmatter": 124,
+      "rawstarmatter": 1984,
+      "molten.eternity": 144
+    },
+    "fluidOutputs": {
+      "benzenefuels.uxv": 50000
+    },
+    "itemInputs": []
+  },
+  {
+    "id": "star.lv",
+    "durationTicks": 160,
+    "euPerTick": 32,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (LV) x 1",
+      "Electric Piston (LV) x 1",
+      "Electric Pump (LV) x 1",
+      "Conveyor Module (LV) x 1",
+      "Robot Arm (LV) x 1",
+      "Emitter (LV) x 1",
+      "Sensor (LV) x 1",
+      "Field Generator (LV) x 1"
+    ]
+  },
+  {
+    "id": "star.mv",
+    "durationTicks": 320,
+    "euPerTick": 128,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (MV) x 2",
+      "Electric Piston (MV) x 2",
+      "Electric Pump (MV) x 2",
+      "Conveyor Module (MV) x 2",
+      "Robot Arm (MV) x 2",
+      "Emitter (MV) x 2",
+      "Sensor (MV) x 2",
+      "Field Generator (MV) x 2",
+      "LV Star x 16"
+    ]
+  },
+  {
+    "id": "star.hv",
+    "durationTicks": 640,
+    "euPerTick": 512,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (HV) x 4",
+      "Electric Piston (HV) x 4",
+      "Electric Pump (HV) x 4",
+      "Conveyor Module (HV) x 4",
+      "Robot Arm (HV) x 4",
+      "Emitter (HV) x 4",
+      "Sensor (HV) x 4",
+      "Field Generator (HV) x 4",
+      "MV Star x 16"
+    ]
+  },
+  {
+    "id": "star.ev",
+    "durationTicks": 1280,
+    "euPerTick": 2048,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (EV) x 8",
+      "Electric Piston (EV) x 8",
+      "Electric Pump (EV) x 8",
+      "Conveyor Module (EV) x 8",
+      "Robot Arm (EV) x 8",
+      "Emitter (EV) x 8",
+      "Sensor (EV) x 8",
+      "Field Generator (EV) x 8",
+      "HV Star x 16"
+    ]
+  },
+  {
+    "id": "star.iv",
+    "durationTicks": 2560,
+    "euPerTick": 8192,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (IV) x 16",
+      "Electric Piston (IV) x 16",
+      "Electric Pump (IV) x 16",
+      "Conveyor Module (IV) x 16",
+      "Robot Arm (IV) x 16",
+      "Emitter (IV) x 16",
+      "Sensor (IV) x 16",
+      "Field Generator (IV) x 16",
+      "EV Star x 16"
+    ]
+  },
+  {
+    "id": "star.luv",
+    "durationTicks": 5120,
+    "euPerTick": 32768,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (LuV) x 32",
+      "Electric Piston (LuV) x 32",
+      "Electric Pump (LuV) x 32",
+      "Conveyor Module (LuV) x 32",
+      "Robot Arm (LuV) x 32",
+      "Emitter (LuV) x 32",
+      "Sensor (LuV) x 32",
+      "Field Generator (LuV) x 32",
+      "IV Star x 16"
+    ]
+  },
+  {
+    "id": "star.zpm",
+    "durationTicks": 10240,
+    "euPerTick": 131072,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (ZPM) x 64",
+      "Electric Piston (ZPM) x 64",
+      "Electric Pump (ZPM) x 64",
+      "Conveyor Module (ZPM) x 64",
+      "Robot Arm (ZPM) x 64",
+      "Emitter (ZPM) x 64",
+      "Sensor (ZPM) x 64",
+      "Field Generator (ZPM) x 64",
+      "LuV Star x 4"
+    ]
+  },
+  {
+    "id": "star.uv",
+    "durationTicks": 20480,
+    "euPerTick": 524288,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UV) x 128",
+      "Electric Piston (UV) x 128",
+      "Electric Pump (UV) x 128",
+      "Conveyor Module (UV) x 128",
+      "Robot Arm (UV) x 128",
+      "Emitter (UV) x 128",
+      "Sensor (UV) x 128",
+      "Field Generator (UV) x 128",
+      "ZPM Star x 4"
+    ]
+  },
+  {
+    "id": "star.uhv",
+    "durationTicks": 40960,
+    "euPerTick": 2097152,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UHV) x 256",
+      "Electric Piston (UHV) x 256",
+      "Electric Pump (UHV) x 256",
+      "Conveyor Module (UHV) x 256",
+      "Robot Arm (UHV) x 256",
+      "Emitter (UHV) x 256",
+      "Sensor (UHV) x 256",
+      "Field Generator (UHV) x 256",
+      "UV Star x 4"
+    ]
+  },
+  {
+    "id": "star.uev",
+    "durationTicks": 81920,
+    "euPerTick": 8388608,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UEV) x 512",
+      "Electric Piston (UEV) x 512",
+      "Electric Pump (UEV) x 512",
+      "Conveyor Module (UEV) x 512",
+      "Robot Arm (UEV) x 512",
+      "Emitter (UEV) x 512",
+      "Sensor (UEV) x 512",
+      "Field Generator (UEV) x 512",
+      "UHV Star x 4"
+    ]
+  },
+  {
+    "id": "star.uiv",
+    "durationTicks": 163840,
+    "euPerTick": 33554432,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UIV) x 1024",
+      "Electric Piston (UIV) x 1024",
+      "Electric Pump (UIV) x 1024",
+      "Conveyor Module (UIV) x 1024",
+      "Robot Arm (UIV) x 1024",
+      "Emitter (UIV) x 1024",
+      "Sensor (UIV) x 1024",
+      "Field Generator (UIV) x 1024",
+      "UEV Star x 4"
+    ]
+  },
+  {
+    "id": "star.umv",
+    "durationTicks": 327680,
+    "euPerTick": 134217728,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UMV) x 1024",
+      "Electric Piston (UMV) x 1024",
+      "Electric Pump (UMV) x 1024",
+      "Conveyor Module (UMV) x 1024",
+      "Robot Arm (UMV) x 1024",
+      "Emitter (UMV) x 1024",
+      "Sensor (UMV) x 1024",
+      "Field Generator (UMV) x 1024",
+      "UIV Star x 4"
+    ]
+  },
+  {
+    "id": "star.uxv",
+    "durationTicks": 655360,
+    "euPerTick": 536870912,
+    "specialValue": 0,
+    "fluidInputs": {},
+    "fluidOutputs": {},
+    "itemInputs": [
+      "Electric Motor (UXV) x 1024",
+      "Electric Piston (UXV) x 1024",
+      "Electric Pump (UXV) x 1024",
+      "Conveyor Module (UXV) x 1024",
+      "Robot Arm (UXV) x 1024",
+      "Emitter (UXV) x 1024",
+      "Sensor (UXV) x 1024",
+      "Field Generator (UXV) x 1024",
+      "UMV Star x 4"
+    ]
+  }
+]

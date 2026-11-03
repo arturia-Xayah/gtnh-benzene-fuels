@@ -1,0 +1,166 @@
+<div id="bf-compact-gui">
+  <div class="bf-caption">0.4.1 · 线圈并行预览</div>
+  <div class="viz-controls">
+    <label class="form-label" for="bf-fuel">燃料
+      <select class="form-select" id="bf-fuel">
+        <option value="luv">超富集铂族苯</option>
+        <option value="zpm">ZPM苯（ZPM）</option>
+        <option value="uv" selected>中子过饱和苯（UV）</option>
+        <option value="uhv">UHV苯（UHV）</option>
+        <option value="uev">UEV苯</option>
+        <option value="uiv">因果闭环苯</option>
+        <option value="umv">永恒调律苯</option>
+        <option value="uxv">苯征宇宙燃料</option>
+      </select>
+    </label>
+    <label class="form-label" for="bf-available">每批可用燃料（B）
+      <input class="form-control" id="bf-available" type="number" min="0" max="2147483647" step="0.001" value="25" />
+    </label>
+  </div>
+  <div class="viz-controls">
+    <label class="form-label" for="bf-coil">线圈热量
+      <select class="form-select" id="bf-coil"></select>
+    </label>
+  </div>
+  <div class="bf-stage viz-dotted-background">
+    <div class="bf-sizing">
+      <section class="bf-machine" aria-label="共振燃料发电塔紧凑GUI">
+        <div class="bf-title">共振燃料发电塔</div>
+        <div class="bf-panel">
+          <div class="bf-terminal" aria-label="发电状态">
+            <div class="bf-terminal-scroll" aria-live="polite">
+              <div class="bf-result">正在发电</div>
+              <div>燃料：<span class="bf-fuel-name">中子过饱和苯</span></div>
+              <div>线圈：<span class="bf-coil-state"></span></div>
+              <div>当前并行：<span class="bf-parallel"></span></div>
+              <div>当前输入：<span class="bf-input">25B(5B/s)</span></div>
+              <div>燃料效率：<span class="bf-multiplier">1.3157x</span></div>
+              <div>当前发电：<span class="bf-generation">490.42M</span> EU/t</div>
+              <div>实际发送：<span class="bf-delivered">490.42M</span> EU/t (<span class="bf-ratio">100.00</span>%)</div>
+              <div>科技侧底数：科技底数基液 Mk2</div>
+              <div>科技侧指数：4 (科技指数核心 MKII)</div>
+              <div>魔法侧底数：魔法底数基液 Mk2</div>
+              <div>魔法侧指数：4 (魔法指数核心 MKII)</div>
+              <div>无线模式：<span class="bf-mode">开</span></div>
+            </div>
+          </div>
+          <div class="bf-options">
+            <button id="bf-wireless" type="button" class="bf-button cursor-interaction" aria-label="无线输出开关" aria-pressed="true" data-tooltip="切换无线输出；下批生效"><img class="bf-wireless-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAP//H/r6GOzsCLSzwfkAAAABdFJOUwBA5thmAAAAOUlEQVQI12NgQANb4xgYmK6GNzDwMjAUMHDoVihAxJgdGA8wMHE/aGBgMI0BqlPgABJAIaBqByTtAIWrCUzFK1vsAAAAAElFTkSuQmCC" alt="" /></button>
+            <button id="bf-settings-toggle" type="button" class="bf-button cursor-interaction" aria-label="打开并行设置" aria-expanded="false" data-tooltip="并行设置"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURQAAAP/LAP+iAP/WAP+NAP+2AP+sAP/gAP/qAP+YAP/BAP+XAP+hAP+3AP/MAP/AAMULHyEAAAABdFJOUwBA5thmAAAASUlEQVQI12NgwAc6GDggjEIB9gIww5iB2RjMEA1gfCgAYqxi4PoAFglSYL0AZqQxsCWAaB4lBR4FEINz9gbuCWApFwYWB7w2AgC1sQnx4nnDWAAAAABJRU5ErkJggg==" alt="" /></button>
+          </div>
+          <div class="bf-inventory" role="img" aria-label="玩家背包"></div>
+          <div class="bf-right-buttons">
+            <button id="bf-structure" type="button" class="bf-button cursor-interaction" aria-label="结构复查预览"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAP//H8rKKOvrE6vRZrGxG+z/gOj/qovRZMLRabL/sn7/evSILxAAAAABdFJOUwBA5thmAAAAM0lEQVQI12NgwAeClJRUwQxlQ0EhCEMQnTE9La0SRK9ucXHx2AViKcKkFJEUG6EaiAsAAFU3CFIJR8wiAAAAAElFTkSuQmCC" alt="" /></button>
+            <button id="bf-power" type="button" class="bf-button cursor-interaction" aria-label="机器电源" aria-pressed="true"><img class="bf-power-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAACfIGynVHRyPEyCjFhBUCyS6GRBRCw9OCx2UFCKtFxqFEiS7GRFXDBRlDh2WFBd2EB2VFB6dFRqHEhFZDBNjDRuJEx6ZFRmAERd0EBh9ESbCGhVvDyGrFxFaDCCmFhRmDhBQCyGsFxyOEyS3GSfGGyW+GiXBGinSHCjQHCfJGyraHinTHTTiKDLhJQ1ECTjiLA9PCzfiKww8CAoxBws5CAo0Bwo1Bw1CCQksBgcmBSzhHzHhJEALCl0AAAABdFJOUwBA5thmAAAAb0lEQVQYGQXBAwICAQAAsF1dXbZt2/r/u9oAAAC8zgCA+xEAviePq98eYLO7uD0dtjFgGaz5vImtApBcAMy7IDMDyCVBOAToT0ClCNAMQXraAhrpMlAt9aCdjQMU6rUoGow6AIwTqVQiDwAAAAD4A5rbB1GwF5PbAAAAAElFTkSuQmCC" alt="" /></button>
+            <div class="bf-slot bf-core-slot" role="img" aria-label="右下角指数核心输入格" data-tooltip="放入下一级指数核心，吸收1个永久升级；不可跳级或重复升级"></div>
+          </div>
+        </div>
+        <aside class="bf-settings" aria-label="并行设置" hidden>
+          <div class="bf-settings-title">并行设置</div>
+          <label for="bf-cap">设定并行上限</label>
+          <input id="bf-cap" type="number" min="1" max="2147483647" value="1" aria-label="每批设定并行上限" />
+          <div class="bf-settings-hint">下批生效；1并行=1000mB</div>
+        </aside>
+      </section>
+    </div>
+  </div>
+  <div class="bf-footnote">每批5秒 · 双侧Mk2底数与指数 · 底数及输出容量按充足预览</div>
+</div>
+<style>
+#bf-compact-gui { width:100%; }
+#bf-compact-gui .bf-caption,#bf-compact-gui .bf-footnote { color:var(--muted-foreground);font-size:12px;text-align:center; }
+#bf-compact-gui .bf-caption { margin-bottom:12px; }
+#bf-compact-gui .bf-footnote { margin-top:12px; }
+#bf-compact-gui .bf-stage { display:flex;justify-content:center;padding:24px 10px 18px; }
+#bf-compact-gui .bf-sizing { width:435.6px;height:605px;position:relative; }
+#bf-compact-gui .bf-machine { position:absolute;left:0;top:0;width:198px;transform:scale(2.2);transform-origin:top left;font-family:Consolas,"SFMono-Regular","PingFang SC",monospace;font-size:9px;line-height:11px;color:#f5f5f5;text-shadow:1px 1px #252525; }
+#bf-compact-gui .bf-title { display:table;max-width:185px;height:12px;padding:4px 5px 2px;background:#c6c6c6;border:1px solid #555;border-bottom:0;box-shadow:inset 1px 1px #fff;color:#303030;text-shadow:none; }
+#bf-compact-gui .bf-panel { width:198px;height:279px;box-sizing:border-box;position:relative;border:4px solid transparent;border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAACmAgMAAAAHVu1LAAAACVBMVEVVVVXGxsb///8l8aFRAAAARUlEQVRYhe3KMREAIAwEsErDBL4qggVUYoEfuUvm1Hm3K8gryV17PhuyLMuyLMuyLMuyLMuyLMuyLMuyLP+dVwU6ySO4F+yDomPplNWtAAAAAElFTkSuQmCC') 4 fill stretch;background:#c6c6c6;image-rendering:pixelated; }
+#bf-compact-gui .bf-terminal { position:absolute;width:190px;height:170px;left:0;top:0;box-sizing:border-box;border:4px solid transparent;border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAAcAQMAAACNnRUDAAAABlBMVEUAAACGhoYp3cclAAAAGUlEQVQoU2P4jw7+MDQwoAGWUaHhK4SZAACavDE/GF/6sgAAAABJRU5ErkJggg==') 4 fill stretch;background:#151515; }
+#bf-compact-gui .bf-terminal-scroll { position:absolute;inset:0;padding-right:1px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#8c8c8c #252525; }
+#bf-compact-gui .bf-terminal-scroll>div { min-height:11px;overflow-wrap:anywhere; }
+#bf-compact-gui .bf-result { color:#5df067; }
+#bf-compact-gui .bf-options { display:flex;justify-content:space-between;position:absolute;top:172px;left:4px;right:2px; }
+#bf-compact-gui .bf-button { flex:none;padding:0;margin:0;width:18px;height:18px;border:0;border-radius:0;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURYuLizc3N////4Qf5V8AAAAZSURBVAjXY1gFBA0MDQwMDAI0JEVDQ0MDAEQLDY13U/qlAAAAAElFTkSuQmCC') center/100% 100%;image-rendering:pixelated;display:flex;align-items:center;justify-content:center; }
+#bf-compact-gui .bf-button img { width:16px;height:16px;image-rendering:pixelated; }
+#bf-compact-gui .bf-button[aria-pressed=true] { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURYuLi////zc3NxoYzEkAAAAZSURBVAjXY1gFBA0MDQwMDAI0JEVDQ0MDAEQLDY13U/qlAAAAAElFTkSuQmCC'); }
+#bf-compact-gui .bf-button:active { filter:brightness(.85); }
+#bf-compact-gui .bf-inventory { position:absolute;top:192px;left:4px;display:grid;grid-template-columns:repeat(9,18px);grid-template-rows:repeat(3,18px) 4px 18px; }
+#bf-compact-gui .bf-slot { width:18px;height:18px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURYuLi////zc3NxoYzEkAAAAZSURBVAjXY1gFBA0MDQwMDAI0JEVDQ0MDAEQLDY13U/qlAAAAAElFTkSuQmCC') center/100% 100%;image-rendering:pixelated; }
+#bf-compact-gui .bf-inventory .bf-slot:nth-child(n+28) { grid-row:5; }
+#bf-compact-gui .bf-right-buttons { position:absolute;right:2px;bottom:4px;display:flex;flex-direction:column; }
+#bf-compact-gui .bf-right-buttons .bf-slot { margin-top:4px; }
+#bf-compact-gui .bf-settings { box-sizing:border-box;position:absolute;left:198px;top:20px;width:142px;height:88px;padding:6px;border:4px solid transparent;border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAACmAgMAAAAHVu1LAAAACVBMVEVVVVXGxsb///8l8aFRAAAARUlEQVRYhe3KMREAIAwEsErDBL4qggVUYoEfuUvm1Hm3K8gryV17PhuyLMuyLMuyLMuyLMuyLMuyLMuyLP+dVwU6ySO4F+yDomPplNWtAAAAAElFTkSuQmCC') 4 fill stretch;background:#c6c6c6;color:#303030;text-shadow:none; }
+#bf-compact-gui .bf-settings[hidden] { display:none; }
+#bf-compact-gui .bf-settings-title { margin-bottom:6px; }
+#bf-compact-gui .bf-settings label { display:block;margin-bottom:3px; }
+#bf-compact-gui .bf-settings input { display:block;width:122px;height:18px;box-sizing:border-box;border:1px solid #707070;border-right-color:#e0e0e0;border-bottom-color:#e0e0e0;background:#1b1b1b;color:#fff;padding:2px 3px;font:inherit;appearance:textfield;border-radius:0; }
+#bf-compact-gui .bf-settings input::-webkit-inner-spin-button { appearance:none; }
+#bf-compact-gui .bf-settings-hint { margin-top:4px; }
+</style>
+<script>
+(()=>{
+ const root=document.getElementById('bf-compact-gui'),machine=root.querySelector('.bf-machine'),sizing=root.querySelector('.bf-sizing'),stage=root.querySelector('.bf-stage'),settings=root.querySelector('.bf-settings'),inventory=root.querySelector('.bf-inventory');
+ for(let i=0;i<36;i++){const slot=document.createElement('div');slot.className='bf-slot';inventory.appendChild(slot);}
+ let wireless=true,running=true,open=true;
+ const onWireless='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAP//H/r6GOzsCLSzwfkAAAABdFJOUwBA5thmAAAAOUlEQVQI12NgQANb4xgYmK6GNzDwMjAUMHDoVihAxJgdGA8wMHE/aGBgMI0BqlPgABJAIaBqByTtAIWrCUzFK1vsAAAAAElFTkSuQmCC',offWireless='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAANpHN///H/r6GOzsCA2DWUIAAAABdFJOUwBA5thmAAAAS0lEQVQIHQXBURGDMBAFwD1SAfeigGQqgA8EMMW/p+4CAEBDIffeb1Bz79X4hXxx1Vw94E5e+JzVx4MhcUHN1SAEqo+nGjFOAQDAH39HBOpSy5cbAAAAAElFTkSuQmCC',onPower='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAACfIGynVHRyPEyCjFhBUCyS6GRBRCw9OCx2UFCKtFxqFEiS7GRFXDBRlDh2WFBd2EB2VFB6dFRqHEhFZDBNjDRuJEx6ZFRmAERd0EBh9ESbCGhVvDyGrFxFaDCCmFhRmDhBQCyGsFxyOEyS3GSfGGyW+GiXBGinSHCjQHCfJGyraHinTHTTiKDLhJQ1ECTjiLA9PCzfiKww8CAoxBws5CAo0Bwo1Bw1CCQksBgcmBSzhHzHhJEALCl0AAAABdFJOUwBA5thmAAAAb0lEQVQYGQXBAwICAQAAsF1dXbZt2/r/u9oAAAC8zgCA+xEAviePq98eYLO7uD0dtjFgGaz5vImtApBcAMy7IDMDyCVBOAToT0ClCNAMQXraAhrpMlAt9aCdjQMU6rUoGow6AIwTqVQiDwAAAAD4A5rbB1GwF5PbAAAAAElFTkSuQmCC',offPower='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURQAAACUNDScODioPDyIMDC0QEBoJCRsKChkJCRwKCjARES8RETUTEx8LCyEMDCwQEDcUFCQNDSMNDR4LCx0LCykPDysQEDMSEhoKCiiMzbsAAAABdFJOUwBA5thmAAAAXklEQVQYGY3BVw4CMQxAwZe6TtlKvf9JwcFC8IHEDL/kO99y5sNtQzK9Y1LbEKHXyrCmBiJQW0KFKyatKH/BhIByDuM9ao+Yw6HicmaYY2SYS+GpnBbM9FJ4mwb+8wBaPAJx+Q38CAAAAABJRU5ErkJggg==';
+ const wirelessButton=root.querySelector('#bf-wireless'),powerButton=root.querySelector('#bf-power'),settingsButton=root.querySelector('#bf-settings-toggle');
+ function resize(){const stack=open&&stage.clientWidth<570;const width=open&&!stack?340:198;const height=open&&stack?396:299;const scale=Math.min(2.2,(stage.clientWidth-20)/width);sizing.style.width=`${width*scale}px`;sizing.style.height=`${height*scale}px`;machine.style.transform=`scale(${scale})`;settings.style.left=stack?'0px':'198px';settings.style.top=stack?'301px':'20px';}
+ const fuelInput=root.querySelector('#bf-fuel'),availableInput=root.querySelector('#bf-available'),capInput=root.querySelector('#bf-cap');
+ const coilInput=root.querySelector('#bf-coil');
+ const coilNames=['白铜','坎塔尔','镍铬','钨钢','高速钢G','高速钢S','硅岩','硅岩合金','凯金','流明','觉醒龙','无尽','海珀珍','永恒'];
+ coilNames.forEach((name,i)=>{const option=document.createElement('option');option.value=1801+900*i;option.textContent=name+' · '+option.value+'K';coilInput.appendChild(option);});
+ const coilLimit=()=>Math.floor(4**((Number(coilInput.value)-901)/900-1));
+ const fuels={luv:['超富集铂族苯',13940n],zpm:['ZPM苯',136200n],uv:['中子过饱和苯',1491000n],uhv:['UHV苯',18290000n],uev:['UEV苯',251500000n],uiv:['因果闭环苯',3876000000n],umv:['永恒调律苯',66950000000n],uxv:['苯征宇宙燃料',1296000000000n]};
+ // Same integer arithmetic as the controller: whole B, floor batch EU once, then 100 ticks.
+ const numerator=102n**4n*105n**4n,denominator=100n**8n;
+ function fixed(n,d,places){const scale=10n**BigInt(places),v=n*scale/d,s=v.toString().padStart(places+1,'0');return places?s.slice(0,-places)+'.'+s.slice(-places):s;}
+ function power(n){if(n>1000000000000n){const e=n.toString().length-1;return fixed(n,10n**BigInt(e),2)+'E'+e;}const suffix=['','K','M','G'];let d=1n,u=0;while(u<3&&n>=d*1000n){d*=1000n;u++;}return fixed(n,d,2)+suffix[u];}
+ function rate(b){return fixed(b,5n,1).replace(/\.0$/,'');}
+ function preview(){
+   const available=Number(availableInput.value),cap=Number(capInput.value);
+   if(availableInput.value===''||!availableInput.checkValidity()||!Number.isFinite(available))return {b:0n,eu:0n,status:'请输入有效燃料量'};
+   if(capInput.value===''||!capInput.checkValidity()||!Number.isInteger(cap))return {b:0n,eu:0n,status:'燃料上限须为1～2147483647的整数'};
+   if(!running)return {b:0n,eu:0n,status:'手动停机'};
+   const b=BigInt(Math.min(Math.floor(available),cap,coilLimit()));
+   if(b===0n)return {b,eu:0n,status:'燃料不足1B'};
+   const eu=fuels[fuelInput.value][1]*b*1000n*numerator/denominator/100n;
+   return {b,eu,status:'正在发电'};
+ }
+ function draw(){
+   const p=preview();
+   wirelessButton.setAttribute('aria-pressed',String(wireless));root.querySelector('.bf-wireless-icon').src=wireless?onWireless:offWireless;
+   powerButton.setAttribute('aria-pressed',String(running));root.querySelector('.bf-power-icon').src=running?onPower:offPower;
+   root.querySelector('.bf-mode').textContent=wireless?'开':'关';
+   root.querySelector('.bf-fuel-name').textContent=fuels[fuelInput.value][0];
+   root.querySelector('.bf-result').textContent=p.status;
+   root.querySelector('.bf-result').style.color=p.b>0n?'#5df067':'#ffcd69';
+   root.querySelector('.bf-multiplier').textContent=fixed(numerator,denominator,4)+'x';
+   root.querySelector('.bf-generation').textContent=power(p.eu);
+   root.querySelector('.bf-delivered').textContent=power(p.eu);
+   root.querySelector('.bf-ratio').textContent=p.b>0n?'100.00':'0.00';
+   root.querySelector('.bf-coil-state').textContent=coilInput.value+'K / 上限'+coilLimit()+'并行';
+   root.querySelector('.bf-parallel').textContent=p.b+' / 设定'+capInput.value;
+   root.querySelector('.bf-input').textContent=p.b+'B('+rate(p.b)+'B/s)';
+   settings.hidden=!open;settingsButton.setAttribute('aria-expanded',String(open));resize();
+ }
+ function apply(state){const saved=state?.modelContent;if(saved?.preview==='generator-coil-gui-041'){
+   wireless=saved.wireless!==false;running=saved.running!==false;
+   capInput.value=Number.isInteger(saved.maximumBuckets)&&saved.maximumBuckets>=1&&saved.maximumBuckets<=2147483647?saved.maximumBuckets:1;
+   fuelInput.value=Object.hasOwn(fuels,saved.fuel)?saved.fuel:'uv';
+   availableInput.value=Number.isFinite(saved.availableBuckets)&&saved.availableBuckets>=0&&saved.availableBuckets<=2147483647?saved.availableBuckets:25;
+   coilInput.value=coilNames.map((_,i)=>1801+900*i).includes(saved.coilHeat)?saved.coilHeat:1801;
+   open=state.privateContent?.settingsOpen??true;
+ }}
+ function save(){if(!availableInput.checkValidity()||!capInput.checkValidity()||availableInput.value===''||capInput.value==='')return;window.openai?.setWidgetState({modelContent:{preview:'generator-coil-gui-041',coilHeat:Number(coilInput.value),wireless,running,maximumBuckets:Number(capInput.value),fuel:fuelInput.value,availableBuckets:Number(availableInput.value)},privateContent:{settingsOpen:open}})?.catch(()=>{});}
+ apply(window.openai?.widgetState);draw();
+ window.addEventListener('openai:set_globals',e=>{const saved=e.detail?.globals?.widgetState;if(saved){apply(saved);draw();}});
+ wirelessButton.addEventListener('click',()=>{wireless=!wireless;draw();save();});
+ powerButton.addEventListener('click',()=>{running=!running;draw();save();});
+ settingsButton.addEventListener('click',()=>{open=!open;draw();save();});
+ for(const field of [fuelInput,availableInput,capInput,coilInput])field.addEventListener('input',()=>{draw();save();});
+ capInput.addEventListener('change',e=>{e.target.value=Math.min(2147483647,Math.max(1,Math.trunc(Number(e.target.value)||1)));draw();save();});
+ root.querySelector('#bf-structure').addEventListener('click',()=>{root.querySelector('.bf-result').textContent='结构完整';});
+ new ResizeObserver(resize).observe(stage);
+})();
+</script>

@@ -1,0 +1,308 @@
+{
+  "status": "implemented_in_0.2.0_alpha",
+  "updated_date": "2026-10-27",
+  "component_types": [
+    "motor",
+    "piston",
+    "pump",
+    "conveyor",
+    "robot_arm",
+    "emitter",
+    "sensor",
+    "field_generator"
+  ],
+  "component_types_note": "Eight-component assumption used throughout the discussion; no decomposition into component manufacturing recipes.",
+  "recipes": [
+    {
+      "stage": "LV",
+      "previous_star": null,
+      "previous_star_count": 0,
+      "current_stage_components_each": 1,
+      "output_stars": 1,
+      "machine": "assembler",
+      "voltage_tier": "LV",
+      "duration_seconds": 8
+    },
+    {
+      "stage": "MV",
+      "previous_star": "LV",
+      "previous_star_count": 16,
+      "current_stage_components_each": 2,
+      "output_stars": 1,
+      "machine": "assembler",
+      "voltage_tier": "MV",
+      "duration_seconds": 16
+    },
+    {
+      "stage": "HV",
+      "previous_star": "MV",
+      "previous_star_count": 16,
+      "current_stage_components_each": 4,
+      "output_stars": 1,
+      "machine": "assembler",
+      "voltage_tier": "HV",
+      "duration_seconds": 32
+    },
+    {
+      "stage": "EV",
+      "previous_star": "HV",
+      "previous_star_count": 16,
+      "current_stage_components_each": 8,
+      "output_stars": 1,
+      "machine": "assembler",
+      "voltage_tier": "EV",
+      "duration_seconds": 64
+    },
+    {
+      "stage": "IV",
+      "previous_star": "EV",
+      "previous_star_count": 16,
+      "current_stage_components_each": 16,
+      "output_stars": 1,
+      "machine": "assembler",
+      "voltage_tier": "IV",
+      "duration_seconds": 128
+    },
+    {
+      "stage": "LuV",
+      "previous_star": "IV",
+      "previous_star_count": 16,
+      "current_stage_components_each": 32,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "LuV",
+      "duration_seconds": 256
+    },
+    {
+      "stage": "ZPM",
+      "previous_star": "LuV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 64,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "ZPM",
+      "duration_seconds": 512
+    },
+    {
+      "stage": "UV",
+      "previous_star": "ZPM",
+      "previous_star_count": 4,
+      "current_stage_components_each": 128,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UV",
+      "duration_seconds": 1024
+    },
+    {
+      "stage": "UHV",
+      "previous_star": "UV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 256,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UHV",
+      "duration_seconds": 2048
+    },
+    {
+      "stage": "UEV",
+      "previous_star": "UHV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 512,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UEV",
+      "duration_seconds": 4096
+    },
+    {
+      "stage": "UIV",
+      "previous_star": "UEV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 1024,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UIV",
+      "duration_seconds": 8192
+    },
+    {
+      "stage": "UMV",
+      "previous_star": "UIV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 1024,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UMV",
+      "duration_seconds": 16384
+    },
+    {
+      "stage": "UXV",
+      "previous_star": "UMV",
+      "previous_star_count": 4,
+      "current_stage_components_each": 1024,
+      "output_stars": 1,
+      "machine": "assembly_line",
+      "voltage_tier": "UXV",
+      "duration_seconds": 32768
+    }
+  ],
+  "expanded_component_requirements": {
+    "LV": {
+      "components_per_type_by_voltage": {
+        "LV": 1
+      },
+      "total_components_all_eight_types": 8
+    },
+    "MV": {
+      "components_per_type_by_voltage": {
+        "LV": 16,
+        "MV": 2
+      },
+      "total_components_all_eight_types": 144
+    },
+    "HV": {
+      "components_per_type_by_voltage": {
+        "LV": 256,
+        "MV": 32,
+        "HV": 4
+      },
+      "total_components_all_eight_types": 2336
+    },
+    "EV": {
+      "components_per_type_by_voltage": {
+        "LV": 4096,
+        "MV": 512,
+        "HV": 64,
+        "EV": 8
+      },
+      "total_components_all_eight_types": 37440
+    },
+    "IV": {
+      "components_per_type_by_voltage": {
+        "LV": 65536,
+        "MV": 8192,
+        "HV": 1024,
+        "EV": 128,
+        "IV": 16
+      },
+      "total_components_all_eight_types": 599168
+    },
+    "LuV": {
+      "components_per_type_by_voltage": {
+        "LV": 1048576,
+        "MV": 131072,
+        "HV": 16384,
+        "EV": 2048,
+        "IV": 256,
+        "LuV": 32
+      },
+      "total_components_all_eight_types": 9586944
+    },
+    "ZPM": {
+      "components_per_type_by_voltage": {
+        "LV": 4194304,
+        "MV": 524288,
+        "HV": 65536,
+        "EV": 8192,
+        "IV": 1024,
+        "LuV": 128,
+        "ZPM": 64
+      },
+      "total_components_all_eight_types": 38348288
+    },
+    "UV": {
+      "components_per_type_by_voltage": {
+        "LV": 16777216,
+        "MV": 2097152,
+        "HV": 262144,
+        "EV": 32768,
+        "IV": 4096,
+        "LuV": 512,
+        "ZPM": 256,
+        "UV": 128
+      },
+      "total_components_all_eight_types": 153394176
+    },
+    "UHV": {
+      "components_per_type_by_voltage": {
+        "LV": 67108864,
+        "MV": 8388608,
+        "HV": 1048576,
+        "EV": 131072,
+        "IV": 16384,
+        "LuV": 2048,
+        "ZPM": 1024,
+        "UV": 512,
+        "UHV": 256
+      },
+      "total_components_all_eight_types": 613578752
+    },
+    "UEV": {
+      "components_per_type_by_voltage": {
+        "LV": 268435456,
+        "MV": 33554432,
+        "HV": 4194304,
+        "EV": 524288,
+        "IV": 65536,
+        "LuV": 8192,
+        "ZPM": 4096,
+        "UV": 2048,
+        "UHV": 1024,
+        "UEV": 512
+      },
+      "total_components_all_eight_types": 2454319104
+    },
+    "UIV": {
+      "components_per_type_by_voltage": {
+        "LV": 1073741824,
+        "MV": 134217728,
+        "HV": 16777216,
+        "EV": 2097152,
+        "IV": 262144,
+        "LuV": 32768,
+        "ZPM": 16384,
+        "UV": 8192,
+        "UHV": 4096,
+        "UEV": 2048,
+        "UIV": 1024
+      },
+      "total_components_all_eight_types": 9817284608
+    },
+    "UMV": {
+      "components_per_type_by_voltage": {
+        "LV": 4294967296,
+        "MV": 536870912,
+        "HV": 67108864,
+        "EV": 8388608,
+        "IV": 1048576,
+        "LuV": 131072,
+        "ZPM": 65536,
+        "UV": 32768,
+        "UHV": 16384,
+        "UEV": 8192,
+        "UIV": 4096,
+        "UMV": 1024
+      },
+      "total_components_all_eight_types": 39269146624
+    },
+    "UXV": {
+      "components_per_type_by_voltage": {
+        "LV": 17179869184,
+        "MV": 2147483648,
+        "HV": 268435456,
+        "EV": 33554432,
+        "IV": 4194304,
+        "LuV": 524288,
+        "ZPM": 262144,
+        "UV": 131072,
+        "UHV": 65536,
+        "UEV": 32768,
+        "UIV": 16384,
+        "UMV": 4096,
+        "UXV": 1024
+      },
+      "total_components_all_eight_types": 157076594688
+    }
+  },
+  "uxv_component_total_all_eight_types": 157076594688,
+  "uxv_star_processing_serial_seconds": 157076652032,
+  "implementation_note": "Implemented in 0.2.0-alpha; exact registered quantities are exported by the dedicated-server fixture."
+}

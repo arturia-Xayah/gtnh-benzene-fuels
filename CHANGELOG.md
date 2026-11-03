@@ -1,0 +1,34 @@
+# 更新日志 / Changelog
+
+## 0.4.3-alpha · GTNH 2.9.0 · 2026-11-03
+
+首个公开发布版本，包含此前本地开发的完整内容。
+
+### 中文
+
+- 八级 LuV～UXV 苯燃料及其单元新增独立动画：64×64、64 帧循环，融合各级配方原料的视觉特征。
+- 流体和单元内部使用原生纹理动画，单元金属外壳保持静止；取消二次染色，无需额外动画模组。
+- 包含 33×33×129 共振发电塔、1648 个同级线圈控制的并行、每批 100 tick 发电、有线／无线输出及科技／魔法两条升级路线。
+- 包含八级燃料升级配方、十三种电压之星、十种底数流体和十种指数核心；主机、外壳和增益材料的生存配方待定。
+- 面向 GTNH 2.9.0 正式版更新依赖。燃料热值、配方用量、结构、注册 ID 及发电逻辑保持原有设定。
+- 重整中英文 README、使用指南、素材说明和开发记录；文档统一使用 mB / B 标注，未改动配方原始数量。
+
+验证：18 项单元测试、821 项独立后台检查通过。未启动游戏客户端。[详细记录](docs/development/VALIDATION.md)
+
+### English
+
+- Individual animated textures for all eight LuV–UXV fuels and their cells: 64×64, 64-frame native loops with ingredient-inspired motifs.
+- Static metal cell shells with flowing interiors; full-color sprites avoid double tinting. No animation mod is required.
+- Includes the 33×33×129 Resonance Fuel Generator, 1648 same-tier coils, parallel limits, 100-tick generation batches, wired/wireless output and permanent technology/magic core upgrades.
+- Includes eight fuel upgrades, thirteen voltage stars, ten base fluids and ten exponent cores. Survival recipes for the controller, casing and route materials remain undecided.
+- Targets GTNH 2.9.0 stable. Existing heat values, recipe amounts, structures, registry IDs and generation behavior are preserved.
+- Reorganized bilingual READMEs, player guides, artwork records and developer evidence. Documentation uses mB / B without rescaling recipe data.
+
+Validation: 18 unit tests and 821 dedicated-server checks passed; no game client was launched. [Evidence](docs/development/VALIDATION.md)
+
+## 本地开发历史 / Local development history
+
+- **0.4.2-alpha · 2026-11-02**：适配 GTNH 2.9.0 正式版；16 项单元测试、781 项后台检查。 / Stable-pack dependency update; 16 unit tests and 781 server checks.
+- **0.4.1-alpha · 2026-10-29**：燃料名称与物品说明、线圈并行、永久核心升级和紧凑 GUI；目标 RC-2。 / RC-2 fuel text, coil parallelism, persistent cores and compact GUI.
+
+此前版本未在此仓库发布。 / Earlier versions were local builds and have no releases in this repository.

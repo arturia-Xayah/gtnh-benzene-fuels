@@ -1,0 +1,178 @@
+[
+  {
+    "stage": "LUV",
+    "nameZh": "超富集铂族苯单元",
+    "nameEn": "Hyper-Enriched Platinum-Group Benzene Cell",
+    "heatPerMb": 13940,
+    "reference": "nitrobenzene",
+    "referenceHeatPerMb": 1600,
+    "zh": [
+      "§7燃料等级：§bLuV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§613.94K EU/mB",
+      "§7燃料当量：§a≈8.712倍硝基苯",
+      "§b§l§o贵金属回收业务，到此终止。"
+    ],
+    "en": [
+      "§7Fuel tier: §bLuV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §613.94K EU/mB",
+      "§7Fuel equivalent: §a~8.712x Nitrobenzene",
+      "§b§l§oPrecious metal recovery ends here."
+    ]
+  },
+  {
+    "stage": "ZPM",
+    "nameZh": "ZPM苯单元",
+    "nameEn": "ZPM Benzene Cell",
+    "heatPerMb": 136200,
+    "reference": "nitrobenzene",
+    "referenceHeatPerMb": 1600,
+    "zh": [
+      "§7燃料等级：§bZPM",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§6136.2K EU/mB",
+      "§7燃料当量：§a≈85.12倍硝基苯",
+      "§b§l§o前途一片锡望。"
+    ],
+    "en": [
+      "§7Fuel tier: §bZPM",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §6136.2K EU/mB",
+      "§7Fuel equivalent: §a~85.12x Nitrobenzene",
+      "§b§l§oA tin-credible future awaits."
+    ]
+  },
+  {
+    "stage": "UV",
+    "nameZh": "中子过饱和苯单元",
+    "nameEn": "Neutron-Supersaturated Benzene Cell",
+    "heatPerMb": 1491000,
+    "reference": "excited_uranium",
+    "referenceHeatPerMb": 1296000,
+    "zh": [
+      "§7燃料等级：§bUV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§61.491M EU/mB",
+      "§7燃料当量：§a≈1.15倍激发铀基燃料",
+      "§b§l§o稳定的方法，就是再加一些中子。"
+    ],
+    "en": [
+      "§7Fuel tier: §bUV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §61.491M EU/mB",
+      "§7Fuel equivalent: §a~1.15x Excited Uranium-Based Liquid Fuel",
+      "§b§l§oFor greater stability, add more neutrons."
+    ]
+  },
+  {
+    "stage": "UHV",
+    "nameZh": "UHV苯单元",
+    "nameEn": "UHV Benzene Cell",
+    "heatPerMb": 18290000,
+    "reference": "naquadah1",
+    "referenceHeatPerMb": 58500000,
+    "zh": [
+      "§7燃料等级：§bUHV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§618.29M EU/mB",
+      "§7燃料当量：§a≈0.3126倍硅岩基燃料MkI",
+      "§b§l§o汝油箱中者，寰宇之力也。"
+    ],
+    "en": [
+      "§7Fuel tier: §bUHV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §618.29M EU/mB",
+      "§7Fuel equivalent: §a~0.3126x Naquadah-Based Fuel MkI",
+      "§b§l§oThe power of the universe, now in your fuel tank."
+    ]
+  },
+  {
+    "stage": "UEV",
+    "nameZh": "UEV苯单元",
+    "nameEn": "UEV Benzene Cell",
+    "heatPerMb": 251500000,
+    "reference": "naquadah2",
+    "referenceHeatPerMb": 161000000,
+    "zh": [
+      "§7燃料等级：§bUEV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§6251.5M EU/mB",
+      "§7燃料当量：§a≈1.562倍硅岩基燃料MkII",
+      "§b§l§o为了升级这种燃料，你需要先升级上一种燃料。"
+    ],
+    "en": [
+      "§7Fuel tier: §bUEV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §6251.5M EU/mB",
+      "§7Fuel equivalent: §a~1.562x Naquadah-Based Fuel MkII",
+      "§b§l§oTo upgrade this fuel, first upgrade the previous fuel."
+    ]
+  },
+  {
+    "stage": "UIV",
+    "nameZh": "因果闭环苯单元",
+    "nameEn": "Causal-Loop Benzene Cell",
+    "heatPerMb": 3876000000,
+    "reference": "naquadah3",
+    "referenceHeatPerMb": 760880000,
+    "zh": [
+      "§7燃料等级：§bUIV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§63.876G EU/mB",
+      "§7燃料当量：§a≈5.094倍硅岩基燃料MkIII",
+      "§b§l§o先有发电量，还是先有燃料？"
+    ],
+    "en": [
+      "§7Fuel tier: §bUIV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §63.876G EU/mB",
+      "§7Fuel equivalent: §a~5.094x Naquadah-Based Fuel MkIII",
+      "§b§l§oWhich came first: the power, or the fuel?"
+    ]
+  },
+  {
+    "stage": "UMV",
+    "nameZh": "永恒调律苯单元",
+    "nameEn": "Eternally Attuned Benzene Cell",
+    "heatPerMb": 66950000000,
+    "reference": "naquadah5",
+    "referenceHeatPerMb": 63932160000,
+    "zh": [
+      "§7燃料等级：§bUMV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§666.95G EU/mB",
+      "§7燃料当量：§a≈1.047倍硅岩基燃料MkV",
+      "§b§l§o燃料也需要调音，只是它的音量有点大。"
+    ],
+    "en": [
+      "§7Fuel tier: §bUMV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §666.95G EU/mB",
+      "§7Fuel equivalent: §a~1.047x Naquadah-Based Fuel MkV",
+      "§b§l§oEven fuel needs tuning. This one is a little loud."
+    ]
+  },
+  {
+    "stage": "UXV",
+    "nameZh": "苯征宇宙燃料单元",
+    "nameEn": "Eigenbenzene Cosmic Fuel Cell",
+    "heatPerMb": 1296000000000,
+    "reference": "antimatter",
+    "referenceHeatPerMb": 1000000000000,
+    "zh": [
+      "§7燃料等级：§bUXV",
+      "§7容量：§f1B（1000mB）",
+      "§7基础热值：§61.296T EU/mB",
+      "§7燃料当量：§a≈1.296倍反物质（铜基准）",
+      "§b§l§o宇宙的苯质，终于可以装桶了。"
+    ],
+    "en": [
+      "§7Fuel tier: §bUXV",
+      "§7Volume: §f1B (1000mB)",
+      "§7Base fuel value: §61.296T EU/mB",
+      "§7Fuel equivalent: §a~1.296x Antimatter (copper baseline)",
+      "§b§l§oThe benzential nature of the universe, finally bucketable."
+    ]
+  }
+]
