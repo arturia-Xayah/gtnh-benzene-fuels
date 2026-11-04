@@ -1,0 +1,17 @@
+{
+  "version": "0.4.4-alpha",
+  "target": "GTNH 2.9.0",
+  "artifact": "benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar",
+  "bytes": 6120841,
+  "sha256": "882b5c21612b3ab6b5917565127879fa79b5ece39a4b3c7e7d9f15369ab96c13",
+  "productionClasses": 30,
+  "javaClassVersion": 52,
+  "fixtureProductionClassesAndAssetsIdentical": true,
+  "packTestClassesIncluded": false,
+  "clientLaunched": false,
+  "releaseUrl": "https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/tag/v0.4.4-alpha-GTNH-2.9.0",
+  "unitTests": 18,
+  "serverChecks": 880,
+  "serverPassed": true,
+  "serverExitCode": 0
+}

@@ -107,6 +107,7 @@ public final class RecipeSuite {
     private void run() throws Exception {
         runtimeDependencies();
         fuelTooltips();
+        DisplaySuite.run(this::check);
         for (FuelStage stage : FuelStage.values()) {
             FluidStack fuel = FuelContent.stack(stage, 1000);
             check(stage.key + ".fluid", FluidRegistry.getFluid(stage.fluidId()) == fuel.getFluid(), stage.fluidId());

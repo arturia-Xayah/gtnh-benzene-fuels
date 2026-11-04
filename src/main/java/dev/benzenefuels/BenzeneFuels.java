@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLLoadCompleteEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkCheckHandler;
@@ -19,7 +20,7 @@ import gregtech.api.GregTechAPI;
     modid = BenzeneFuels.ID,
     name = "Benzene Fuels",
     version = Tags.VERSION,
-    dependencies = "required-after:gregtech;required-after:GoodGenerator;required-after:miscutils",
+    dependencies = "required-after:gregtech;required-after:GoodGenerator;required-after:miscutils;required-after:unimixins",
     acceptedMinecraftVersions = "[1.7.10]")
 public final class BenzeneFuels {
 
@@ -60,6 +61,11 @@ public final class BenzeneFuels {
         FuelRecipes.register();
         StarRecipes.register();
         LOG.info("Registered eight benzene fuels, ten base fluids, ten exponent cores and thirteen voltage stars");
+    }
+
+    @Mod.EventHandler
+    public void loadComplete(FMLLoadCompleteEvent event) {
+        GeneratorRecipes.register();
     }
 
     @NetworkCheckHandler

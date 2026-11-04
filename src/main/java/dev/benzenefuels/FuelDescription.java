@@ -65,10 +65,20 @@ public final class FuelDescription {
 
     /** The preview and server checks can use the exact same text builder with a selected language. */
     public static String[] lines(FuelStage stage, Translation language) {
+        List<String> lines = new ArrayList<>(java.util.Arrays.asList(fluidLines(stage, language)));
+        lines.add(1, language.text("tooltip.benzenefuels.fuel_volume"));
+        return lines.toArray(new String[0]);
+    }
+
+    public static String[] fluidLines(FuelStage stage) {
+        return fluidLines(stage, (key, args) -> StatCollector.translateToLocalFormatted(key, args));
+    }
+
+    /** A fluid has no fixed container capacity. The GUI supplies its actual amount separately. */
+    public static String[] fluidLines(FuelStage stage, Translation language) {
         Reference reference = reference(stage);
         List<String> lines = new ArrayList<>();
         lines.add(language.text("tooltip.benzenefuels.fuel_tier", stage == FuelStage.LUV ? "LuV" : stage.name()));
-        lines.add(language.text("tooltip.benzenefuels.fuel_volume"));
         lines.add(language.text("tooltip.benzenefuels.fuel_heat", FuelTextFormat.heat(stage.euPerLiter)));
         lines.add(
             language.text(

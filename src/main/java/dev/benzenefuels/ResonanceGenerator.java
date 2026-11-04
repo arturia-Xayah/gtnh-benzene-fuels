@@ -136,23 +136,13 @@ public class ResonanceGenerator extends MTEEnhancedMultiBlockBase<ResonanceGener
 
     @Override
     protected MultiblockTooltipBuilder createTooltip() {
-        return new MultiblockTooltipBuilder().addMachineType("Resonance Fuel Generator")
-            .addInfo("100 ticks per batch; 1 parallel burns 1000 mB fuel; default 1 parallel")
-            .addInfo("1648 heating coils around the central axis; all must be the same tier")
-            .addInfo("Max parallel = floor(4 ^ ((coil heat - 901) / 900 - 1)); real division")
-            .addInfo("Actual batch = min(available whole litres, configured parallel, coil limit)")
-            .addInfo("Build controller at world Y=2..129 (tower height 129)")
-            .addInfo("Each 1000 mB fuel needs 1 mB of each route base fluid")
-            .addInfo("Multiplier = Technology base ^ exponent x Magic base ^ exponent")
-            .addInfo("Insert exponent cores in the controller slot: Mk1 to Mk5, one per upgrade")
-            .addInfo("Only the first non-booster fluid is checked; no fallback fuel")
-            .addInfo("Over-capacity or full dynamo output is lost; generation continues")
-            .beginStructureBlock(33, 129, 33, false)
-            .addController("Front face, Y=2 above foundation")
-            .addInputHatch("1-3", "Front inert casings, Y=2 or 3 only", 1)
-            .addMaintenanceHatch("Exactly 1", "Same front hatch zone", 1)
-            .addDynamoHatch("0-16", "Rear two steel rows, Y=2 or 3", 2)
-            .toolTipFinisher();
+        return GeneratorDescription
+            .tooltip((key, args) -> net.minecraft.util.StatCollector.translateToLocalFormatted(key, args));
+    }
+
+    @Override
+    public gregtech.api.recipe.RecipeMap<?> getRecipeMap() {
+        return GeneratorRecipes.RECIPES;
     }
 
     @Override

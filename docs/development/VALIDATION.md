@@ -1,3 +1,17 @@
+# 0.4.4 · GTNH 2.9.0 验证 / Validation
+
+2026-11-04。18 项单元测试、880 项独立后台检查通过，服务端退出码 0。
+
+新增检查覆盖 36 种受支持燃料、900 条 NEI 参考配方（每种燃料的两侧基液有 25 种搭配）、1000:1:1 输入用量、完整精度能量、控制器配方关联、流体说明去重和双语翻译。所有配方为仅供显示的参考数据，实际发电仍由原有 100 tick 批次逻辑执行。
+
+使用 GT 的共用流体说明入口连接 NEI 流体显示物品和 ModularUI 流体槽。此客户端钩子不在专用服务端加载。测试检查共享说明生成逻辑、配方数据及打包内容；没有启动 Minecraft 客户端，因此未实际按键验收 R/U 页面或检查客户端字体排版。
+
+[0.4.4 后台结果](verification/0.4.4/backend-tests.json) · [0.4.4 安装包验证](verification/0.4.4/distribution.json)
+
+18 unit tests and 880 dedicated-server checks passed. New checks cover the 900 reference recipes, 36 supported fuels, exact inputs and energy, controller association, fluid tooltip deduplication and translations. The client hook is excluded on dedicated servers. No game client was launched: actual R/U interaction and client text rendering remain unverified.
+
+---
+
 # 0.4.3 · GTNH 2.9.0 验证 / Validation
 
 2026-11-03。使用官方 GTNH 2.9.0 Java 17–26 服务端及 Java 25，所有游戏逻辑检查在独立后台服务端进行；没有启动客户端或修改玩家世界。

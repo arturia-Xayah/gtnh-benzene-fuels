@@ -124,3 +124,27 @@ tooltip.benzenefuels.flavor.uxv=§b§l§o宇宙的苯质，终于可以装桶了
 tooltip.benzenefuels.reference.excited_uranium=激发铀基燃料
 gui.benzenefuels.coil=线圈：%sK / 上限%s并行
 gui.benzenefuels.parallel=当前并行：%s / 设定%s
+
+tooltip.benzenefuels.tower.batch=每批运行5秒；1并行消耗1000mB燃料，默认1并行
+tooltip.benzenefuels.tower.coils=中轴周围需要1648个同等级线圈
+tooltip.benzenefuels.tower.parallel=最大并行=floor(4^((线圈热量-901)/900-1))；按实数计算
+tooltip.benzenefuels.tower.actual=实际并行取燃料整桶数、设定上限及线圈上限中的最小值
+tooltip.benzenefuels.tower.height=塔高129格；主机可放置于世界高度Y=2~129
+tooltip.benzenefuels.tower.bases=每1000mB燃料同时消耗1mB科技基液和1mB魔法基液
+tooltip.benzenefuels.tower.multiplier=燃料效率=科技底数^科技指数 × 魔法底数^魔法指数
+tooltip.benzenefuels.tower.cores=主机右下角放入指数核心，Mk1~Mk5逐级永久升级
+tooltip.benzenefuels.tower.first_fuel=仅读取第一种非底数流体；不支持时不会尝试后续燃料
+tooltip.benzenefuels.tower.overflow=均匀输出功率；动力仓满或输出不足时，多余能量直接损失
+tooltip.benzenefuels.tower.nei=对主机按R或U查看发电配方；对燃料按U查看发电用途
+tooltip.benzenefuels.tower.wireless=支持无线输出至主机所有者的无线电网
+tooltip.benzenefuels.tower.controller=入口正面，距地基层上方2格
+tooltip.benzenefuels.tower.input=入口面惰性机械方块区域，仅相对Y=2或3
+tooltip.benzenefuels.tower.maintenance=同一入口仓室区域，仅1个
+tooltip.benzenefuels.tower.dynamo=背面两排坚固钢机械方块，相对Y=2或3
+benzenefuels.recipe.resonance=共振燃料发电塔
+nei.benzenefuels.batch=1并行：1000mB燃料 / 5秒
+nei.benzenefuels.bases=科技、魔法底数基液：各1mB
+nei.benzenefuels.energy=每批发电：%s EU
+nei.benzenefuels.power=平均功率：%s EU/t
+nei.benzenefuels.exponents=此处按两侧指数均为1计算
+nei.benzenefuels.upgrades=升级指数核心可提高实际效率

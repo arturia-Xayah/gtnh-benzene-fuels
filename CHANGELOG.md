@@ -1,5 +1,23 @@
 # 更新日志 / Changelog
 
+## 0.4.4-alpha · GTNH 2.9.0 · 2026-11-04
+
+### 中文
+
+- 燃料流体图标和 ModularUI 流体槽现在显示等级、热值、燃料当量及彩色斜体描述；单元容量说明只出现在单元上。
+- 新增共振发电塔 NEI 发电配方页：主机按 R／U、燃料和底数流体（含单元）按 U 查询。覆盖全部受支持燃料及两侧 25 种底数搭配，列出 5 秒用量、每批能量和平均功率；页面采用默认指数 1，保留高阶燃料完整数值。
+- 补齐发电塔中英文使用介绍及 Shift 结构说明。
+- 燃料热值、实际发电逻辑、配方用量、结构和注册 ID 不变。
+
+### English
+
+- Fuel displays and ModularUI fluid tanks now show localized tier, heat, reference-fuel equivalence and styled flavor text. Fixed cell capacity remains cell-only.
+- Added a dedicated generation page: R/U on the controller and U on fuel/base fluids or cells. Covers supported fuels and all 25 base-fluid combinations, showing 5-second inputs, batch energy and mean power at exponent 1 with full-precision high-tier values.
+- Localized the controller description and Shift structure page.
+- Fuel heat, runtime generation, recipe quantities, structure and registry IDs are unchanged.
+
+Validation / 验证：18 项单元测试、880 项后台检查通过；未启动客户端。[记录 / Evidence](docs/development/VALIDATION.md)
+
 ## 0.4.3-alpha · GTNH 2.9.0 · 2026-11-03
 
 首个公开发布版本，包含此前本地开发的完整内容。

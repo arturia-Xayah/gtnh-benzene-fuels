@@ -10,7 +10,7 @@
 
 [简体中文](README.md) · **English** · [Releases](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.3--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.3-alpha-GTNH-2.9.0/benzenefuels-0.4.3-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.4--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.4-alpha-GTNH-2.9.0/benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -31,11 +31,11 @@ Upgrade Nitrobenzene through LuV–UXV, build a tall Resonance Fuel Generator, a
 
 ## Installation and upgrading
 
-1. Download `benzenefuels-0.4.3-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
+1. Download `benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
 2. Multiplayer clients and servers need the same version; install on the client for single-player. Replace the previous Benzene Fuels JAR instead of keeping duplicates.
 3. Use the dependencies included in **GTNH 2.9.0 stable**. No animation mod is needed.
 
-This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.4.3 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
+This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.4.4 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
 
 ## Eight benzene fuels
 
@@ -69,6 +69,8 @@ A **33×33×129** tower with **1648 same-tier heating coils** around its central
 3. Open the side settings panel to set the parallel cap. Available whole buckets, your setting and the coil limit determine the actual batch.
 4. Output through dynamos, or use the dedicated **wireless** button to credit the owner's native GT wireless network.
 
+Press **R or U on the controller**, or **U on a fuel/base fluid or cell**, to open generation recipes. All Mk1–Mk5 base combinations show batch energy and average output with both exponents at 1 (no core upgrades).
+
 Generation is spread evenly across 100 ticks. Full buffers or insufficient dynamo throughput lose excess energy while the batch continues. The GUI shows fuel input, efficiency, generation, delivery and delivery percentage, plus both material routes.
 
 ![Resonance Fuel Generator structure illustration](docs/assets/generator-structure.png)
@@ -101,7 +103,7 @@ LV–IV use the assembler; LuV onward use the assembly line. Stars are craftable
 
 - Fuel upgrades, voltage stars and cell filling/emptying recipes are implemented.
 - Survival recipes for the generator controller, light casing, bases and exponent cores remain undecided; obtain them through creative/NEI. Some other items still use temporary icons.
-- Target: **GTNH 2.9.0 / GT5 5.09.54.265**, using the pack's GregTech, Good Generator, GT++, AE2, StructureLib, GTNHLib and ModularUI2.
+- Target: **GTNH 2.9.0 / GT5 5.09.54.265**, using the pack's GregTech, Good Generator, GT++, AE2, StructureLib, GTNHLib, ModularUI and UniMixins.
 - Settings live in `config/benzenefuels.cfg`. Default GT controller ID: **32240**. Both sides need the same ID; do not change it after placing controllers.
 
 ## Developer documentation

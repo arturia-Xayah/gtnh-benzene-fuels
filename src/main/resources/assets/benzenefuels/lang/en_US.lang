@@ -124,3 +124,27 @@ tooltip.benzenefuels.flavor.uxv=§b§l§oThe benzential nature of the universe, 
 tooltip.benzenefuels.reference.excited_uranium=Excited Uranium-Based Liquid Fuel
 gui.benzenefuels.coil=Coils: %s K / max %s parallel
 gui.benzenefuels.parallel=Parallel: %s / configured %s
+
+tooltip.benzenefuels.tower.batch=Each batch lasts 5 s; 1 parallel burns 1000 mB fuel; default: 1 parallel
+tooltip.benzenefuels.tower.coils=Requires 1648 heating coils of the same tier around the central axis
+tooltip.benzenefuels.tower.parallel=Max parallel = floor(4^((coil heat - 901)/900 - 1)); real division
+tooltip.benzenefuels.tower.actual=Actual parallel is limited by whole fuel buckets, setting and coils
+tooltip.benzenefuels.tower.height=Tower height: 129; place the controller at world Y=2..129
+tooltip.benzenefuels.tower.bases=Each 1000 mB fuel also consumes 1 mB technology base and 1 mB magic base
+tooltip.benzenefuels.tower.multiplier=Fuel efficiency = technology base^exponent x magic base^exponent
+tooltip.benzenefuels.tower.cores=Insert exponent cores in the controller slot; upgrade Mk1 to Mk5 in order
+tooltip.benzenefuels.tower.first_fuel=Only checks the first non-base fluid; no fallback to another fuel
+tooltip.benzenefuels.tower.overflow=Outputs power evenly; energy exceeding dynamo capacity is lost
+tooltip.benzenefuels.tower.nei=Press R or U on the controller, or U on fuel, to view generation recipes
+tooltip.benzenefuels.tower.wireless=Supports wireless output to the controller owner's energy network
+tooltip.benzenefuels.tower.controller=Front face, 2 blocks above the foundation
+tooltip.benzenefuels.tower.input=Front inert casings, relative Y=2 or 3 only
+tooltip.benzenefuels.tower.maintenance=Same front hatch zone; exactly one
+tooltip.benzenefuels.tower.dynamo=Rear two robust steel casing rows, relative Y=2 or 3
+benzenefuels.recipe.resonance=Resonance Fuel Generator
+nei.benzenefuels.batch=1 parallel: 1000 mB fuel / 5 s
+nei.benzenefuels.bases=Technology + magic base: 1 mB each
+nei.benzenefuels.energy=Batch energy: %s EU
+nei.benzenefuels.power=Mean output: %s EU/t
+nei.benzenefuels.exponents=Shown with both exponents = 1
+nei.benzenefuels.upgrades=Exponent cores increase efficiency
