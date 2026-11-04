@@ -10,7 +10,7 @@
 
 **简体中文** · [English](README.en.md) · [版本下载](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.4--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.4-alpha-GTNH-2.9.0/benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.5--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.5-alpha-GTNH-2.9.0/benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -31,11 +31,11 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 
 ## 安装与升级
 
-1. 下载 `benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
+1. 下载 `benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
 2. 联机时客户端和服务端安装相同版本；单人游戏安装在客户端。替换旧版 Benzene Fuels JAR，不要重复安装。
 3. 使用 GTNH **2.9.0 正式版**自带的依赖，无需额外安装动画模组。
 
-本模组独立于 GTNH现代化升级／结构终端。升级至 0.4.4 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
+本模组独立于 GTNH现代化升级／结构终端。升级至 0.4.5 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
 
 ## 八级苯燃料
 
@@ -91,6 +91,8 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 
 燃料倍率为 `科技底数^科技指数 × 魔法底数^魔法指数`。未安装核心时，两侧指数均为 1。重复、跳级或降级核心不会消耗；运行中升级从下一批生效，拆下主机仍保留升级。
 
+[部件材质总览与动态预览](design/component-textures/README.md)
+
 ## 电压之星
 
 LV～UXV 共十三种。每级配方组合马达、活塞、泵、输送带、机械臂、发射器、传感器和力场发生器；高等级还需要上级之星。
@@ -102,7 +104,7 @@ LV～IV 使用组装机，LuV 起使用装配线。星星目前可合成，尚�
 ## 内容获取与兼容性
 
 - 燃料升级、电压之星、燃料单元装填／倒出配方已实装。
-- 发电塔主机、导光外壳、底数材料与指数核心的生存合成配方待定，可从创造物品栏／NEI 取得。星星和其他中间物部分仍使用临时图标。
+- 发电塔主机、导光外壳、底数材料与指数核心的生存合成配方待定，可从创造物品栏／NEI 取得。催化剂、之星、指数核心和底数单元均已配备独立材质。
 - 目标为 **GTNH 2.9.0 / GT5 5.09.54.265**，使用整合包中的 GregTech、Good Generator、GT++、AE2、StructureLib、GTNHLib、ModularUI 和 UniMixins。
 - 配置位于 `config/benzenefuels.cfg`。主机默认 GT ID 为 **32240**；客户端和服务端须一致，已有主机放置后不要修改此 ID。
 

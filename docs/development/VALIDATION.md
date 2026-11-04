@@ -1,3 +1,15 @@
+# 0.4.5 · GTNH 2.9.0 验证 / Validation
+
+2026-11-04。20 项单元测试、967 项独立后台检查通过，服务端退出码 0。新增检查覆盖全部 43 个物品图标映射、35 个新图标与 11 种流体资源、原生动画元数据、动画帧差异、固定外壳与等级标记、透明轮廓，以及流体实际注册的仍图／流动图路径与白色染色。
+
+新增 46 张贴图，其中 21 张为 64 帧原生动画。生产包 31 个 Java 8 类，生产类及资源与后台实测夹具一致。已有燃料和机器贴图逐字节保留。静态总览已检查，网页预览直接使用打包帧；没有启动游戏客户端，因此未进行 Minecraft 图集上传及资源包覆盖验收。
+
+[0.4.5 后台结果](verification/0.4.5/backend-tests.json) · [0.4.5 安装包验证](verification/0.4.5/distribution.json) · [材质清单](../../preview/components/manifest.json)
+
+20 unit tests and 967 dedicated-server checks passed. Coverage includes all 43 item mappings, new assets, animation frames and metadata, fixed cell shells/tier contacts, alpha silhouettes and actual fluid registration. The 31 Java 8 production classes and assets match the executed fixture. Existing sprites are byte-identical. The contact sheet was inspected; no Minecraft client, atlas upload or resource-pack override testing was performed.
+
+---
+
 # 0.4.4 · GTNH 2.9.0 验证 / Validation
 
 2026-11-04。18 项单元测试、880 项独立后台检查通过，服务端退出码 0。

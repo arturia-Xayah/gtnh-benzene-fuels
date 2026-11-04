@@ -1,0 +1,324 @@
+[
+  {
+    "key": "component_activator",
+    "name": "苯环活化剂",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/component_activator.png",
+    "frames": 1,
+    "sha256": "8176b77ae94e54aa198ff1cc889be3b3d921d451cd5ee0076961b69bb5b7009e"
+  },
+  {
+    "key": "catalyst_quantum",
+    "name": "苯环量子催化剂",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/catalyst_quantum.png",
+    "frames": 1,
+    "sha256": "5125608fa2ba552a6c4ceaff2b590f6e80cb5d7a24c3c6fcf6141c2bd4153389"
+  },
+  {
+    "key": "star_lv",
+    "name": "LV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_lv.png",
+    "frames": 1,
+    "sha256": "81a429d2b2b472a2d4c86e1ec861b76716cb2fb198f41fe8fbcab89245c58214"
+  },
+  {
+    "key": "star_mv",
+    "name": "MV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_mv.png",
+    "frames": 1,
+    "sha256": "0bbd01b4b0d0a1b4814c9fec35eb8e711bbd8ab9c33345c648c50c8e464cc5a3"
+  },
+  {
+    "key": "star_hv",
+    "name": "HV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_hv.png",
+    "frames": 1,
+    "sha256": "d79d93743457777723568e417f45b74a676efff957d9c98ae05bba865aa7411e"
+  },
+  {
+    "key": "star_ev",
+    "name": "EV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_ev.png",
+    "frames": 1,
+    "sha256": "09d2415aee73a676dbf624fdf761e04aff436961bc746944c88a7790ff6eea6c"
+  },
+  {
+    "key": "star_iv",
+    "name": "IV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_iv.png",
+    "frames": 1,
+    "sha256": "0c4bd4db524b4fd91458db7b98820bb9881aa0a92c49a20daaf577d2134d7d69"
+  },
+  {
+    "key": "star_luv",
+    "name": "LUV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_luv.png",
+    "frames": 1,
+    "sha256": "ce74ced381ca37153ce46d5f5c10117f3ebd70a9008c8a62c18dc926ef4e0547"
+  },
+  {
+    "key": "star_zpm",
+    "name": "ZPM之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_zpm.png",
+    "frames": 1,
+    "sha256": "71147c3ffadfa220dc76043ef52f53cf2f1667015420b1fab58a0ba93b66407b"
+  },
+  {
+    "key": "star_uv",
+    "name": "UV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_uv.png",
+    "frames": 1,
+    "sha256": "1a7c1c29022d628cd81c7e38670b4ae02e526f26d9fcfc6e68262e38b0d194d7"
+  },
+  {
+    "key": "star_uhv",
+    "name": "UHV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_uhv.png",
+    "frames": 1,
+    "sha256": "36936160e266204ea1e26e3e501cca961111ebc3accb4f63f7b33f245030bc05"
+  },
+  {
+    "key": "star_uev",
+    "name": "UEV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_uev.png",
+    "frames": 1,
+    "sha256": "86c0607ee96c42d850bd564ff1b935a35fb6683d0bcb514b7ff57500c16200bf"
+  },
+  {
+    "key": "star_uiv",
+    "name": "UIV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_uiv.png",
+    "frames": 1,
+    "sha256": "082659684ab76b3696dcc863cb2e9aaf54e3f9b6f8fcf3d7ce859f23280b6b2f"
+  },
+  {
+    "key": "star_umv",
+    "name": "UMV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_umv.png",
+    "frames": 1,
+    "sha256": "c000e01bde7a5c98618d68ff5f61e3bee349da59a41edaaf1f7191028ce3acc2"
+  },
+  {
+    "key": "star_uxv",
+    "name": "UXV之星",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/star_uxv.png",
+    "frames": 1,
+    "sha256": "fec84b46673b3c8af4030b0384fba31e48cfe329dcad20234d2a0988633d3905"
+  },
+  {
+    "key": "core_technology_mk1",
+    "name": "科技指数核心 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_technology_mk1.png",
+    "frames": 1,
+    "sha256": "2caaf160e144d696e210554c6f420cfba1537c671944f9b19a57a0fec1cb0608"
+  },
+  {
+    "key": "technology_base_mk1",
+    "name": "科技底数基液 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/technology_base_mk1.png",
+    "frames": 64,
+    "sha256": "3304f54258269c2121792dc85f3fa265a49a7f94aa6eb2d26d5590d71075d353"
+  },
+  {
+    "key": "base_cell_technology_mk1",
+    "name": "科技底数基液单元 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_technology_mk1.png",
+    "frames": 64,
+    "sha256": "f78dfee280a7b0a9a4ad1f351b6b6d585a8a202e30894a448e9ba768e3b1aedd"
+  },
+  {
+    "key": "core_technology_mk2",
+    "name": "科技指数核心 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_technology_mk2.png",
+    "frames": 1,
+    "sha256": "3d88bca283d5d86b31161f1bcb912e441d597587aa992fb683a29442fb1f07cc"
+  },
+  {
+    "key": "technology_base_mk2",
+    "name": "科技底数基液 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/technology_base_mk2.png",
+    "frames": 64,
+    "sha256": "c636730ac8ce8526bd70caf3fbde227cb7e882b30233cf5bff364abe0ac916d4"
+  },
+  {
+    "key": "base_cell_technology_mk2",
+    "name": "科技底数基液单元 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_technology_mk2.png",
+    "frames": 64,
+    "sha256": "25f6b63ea866018c02d086307ed7377f03adae22501d92e9f9abaf88140889d1"
+  },
+  {
+    "key": "core_technology_mk3",
+    "name": "科技指数核心 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_technology_mk3.png",
+    "frames": 1,
+    "sha256": "65401fe5a31772a6c435ba37256facdc0beaf6326c420f5497f747baac668e63"
+  },
+  {
+    "key": "technology_base_mk3",
+    "name": "科技底数基液 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/technology_base_mk3.png",
+    "frames": 64,
+    "sha256": "4ab5cad1e1d8ca252e87c71294f595cd6b10c199ee555438f1f6fa2a9d04e517"
+  },
+  {
+    "key": "base_cell_technology_mk3",
+    "name": "科技底数基液单元 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_technology_mk3.png",
+    "frames": 64,
+    "sha256": "9dcdf9d62332faee4052d80002450348e84a8a19ddb81902f88608bb96e34de8"
+  },
+  {
+    "key": "core_technology_mk4",
+    "name": "科技指数核心 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_technology_mk4.png",
+    "frames": 1,
+    "sha256": "402b26201f67425bfbd742e0e4bda8e5321e92e00b1800e40b7f0c76b4e7e5bd"
+  },
+  {
+    "key": "technology_base_mk4",
+    "name": "科技底数基液 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/technology_base_mk4.png",
+    "frames": 64,
+    "sha256": "e285fd5230441d94b3b0a8ecf4133426b41fd5ef14451026a843880aa2e8ac5e"
+  },
+  {
+    "key": "base_cell_technology_mk4",
+    "name": "科技底数基液单元 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_technology_mk4.png",
+    "frames": 64,
+    "sha256": "025109d670b6283104613dd4f14298ec528c7aad2badb233426eee191bb66f6b"
+  },
+  {
+    "key": "core_technology_mk5",
+    "name": "科技指数核心 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_technology_mk5.png",
+    "frames": 1,
+    "sha256": "4b54bbb2ea12ef7d0eaea87c99f0b9afcf630c69b2590bc63c9a456b9d5678c8"
+  },
+  {
+    "key": "technology_base_mk5",
+    "name": "科技底数基液 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/technology_base_mk5.png",
+    "frames": 64,
+    "sha256": "abc4d548b45eeb2c129df8d936608867a6699e08431aea3b4b52381a7fc10667"
+  },
+  {
+    "key": "base_cell_technology_mk5",
+    "name": "科技底数基液单元 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_technology_mk5.png",
+    "frames": 64,
+    "sha256": "6ee5a349c81f465cccea4efb92a546dbd99e8867df88d52a99f1f77fd4538992"
+  },
+  {
+    "key": "core_magic_mk1",
+    "name": "魔法指数核心 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_magic_mk1.png",
+    "frames": 1,
+    "sha256": "fde89d80e6f2ac217298ef47db843ff5a0e7a6e1707ae5e67369a874546a43c7"
+  },
+  {
+    "key": "magic_base_mk1",
+    "name": "魔法底数基液 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/magic_base_mk1.png",
+    "frames": 64,
+    "sha256": "7797a9fa35f7cce34b23d3a536cc93b7ed8d363d9498d7d972d58cf79dc1a0dd"
+  },
+  {
+    "key": "base_cell_magic_mk1",
+    "name": "魔法底数基液单元 Mk1",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_magic_mk1.png",
+    "frames": 64,
+    "sha256": "7cdfdca5d7b3f8b3339209392436c91faf1835710228b0b6b162492b87e0b29f"
+  },
+  {
+    "key": "core_magic_mk2",
+    "name": "魔法指数核心 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_magic_mk2.png",
+    "frames": 1,
+    "sha256": "256952f065e835dbcfc7d88f9f74f17d098d313c2790464b48eecae21be769ba"
+  },
+  {
+    "key": "magic_base_mk2",
+    "name": "魔法底数基液 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/magic_base_mk2.png",
+    "frames": 64,
+    "sha256": "cb7e854adea4c5692f4c57008296e55759e390fc2a4e0930275301c86f6378e8"
+  },
+  {
+    "key": "base_cell_magic_mk2",
+    "name": "魔法底数基液单元 Mk2",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_magic_mk2.png",
+    "frames": 64,
+    "sha256": "c5040efb04e20230fe1d341df82d3c9b9ac99a8bffd522a5aea00d391260989a"
+  },
+  {
+    "key": "core_magic_mk3",
+    "name": "魔法指数核心 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_magic_mk3.png",
+    "frames": 1,
+    "sha256": "f3697cef6e8068c60abd87078f46dc3002bb003c64b6dc82af62c28bf4610bb9"
+  },
+  {
+    "key": "magic_base_mk3",
+    "name": "魔法底数基液 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/magic_base_mk3.png",
+    "frames": 64,
+    "sha256": "a8a81aff320cf91c56dd266c405f8606ad6b9c446a4f108d5b7e785317a3b9c3"
+  },
+  {
+    "key": "base_cell_magic_mk3",
+    "name": "魔法底数基液单元 Mk3",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_magic_mk3.png",
+    "frames": 64,
+    "sha256": "2d848d6e28eeaae0175062605662f102bf2410880b7d3cdb956e0f1a330e154b"
+  },
+  {
+    "key": "core_magic_mk4",
+    "name": "魔法指数核心 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_magic_mk4.png",
+    "frames": 1,
+    "sha256": "0745f0dcad1b8d9b42462033101707d1425887d4fc2f6ae3ec26b5747d8794bb"
+  },
+  {
+    "key": "magic_base_mk4",
+    "name": "魔法底数基液 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/magic_base_mk4.png",
+    "frames": 64,
+    "sha256": "1b89e3560e81d02f8c0c6ab6e43ea2e75d9f7b2e2e63b5d955fe942fd7c76ea4"
+  },
+  {
+    "key": "base_cell_magic_mk4",
+    "name": "魔法底数基液单元 Mk4",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_magic_mk4.png",
+    "frames": 64,
+    "sha256": "dbb0e17c582a4566e54aecd885e4de8b70166e1ba6e4768b995762409c23c29d"
+  },
+  {
+    "key": "core_magic_mk5",
+    "name": "魔法指数核心 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/core_magic_mk5.png",
+    "frames": 1,
+    "sha256": "afae6a8696b7a1c1e64cb92a786f9a0bf3da62bb7a153194ee660c4ac8076518"
+  },
+  {
+    "key": "magic_base_mk5",
+    "name": "魔法底数基液 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/magic_base_mk5.png",
+    "frames": 64,
+    "sha256": "c50167afeb9e5ef0f311ef096096a52da113bf32ec703a99b51fa09ae78f25a0"
+  },
+  {
+    "key": "base_cell_magic_mk5",
+    "name": "魔法底数基液单元 Mk5",
+    "path": "src/main/resources/assets/benzenefuels/textures/items/base_cell_magic_mk5.png",
+    "frames": 64,
+    "sha256": "8d32d3e5f42141556d03b2a3e0aef2a673bfd0c5e1b5bf69bec5e1a27ce03b14"
+  },
+  {
+    "key": "uv_activator",
+    "name": "UV苯活化液",
+    "path": "src/main/resources/assets/benzenefuels/textures/blocks/fluids/uv_activator.png",
+    "frames": 64,
+    "sha256": "9338868be2a870266fb4a1be43c2dfcb1505c9b894e5f4d0d41cf5273b3a775f"
+  }
+]

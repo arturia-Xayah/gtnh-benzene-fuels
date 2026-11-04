@@ -1,0 +1,4851 @@
+{
+  "target": "GTNH 2.9.0 / GT5 5.09.54.265",
+  "dependencies": {
+    "gregtech": "5.09.54.265",
+    "appliedenergistics2": "rv3-beta-1095-GTNH",
+    "structurelib": "1.4.47",
+    "modularui2": "2.3.94-1.7.10",
+    "gtnhlib": "0.11.54",
+    "Waila": "1.19.34"
+  },
+  "scope": "Full-pack registration, native recipe matching/consumption and machine tier validation",
+  "clientLaunched": false,
+  "passed": true,
+  "tests": [
+    {
+      "name": "runtime.gregtech",
+      "passed": true,
+      "detail": "5.09.54.265"
+    },
+    {
+      "name": "runtime.appliedenergistics2",
+      "passed": true,
+      "detail": "rv3-beta-1095-GTNH"
+    },
+    {
+      "name": "runtime.structurelib",
+      "passed": true,
+      "detail": "1.4.47"
+    },
+    {
+      "name": "runtime.modularui2",
+      "passed": true,
+      "detail": "2.3.94-1.7.10"
+    },
+    {
+      "name": "runtime.gtnhlib",
+      "passed": true,
+      "detail": "0.11.54"
+    },
+    {
+      "name": "runtime.Waila",
+      "passed": true,
+      "detail": "1.19.34"
+    },
+    {
+      "name": "luv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bLuV, §7Volume: §f1B (1000mB), §7Base fuel value: §613.94K EU/mB, §7Fuel equivalent: §a~8.712x Nitrobenzene, §b§l§oPrecious metal recovery ends here.]"
+    },
+    {
+      "name": "luv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "超富集铂族苯"
+    },
+    {
+      "name": "luv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§613.94K EU/mB"
+    },
+    {
+      "name": "luv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "luv.tooltip.reference",
+      "passed": true,
+      "detail": "nitrobenzene\u003d1600"
+    },
+    {
+      "name": "zpm.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bZPM, §7Volume: §f1B (1000mB), §7Base fuel value: §6136.2K EU/mB, §7Fuel equivalent: §a~85.12x Nitrobenzene, §b§l§oA tin-credible future awaits.]"
+    },
+    {
+      "name": "zpm.tooltip.localizedNames",
+      "passed": true,
+      "detail": "ZPM苯"
+    },
+    {
+      "name": "zpm.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§6136.2K EU/mB"
+    },
+    {
+      "name": "zpm.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "zpm.tooltip.reference",
+      "passed": true,
+      "detail": "nitrobenzene\u003d1600"
+    },
+    {
+      "name": "uv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUV, §7Volume: §f1B (1000mB), §7Base fuel value: §61.491M EU/mB, §7Fuel equivalent: §a~1.15x Excited Uranium-Based Liquid Fuel, §b§l§oFor greater stability, add more neutrons.]"
+    },
+    {
+      "name": "uv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "中子过饱和苯"
+    },
+    {
+      "name": "uv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§61.491M EU/mB"
+    },
+    {
+      "name": "uv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "uv.tooltip.reference",
+      "passed": true,
+      "detail": "excited_uranium\u003d1296000"
+    },
+    {
+      "name": "uhv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUHV, §7Volume: §f1B (1000mB), §7Base fuel value: §618.29M EU/mB, §7Fuel equivalent: §a~0.3126x Naquadah-Based Fuel MkI, §b§l§oThe power of the universe, now in your fuel tank.]"
+    },
+    {
+      "name": "uhv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "UHV苯"
+    },
+    {
+      "name": "uhv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§618.29M EU/mB"
+    },
+    {
+      "name": "uhv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "uhv.tooltip.reference",
+      "passed": true,
+      "detail": "naquadah1\u003d58500000"
+    },
+    {
+      "name": "uev.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUEV, §7Volume: §f1B (1000mB), §7Base fuel value: §6251.5M EU/mB, §7Fuel equivalent: §a~1.562x Naquadah-Based Fuel MkII, §b§l§oTo upgrade this fuel, first upgrade the previous fuel.]"
+    },
+    {
+      "name": "uev.tooltip.localizedNames",
+      "passed": true,
+      "detail": "UEV苯"
+    },
+    {
+      "name": "uev.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§6251.5M EU/mB"
+    },
+    {
+      "name": "uev.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "uev.tooltip.reference",
+      "passed": true,
+      "detail": "naquadah2\u003d161000000"
+    },
+    {
+      "name": "uiv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUIV, §7Volume: §f1B (1000mB), §7Base fuel value: §63.876G EU/mB, §7Fuel equivalent: §a~5.094x Naquadah-Based Fuel MkIII, §b§l§oWhich came first: the power, or the fuel?]"
+    },
+    {
+      "name": "uiv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "因果闭环苯"
+    },
+    {
+      "name": "uiv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§63.876G EU/mB"
+    },
+    {
+      "name": "uiv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "uiv.tooltip.reference",
+      "passed": true,
+      "detail": "naquadah3\u003d760880000"
+    },
+    {
+      "name": "umv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUMV, §7Volume: §f1B (1000mB), §7Base fuel value: §666.95G EU/mB, §7Fuel equivalent: §a~1.047x Naquadah-Based Fuel MkV, §b§l§oEven fuel needs tuning. This one is a little loud.]"
+    },
+    {
+      "name": "umv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "永恒调律苯"
+    },
+    {
+      "name": "umv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§666.95G EU/mB"
+    },
+    {
+      "name": "umv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "umv.tooltip.reference",
+      "passed": true,
+      "detail": "naquadah5\u003d63932160000"
+    },
+    {
+      "name": "uxv.tooltip.realItem",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUXV, §7Volume: §f1B (1000mB), §7Base fuel value: §61.296T EU/mB, §7Fuel equivalent: §a~1.296x Antimatter (copper baseline), §b§l§oThe benzential nature of the universe, finally bucketable.]"
+    },
+    {
+      "name": "uxv.tooltip.localizedNames",
+      "passed": true,
+      "detail": "苯征宇宙燃料"
+    },
+    {
+      "name": "uxv.tooltip.heatAndUnit",
+      "passed": true,
+      "detail": "§7基础热值：§61.296T EU/mB"
+    },
+    {
+      "name": "uxv.tooltip.noMissingTranslations",
+      "passed": true,
+      "detail": "both languages"
+    },
+    {
+      "name": "uxv.tooltip.reference",
+      "passed": true,
+      "detail": "antimatter\u003d1000000000000"
+    },
+    {
+      "name": "tooltip.antimatterCopperBaseline",
+      "passed": true,
+      "detail": "balanced copper, exponent 1"
+    },
+    {
+      "name": "nei.allSupportedFuels",
+      "passed": true,
+      "detail": "900 recipes / 36 fuels / 25 base combinations"
+    },
+    {
+      "name": "nei.controllerCatalyst",
+      "passed": true,
+      "detail": "Native GT catalyst association"
+    },
+    {
+      "name": "nei.referenceOnly",
+      "passed": true,
+      "detail": "Reference recipes never execute or fabricate a controller output"
+    },
+    {
+      "name": "nei.exactFluidQuantities",
+      "passed": true,
+      "detail": "1000 mB fuel + 1 mB technology + 1 mB magic"
+    },
+    {
+      "name": "luv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "luv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "luv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bLuV, §7Base fuel value: §613.94K EU/mB, §7Fuel equivalent: §a~8.712x Nitrobenzene, §b§l§oPrecious metal recovery ends here.]"
+    },
+    {
+      "name": "luv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "zpm.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "zpm.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "zpm.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bZPM, §7Base fuel value: §6136.2K EU/mB, §7Fuel equivalent: §a~85.12x Nitrobenzene, §b§l§oA tin-credible future awaits.]"
+    },
+    {
+      "name": "zpm.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "uv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "uv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "uv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUV, §7Base fuel value: §61.491M EU/mB, §7Fuel equivalent: §a~1.15x Excited Uranium-Based Liquid Fuel, §b§l§oFor greater stability, add more neutrons.]"
+    },
+    {
+      "name": "uv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "uhv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "uhv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "uhv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUHV, §7Base fuel value: §618.29M EU/mB, §7Fuel equivalent: §a~0.3126x Naquadah-Based Fuel MkI, §b§l§oThe power of the universe, now in your fuel tank.]"
+    },
+    {
+      "name": "uhv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "uev.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "uev.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "uev.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUEV, §7Base fuel value: §6251.5M EU/mB, §7Fuel equivalent: §a~1.562x Naquadah-Based Fuel MkII, §b§l§oTo upgrade this fuel, first upgrade the previous fuel.]"
+    },
+    {
+      "name": "uev.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "uiv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "uiv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "uiv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUIV, §7Base fuel value: §63.876G EU/mB, §7Fuel equivalent: §a~5.094x Naquadah-Based Fuel MkIII, §b§l§oWhich came first: the power, or the fuel?]"
+    },
+    {
+      "name": "uiv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "umv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "umv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "umv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUMV, §7Base fuel value: §666.95G EU/mB, §7Fuel equivalent: §a~1.047x Naquadah-Based Fuel MkV, §b§l§oEven fuel needs tuning. This one is a little loud.]"
+    },
+    {
+      "name": "umv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "uxv.nei.allBaseCombinations",
+      "passed": true,
+      "detail": "Five grades on each route"
+    },
+    {
+      "name": "uxv.nei.fullPrecisionEnergy",
+      "passed": true,
+      "detail": "BigInteger, including UIV/UMV/UXV"
+    },
+    {
+      "name": "uxv.fluidTooltip.shared",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUXV, §7Base fuel value: §61.296T EU/mB, §7Fuel equivalent: §a~1.296x Antimatter (copper baseline), §b§l§oThe benzential nature of the universe, finally bucketable.]"
+    },
+    {
+      "name": "uxv.fluidTooltip.notDuplicated",
+      "passed": true,
+      "detail": "Repeated tooltip hook"
+    },
+    {
+      "name": "fluidTooltip.otherFluidsUntouched",
+      "passed": true,
+      "detail": "[Water]"
+    },
+    {
+      "name": "zh_CN.controller.description",
+      "passed": true,
+      "detail": "[Machine Type: §e共振燃料发电塔§r, 每批运行5秒；1并行消耗1000mB燃料，默认1并行, 中轴周围需要1648个同等级线圈, 最大并行\u003dfloor(4^((线圈热量-901)/900-1))；按实数计算, 实际并行取燃料整桶数、设定上限及线圈上限中的最小值, 塔高129格；主机可放置于世界高度Y\u003d2~129, 每1000mB燃料同时消耗1mB科技基液和1mB魔法基液, 燃料效率\u003d科技底数^科技指数 × 魔法底数^魔法指数, 主机右下角放入指数核心，Mk1~Mk5逐级永久升级, 仅读取第一种非底数流体；不支持时不会尝试后续燃料, 均匀输出功率；动力仓满或输出不足时，多余能量直接损失, 对主机按R或U查看发电配方；对燃料按U查看发电用途, 支持无线输出至主机所有者的无线电网, §7§m-----------------------------------------, Hold §l[LSHIFT]§r§7 to display structure guidelines]"
+    },
+    {
+      "name": "zh_CN.controller.structure",
+      "passed": true,
+      "detail": "[§fDimensions: §633§7x§633§7x§6129§7 (§6L§7x§6W§7x§6H§7) , §fStructure: ,    §fController: §7入口正面，距地基层上方2格,    §e1-3 §fInput Hatch: §7入口面惰性机械方块区域，仅相对Y\u003d2或3,    §e1 §fMaintenance Hatch: §7同一入口仓室区域，仅1个,    §e0-16 §fDynamo Hatch: §7背面两排坚固钢机械方块，相对Y\u003d2或3, §7§m------------------------------, §fUse the Multiblock Structure §9Hologram §1Projector§f to visualize/build the structure!]"
+    },
+    {
+      "name": "zh_CN.luv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bLuV, §7基础热值：§613.94K EU/mB, §7燃料当量：§a≈8.712倍硝基苯, §b§l§o贵金属回收业务，到此终止。]"
+    },
+    {
+      "name": "zh_CN.zpm.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bZPM, §7基础热值：§6136.2K EU/mB, §7燃料当量：§a≈85.12倍硝基苯, §b§l§o前途一片锡望。]"
+    },
+    {
+      "name": "zh_CN.uv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUV, §7基础热值：§61.491M EU/mB, §7燃料当量：§a≈1.15倍激发铀基燃料, §b§l§o稳定的方法，就是再加一些中子。]"
+    },
+    {
+      "name": "zh_CN.uhv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUHV, §7基础热值：§618.29M EU/mB, §7燃料当量：§a≈0.3126倍硅岩基燃料MkI, §b§l§o汝油箱中者，寰宇之力也。]"
+    },
+    {
+      "name": "zh_CN.uev.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUEV, §7基础热值：§6251.5M EU/mB, §7燃料当量：§a≈1.562倍硅岩基燃料MkII, §b§l§o为了升级这种燃料，你需要先升级上一种燃料。]"
+    },
+    {
+      "name": "zh_CN.uiv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUIV, §7基础热值：§63.876G EU/mB, §7燃料当量：§a≈5.094倍硅岩基燃料MkIII, §b§l§o先有发电量，还是先有燃料？]"
+    },
+    {
+      "name": "zh_CN.umv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUMV, §7基础热值：§666.95G EU/mB, §7燃料当量：§a≈1.047倍硅岩基燃料MkV, §b§l§o燃料也需要调音，只是它的音量有点大。]"
+    },
+    {
+      "name": "zh_CN.uxv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7燃料等级：§bUXV, §7基础热值：§61.296T EU/mB, §7燃料当量：§a≈1.296倍反物质（铜基准）, §b§l§o宇宙的苯质，终于可以装桶了。]"
+    },
+    {
+      "name": "zh_CN.nei.description",
+      "passed": true,
+      "detail": "Localized energy, power, batch and exponent baseline"
+    },
+    {
+      "name": "en_US.controller.description",
+      "passed": true,
+      "detail": "[Machine Type: §eResonance Fuel Generator§r, Each batch lasts 5 s; 1 parallel burns 1000 mB fuel; default: 1 parallel, Requires 1648 heating coils of the same tier around the central axis, Max parallel \u003d floor(4^((coil heat - 901)/900 - 1)); real division, Actual parallel is limited by whole fuel buckets, setting and coils, Tower height: 129; place the controller at world Y\u003d2..129, Each 1000 mB fuel also consumes 1 mB technology base and 1 mB magic base, Fuel efficiency \u003d technology base^exponent x magic base^exponent, Insert exponent cores in the controller slot; upgrade Mk1 to Mk5 in order, Only checks the first non-base fluid; no fallback to another fuel, Outputs power evenly; energy exceeding dynamo capacity is lost, Press R or U on the controller, or U on fuel, to view generation recipes, Supports wireless output to the controller owner\u0027s energy network, §7§m-----------------------------------------, Hold §l[LSHIFT]§r§7 to display structure guidelines]"
+    },
+    {
+      "name": "en_US.controller.structure",
+      "passed": true,
+      "detail": "[§fDimensions: §633§7x§633§7x§6129§7 (§6L§7x§6W§7x§6H§7) , §fStructure: ,    §fController: §7Front face, 2 blocks above the foundation,    §e1-3 §fInput Hatch: §7Front inert casings, relative Y\u003d2 or 3 only,    §e1 §fMaintenance Hatch: §7Same front hatch zone; exactly one,    §e0-16 §fDynamo Hatch: §7Rear two robust steel casing rows, relative Y\u003d2 or 3, §7§m------------------------------, §fUse the Multiblock Structure §9Hologram §1Projector§f to visualize/build the structure!]"
+    },
+    {
+      "name": "en_US.luv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bLuV, §7Base fuel value: §613.94K EU/mB, §7Fuel equivalent: §a~8.712x Nitrobenzene, §b§l§oPrecious metal recovery ends here.]"
+    },
+    {
+      "name": "en_US.zpm.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bZPM, §7Base fuel value: §6136.2K EU/mB, §7Fuel equivalent: §a~85.12x Nitrobenzene, §b§l§oA tin-credible future awaits.]"
+    },
+    {
+      "name": "en_US.uv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUV, §7Base fuel value: §61.491M EU/mB, §7Fuel equivalent: §a~1.15x Excited Uranium-Based Liquid Fuel, §b§l§oFor greater stability, add more neutrons.]"
+    },
+    {
+      "name": "en_US.uhv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUHV, §7Base fuel value: §618.29M EU/mB, §7Fuel equivalent: §a~0.3126x Naquadah-Based Fuel MkI, §b§l§oThe power of the universe, now in your fuel tank.]"
+    },
+    {
+      "name": "en_US.uev.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUEV, §7Base fuel value: §6251.5M EU/mB, §7Fuel equivalent: §a~1.562x Naquadah-Based Fuel MkII, §b§l§oTo upgrade this fuel, first upgrade the previous fuel.]"
+    },
+    {
+      "name": "en_US.uiv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUIV, §7Base fuel value: §63.876G EU/mB, §7Fuel equivalent: §a~5.094x Naquadah-Based Fuel MkIII, §b§l§oWhich came first: the power, or the fuel?]"
+    },
+    {
+      "name": "en_US.umv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUMV, §7Base fuel value: §666.95G EU/mB, §7Fuel equivalent: §a~1.047x Naquadah-Based Fuel MkV, §b§l§oEven fuel needs tuning. This one is a little loud.]"
+    },
+    {
+      "name": "en_US.uxv.fluidTooltip.noContainerCapacity",
+      "passed": true,
+      "detail": "[§7Fuel tier: §bUXV, §7Base fuel value: §61.296T EU/mB, §7Fuel equivalent: §a~1.296x Antimatter (copper baseline), §b§l§oThe benzential nature of the universe, finally bucketable.]"
+    },
+    {
+      "name": "en_US.nei.description",
+      "passed": true,
+      "detail": "Localized energy, power, batch and exponent baseline"
+    },
+    {
+      "name": "component.0.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/component_activator.png"
+    },
+    {
+      "name": "component.30000.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/catalyst_quantum.png"
+    },
+    {
+      "name": "component.1.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_luv.png"
+    },
+    {
+      "name": "component.2.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_zpm.png"
+    },
+    {
+      "name": "component.3.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uv.png"
+    },
+    {
+      "name": "component.4.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uhv.png"
+    },
+    {
+      "name": "component.5.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uev.png"
+    },
+    {
+      "name": "component.6.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uiv.png"
+    },
+    {
+      "name": "component.7.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_umv.png"
+    },
+    {
+      "name": "component.8.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uxv.png"
+    },
+    {
+      "name": "component.100.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_lv.png"
+    },
+    {
+      "name": "component.101.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_mv.png"
+    },
+    {
+      "name": "component.102.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_hv.png"
+    },
+    {
+      "name": "component.103.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_ev.png"
+    },
+    {
+      "name": "component.104.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_iv.png"
+    },
+    {
+      "name": "component.105.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_luv.png"
+    },
+    {
+      "name": "component.106.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_zpm.png"
+    },
+    {
+      "name": "component.107.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_uv.png"
+    },
+    {
+      "name": "component.108.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_uhv.png"
+    },
+    {
+      "name": "component.109.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_uev.png"
+    },
+    {
+      "name": "component.110.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_uiv.png"
+    },
+    {
+      "name": "component.111.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_umv.png"
+    },
+    {
+      "name": "component.112.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/star_uxv.png"
+    },
+    {
+      "name": "component.200.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_technology_mk1.png"
+    },
+    {
+      "name": "component.400.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_technology_mk1.png"
+    },
+    {
+      "name": "component.201.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_technology_mk2.png"
+    },
+    {
+      "name": "component.401.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_technology_mk2.png"
+    },
+    {
+      "name": "component.202.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_technology_mk3.png"
+    },
+    {
+      "name": "component.402.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_technology_mk3.png"
+    },
+    {
+      "name": "component.203.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_technology_mk4.png"
+    },
+    {
+      "name": "component.403.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_technology_mk4.png"
+    },
+    {
+      "name": "component.204.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_technology_mk5.png"
+    },
+    {
+      "name": "component.404.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_technology_mk5.png"
+    },
+    {
+      "name": "component.210.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_magic_mk1.png"
+    },
+    {
+      "name": "component.410.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_magic_mk1.png"
+    },
+    {
+      "name": "component.211.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_magic_mk2.png"
+    },
+    {
+      "name": "component.411.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_magic_mk2.png"
+    },
+    {
+      "name": "component.212.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_magic_mk3.png"
+    },
+    {
+      "name": "component.412.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_magic_mk3.png"
+    },
+    {
+      "name": "component.213.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_magic_mk4.png"
+    },
+    {
+      "name": "component.413.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_magic_mk4.png"
+    },
+    {
+      "name": "component.214.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/core_magic_mk5.png"
+    },
+    {
+      "name": "component.414.texture",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/base_cell_magic_mk5.png"
+    },
+    {
+      "name": "benzenefuels.uv_activator.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.uv_activator.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/uv_activator"
+    },
+    {
+      "name": "benzenefuels.uv_activator.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/uv_activator"
+    },
+    {
+      "name": "benzenefuels.uv_activator.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/uv_activator.png"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk1.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk1.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk1"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk1.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk1"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk1.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/technology_base_mk1.png"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk2.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk2.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk2"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk2.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk2"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk2.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/technology_base_mk2.png"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk3.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk3.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk3"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk3.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk3"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk3.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/technology_base_mk3.png"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk4.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk4.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk4"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk4.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk4"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk4.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/technology_base_mk4.png"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk5.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk5.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk5"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk5.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/technology_base_mk5"
+    },
+    {
+      "name": "benzenefuels.technology.base.mk5.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/technology_base_mk5.png"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk1.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk1.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk1"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk1.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk1"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk1.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/magic_base_mk1.png"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk2.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk2.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk2"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk2.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk2"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk2.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/magic_base_mk2.png"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk3.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk3.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk3"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk3.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk3"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk3.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/magic_base_mk3.png"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk4.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk4.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk4"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk4.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk4"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk4.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/magic_base_mk4.png"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk5.whiteTint",
+      "passed": true,
+      "detail": "full-color sprite"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk5.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk5"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk5.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/magic_base_mk5"
+    },
+    {
+      "name": "benzenefuels.magic.base.mk5.animation",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/magic_base_mk5.png"
+    },
+    {
+      "name": "luv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.luv"
+    },
+    {
+      "name": "luv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "luv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_luv"
+    },
+    {
+      "name": "luv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_luv"
+    },
+    {
+      "name": "luv.asset.blocks/fluids/benzene_luv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_luv.png"
+    },
+    {
+      "name": "luv.asset.items/cell_luv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_luv.png"
+    },
+    {
+      "name": "luv.fuelValue",
+      "passed": true,
+      "detail": "13940"
+    },
+    {
+      "name": "luv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "luv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "luv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "luv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "luv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "luv.voltage",
+      "passed": true,
+      "detail": "32768"
+    },
+    {
+      "name": "luv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "luv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "luv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "luv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "zpm.fluid",
+      "passed": true,
+      "detail": "benzenefuels.zpm"
+    },
+    {
+      "name": "zpm.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "zpm.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_zpm"
+    },
+    {
+      "name": "zpm.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_zpm"
+    },
+    {
+      "name": "zpm.asset.blocks/fluids/benzene_zpm",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_zpm.png"
+    },
+    {
+      "name": "zpm.asset.items/cell_zpm",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_zpm.png"
+    },
+    {
+      "name": "zpm.fuelValue",
+      "passed": true,
+      "detail": "136200"
+    },
+    {
+      "name": "zpm.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "zpm.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "zpm.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "zpm.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "zpm.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "zpm.voltage",
+      "passed": true,
+      "detail": "131072"
+    },
+    {
+      "name": "zpm.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "zpm.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "zpm.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "zpm.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "uv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.uv"
+    },
+    {
+      "name": "uv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "uv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uv"
+    },
+    {
+      "name": "uv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uv"
+    },
+    {
+      "name": "uv.asset.blocks/fluids/benzene_uv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_uv.png"
+    },
+    {
+      "name": "uv.asset.items/cell_uv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uv.png"
+    },
+    {
+      "name": "uv.fuelValue",
+      "passed": true,
+      "detail": "1491000"
+    },
+    {
+      "name": "uv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "uv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "uv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "uv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "uv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "uv.voltage",
+      "passed": true,
+      "detail": "524288"
+    },
+    {
+      "name": "uv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "uv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "uv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "uv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "uhv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.uhv"
+    },
+    {
+      "name": "uhv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "uhv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uhv"
+    },
+    {
+      "name": "uhv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uhv"
+    },
+    {
+      "name": "uhv.asset.blocks/fluids/benzene_uhv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_uhv.png"
+    },
+    {
+      "name": "uhv.asset.items/cell_uhv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uhv.png"
+    },
+    {
+      "name": "uhv.fuelValue",
+      "passed": true,
+      "detail": "18290000"
+    },
+    {
+      "name": "uhv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "uhv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "uhv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "uhv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "uhv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "uhv.voltage",
+      "passed": true,
+      "detail": "2097152"
+    },
+    {
+      "name": "uhv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "uhv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "uhv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "uhv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "uev.fluid",
+      "passed": true,
+      "detail": "benzenefuels.uev"
+    },
+    {
+      "name": "uev.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "uev.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uev"
+    },
+    {
+      "name": "uev.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uev"
+    },
+    {
+      "name": "uev.asset.blocks/fluids/benzene_uev",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_uev.png"
+    },
+    {
+      "name": "uev.asset.items/cell_uev",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uev.png"
+    },
+    {
+      "name": "uev.fuelValue",
+      "passed": true,
+      "detail": "251500000"
+    },
+    {
+      "name": "uev.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "uev.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "uev.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "uev.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "uev.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "uev.voltage",
+      "passed": true,
+      "detail": "8388608"
+    },
+    {
+      "name": "uev.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "uev.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "uev.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "uev.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "uiv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.uiv"
+    },
+    {
+      "name": "uiv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "uiv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uiv"
+    },
+    {
+      "name": "uiv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uiv"
+    },
+    {
+      "name": "uiv.asset.blocks/fluids/benzene_uiv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_uiv.png"
+    },
+    {
+      "name": "uiv.asset.items/cell_uiv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uiv.png"
+    },
+    {
+      "name": "uiv.fuelValue",
+      "passed": true,
+      "detail": "missing"
+    },
+    {
+      "name": "uiv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "uiv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "uiv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "uiv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "uiv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "uiv.voltage",
+      "passed": true,
+      "detail": "33554432"
+    },
+    {
+      "name": "uiv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "uiv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "uiv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "uiv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "umv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.umv"
+    },
+    {
+      "name": "umv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "umv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_umv"
+    },
+    {
+      "name": "umv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_umv"
+    },
+    {
+      "name": "umv.asset.blocks/fluids/benzene_umv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_umv.png"
+    },
+    {
+      "name": "umv.asset.items/cell_umv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_umv.png"
+    },
+    {
+      "name": "umv.fuelValue",
+      "passed": true,
+      "detail": "missing"
+    },
+    {
+      "name": "umv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "umv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "umv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "umv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "umv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "umv.voltage",
+      "passed": true,
+      "detail": "134217728"
+    },
+    {
+      "name": "umv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "umv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "umv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "umv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "uxv.fluid",
+      "passed": true,
+      "detail": "benzenefuels.uxv"
+    },
+    {
+      "name": "uxv.noDoubleTint",
+      "passed": true,
+      "detail": "authored full-color palette"
+    },
+    {
+      "name": "uxv.stillIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uxv"
+    },
+    {
+      "name": "uxv.flowingIconResourceLocation",
+      "passed": true,
+      "detail": "benzenefuels:fluids/benzene_uxv"
+    },
+    {
+      "name": "uxv.asset.blocks/fluids/benzene_uxv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/blocks/fluids/benzene_uxv.png"
+    },
+    {
+      "name": "uxv.asset.items/cell_uxv",
+      "passed": true,
+      "detail": "/assets/benzenefuels/textures/items/cell_uxv.png"
+    },
+    {
+      "name": "uxv.fuelValue",
+      "passed": true,
+      "detail": "missing"
+    },
+    {
+      "name": "uxv.cell",
+      "passed": true,
+      "detail": "1,000 L"
+    },
+    {
+      "name": "uxv.fillCell",
+      "passed": true,
+      "detail": "native canner fill"
+    },
+    {
+      "name": "uxv.drainCell",
+      "passed": true,
+      "detail": "native canner drain"
+    },
+    {
+      "name": "uxv.output",
+      "passed": true,
+      "detail": "50,000 L"
+    },
+    {
+      "name": "uxv.duration",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "uxv.voltage",
+      "passed": true,
+      "detail": "536870912"
+    },
+    {
+      "name": "uxv.nativeMatch",
+      "passed": true,
+      "detail": "native GT matcher"
+    },
+    {
+      "name": "uxv.nativeConsume",
+      "passed": true,
+      "detail": "consume one batch"
+    },
+    {
+      "name": "uxv.noSecondFreeBatch",
+      "passed": true,
+      "detail": "inputs exhausted"
+    },
+    {
+      "name": "uxv.shortInputRejected",
+      "passed": true,
+      "detail": "49,999 L"
+    },
+    {
+      "name": "zpm.onlyTwoFluidsNoMetals",
+      "passed": true,
+      "detail": "50,000 L LuV + 163,840 L tin plasma; no solids"
+    },
+    {
+      "name": "zpm.shortPlasmaRejected",
+      "passed": true,
+      "detail": "163,839 L tin plasma"
+    },
+    {
+      "name": "zpm.failureDoesNotConsume",
+      "passed": true,
+      "detail": "atomic failed match"
+    },
+    {
+      "name": "zpm.mk1Blocked",
+      "passed": true,
+      "detail": "280 MEU \u003e Mk-I limit"
+    },
+    {
+      "name": "zpm.mk2Allowed",
+      "passed": true,
+      "detail": "280 MEU \u003c\u003d Mk-II limit"
+    },
+    {
+      "name": "uv.mk2Blocked",
+      "passed": true,
+      "detail": "500 MEU"
+    },
+    {
+      "name": "uv.mk3Allowed",
+      "passed": true,
+      "detail": "500 MEU"
+    },
+    {
+      "name": "luv.realAssemblyLine",
+      "passed": true,
+      "detail": "survival assembly-line recipe"
+    },
+    {
+      "name": "uhv.noCoilRejected",
+      "passed": true,
+      "detail": "native refinery tier check"
+    },
+    {
+      "name": "uhv.coil1Allowed",
+      "passed": true,
+      "detail": "native refinery tier check"
+    },
+    {
+      "name": "uhv.requestedName",
+      "passed": true,
+      "detail": "UHV苯"
+    },
+    {
+      "name": "quantum.housingAcceptsCatalyst",
+      "passed": true,
+      "detail": "survival-valid catalyst"
+    },
+    {
+      "name": "uev.lowStructureRejected",
+      "passed": true,
+      "detail": "native QFT tier gate"
+    },
+    {
+      "name": "uev.correctStructureAllowed",
+      "passed": true,
+      "detail": "native QFT validation"
+    },
+    {
+      "name": "uev.deterministicOutput",
+      "passed": true,
+      "detail": "100% output, one product"
+    },
+    {
+      "name": "uev.catalystNotConsumed",
+      "passed": true,
+      "detail": "four parallels retained"
+    },
+    {
+      "name": "uev.missingCatalystRejected",
+      "passed": true,
+      "detail": "native QFT catalyst gate"
+    },
+    {
+      "name": "uiv.lowStructureRejected",
+      "passed": true,
+      "detail": "native QFT tier gate"
+    },
+    {
+      "name": "uiv.correctStructureAllowed",
+      "passed": true,
+      "detail": "native QFT validation"
+    },
+    {
+      "name": "uiv.deterministicOutput",
+      "passed": true,
+      "detail": "100% output, one product"
+    },
+    {
+      "name": "uiv.catalystNotConsumed",
+      "passed": true,
+      "detail": "four parallels retained"
+    },
+    {
+      "name": "uiv.missingCatalystRejected",
+      "passed": true,
+      "detail": "native QFT catalyst gate"
+    },
+    {
+      "name": "umv.lowStructureRejected",
+      "passed": true,
+      "detail": "native QFT tier gate"
+    },
+    {
+      "name": "umv.correctStructureAllowed",
+      "passed": true,
+      "detail": "native QFT validation"
+    },
+    {
+      "name": "umv.deterministicOutput",
+      "passed": true,
+      "detail": "100% output, one product"
+    },
+    {
+      "name": "umv.catalystNotConsumed",
+      "passed": true,
+      "detail": "four parallels retained"
+    },
+    {
+      "name": "umv.missingCatalystRejected",
+      "passed": true,
+      "detail": "native QFT catalyst gate"
+    },
+    {
+      "name": "uxv.lowStructureRejected",
+      "passed": true,
+      "detail": "native QFT tier gate"
+    },
+    {
+      "name": "uxv.correctStructureAllowed",
+      "passed": true,
+      "detail": "native QFT validation"
+    },
+    {
+      "name": "uxv.deterministicOutput",
+      "passed": true,
+      "detail": "100% output, one product"
+    },
+    {
+      "name": "uxv.catalystNotConsumed",
+      "passed": true,
+      "detail": "four parallels retained"
+    },
+    {
+      "name": "uxv.missingCatalystRejected",
+      "passed": true,
+      "detail": "native QFT catalyst gate"
+    },
+    {
+      "name": "luv.activatorProcessExport",
+      "passed": true,
+      "detail": "assembly-line process, not scanner research"
+    },
+    {
+      "name": "palette.foundation.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings9"
+    },
+    {
+      "name": "palette.foundation.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings9"
+    },
+    {
+      "name": "palette.foundation.metadata",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "name": "palette.casing.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings4"
+    },
+    {
+      "name": "palette.casing.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings4"
+    },
+    {
+      "name": "palette.casing.metadata",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "palette.frame.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.frame.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.frame.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.armor.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings4"
+    },
+    {
+      "name": "palette.armor.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings4"
+    },
+    {
+      "name": "palette.armor.metadata",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "palette.shielding.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.shielding.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.shielding.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.alloy.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.alloy.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.alloy.metadata",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "palette.glass.registered",
+      "passed": true,
+      "detail": "tectech:tile.quantumGlass"
+    },
+    {
+      "name": "palette.glass.registry",
+      "passed": true,
+      "detail": "tectech:tile.quantumGlass"
+    },
+    {
+      "name": "palette.glass.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.heating_coil.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings5"
+    },
+    {
+      "name": "palette.heating_coil.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings5"
+    },
+    {
+      "name": "palette.heating_coil.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.technology.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings"
+    },
+    {
+      "name": "palette.technology.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings"
+    },
+    {
+      "name": "palette.technology.metadata",
+      "passed": true,
+      "detail": "15"
+    },
+    {
+      "name": "palette.magic.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.magic.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.magic.metadata",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "palette.conduit.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.conduit.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings8"
+    },
+    {
+      "name": "palette.conduit.metadata",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "palette.core.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.core.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.core.metadata",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "palette.coolant.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings10"
+    },
+    {
+      "name": "palette.coolant.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings10"
+    },
+    {
+      "name": "palette.coolant.metadata",
+      "passed": true,
+      "detail": "9"
+    },
+    {
+      "name": "palette.radiator.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings9"
+    },
+    {
+      "name": "palette.radiator.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings9"
+    },
+    {
+      "name": "palette.radiator.metadata",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "palette.grating.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings3"
+    },
+    {
+      "name": "palette.grating.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings3"
+    },
+    {
+      "name": "palette.grating.metadata",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "palette.rail.registered",
+      "passed": true,
+      "detail": "minecraft:iron_bars"
+    },
+    {
+      "name": "palette.rail.registry",
+      "passed": true,
+      "detail": "minecraft:iron_bars"
+    },
+    {
+      "name": "palette.rail.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.capacitor.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings6"
+    },
+    {
+      "name": "palette.capacitor.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings6"
+    },
+    {
+      "name": "palette.capacitor.metadata",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "palette.busbar.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.busbar.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.busbar.metadata",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "palette.display.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.display.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockcasings2"
+    },
+    {
+      "name": "palette.display.metadata",
+      "passed": true,
+      "detail": "7"
+    },
+    {
+      "name": "palette.antenna.registered",
+      "passed": true,
+      "detail": "minecraft:iron_bars"
+    },
+    {
+      "name": "palette.antenna.registry",
+      "passed": true,
+      "detail": "minecraft:iron_bars"
+    },
+    {
+      "name": "palette.antenna.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.light.registered",
+      "passed": true,
+      "detail": "benzenefuels:resonance_light_casing"
+    },
+    {
+      "name": "palette.light.registry",
+      "passed": true,
+      "detail": "benzenefuels:resonance_light_casing"
+    },
+    {
+      "name": "palette.light.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.beacon.registered",
+      "passed": true,
+      "detail": "benzenefuels:resonance_light_casing"
+    },
+    {
+      "name": "palette.beacon.registry",
+      "passed": true,
+      "detail": "benzenefuels:resonance_light_casing"
+    },
+    {
+      "name": "palette.beacon.metadata",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "palette.fuel_port.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.fuel_port.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.tech_port.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.tech_port.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.magic_port.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.magic_port.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.output_port.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.output_port.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.maintenance.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.maintenance.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.controller.registered",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.controller.registry",
+      "passed": true,
+      "detail": "gregtech:gt.blockmachines"
+    },
+    {
+      "name": "palette.controller.metadata",
+      "passed": true,
+      "detail": "32240"
+    },
+    {
+      "name": "palette.customLightLevel",
+      "passed": true,
+      "detail": "15"
+    },
+    {
+      "name": "luv.activator.fullSolidCount.Platinum Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "luv.activator.fullSolidCount.Rhodium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "luv.activator.fullSolidCount.Palladium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "luv.activator.fullSolidCount.Iridium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "luv.activator.fullSolidCount.Ruthenium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "luv.activator.shortSolidRejected",
+      "passed": true,
+      "detail": "One missing item must reject a complete batch"
+    },
+    {
+      "name": "luv.activator.splitStacksConsume",
+      "passed": true,
+      "detail": "Native matcher consumes across ordinary 64-item stacks"
+    },
+    {
+      "name": "uv.activator.fullSolidCount.Neutronium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "uv.activator.fullSolidCount.Cosmic Neutronium Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "uv.activator.shortSolidRejected",
+      "passed": true,
+      "detail": "One missing item must reject a complete batch"
+    },
+    {
+      "name": "uv.activator.splitStacksConsume",
+      "passed": true,
+      "detail": "Native matcher consumes across ordinary 64-item stacks"
+    },
+    {
+      "name": "upgrade.uhv.fullSolidCount.Infinity Catalyst Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "upgrade.uhv.fullSolidCount.Atomic Separation Catalyst Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "upgrade.uhv.shortSolidRejected",
+      "passed": true,
+      "detail": "One missing item must reject a complete batch"
+    },
+    {
+      "name": "upgrade.uhv.splitStacksConsume",
+      "passed": true,
+      "detail": "Native matcher consumes across ordinary 64-item stacks"
+    },
+    {
+      "name": "upgrade.uev.fullSolidCount.Transcendent Metal Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "upgrade.uev.fullSolidCount.Hypogen Dust",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "upgrade.uev.shortSolidRejected",
+      "passed": true,
+      "detail": "One missing item must reject a complete batch"
+    },
+    {
+      "name": "upgrade.uev.splitStacksConsume",
+      "passed": true,
+      "detail": "Native matcher consumes across ordinary 64-item stacks"
+    },
+    {
+      "name": "upgrade.uiv.fullSolidCount.Transcendent Metal Dust",
+      "passed": true,
+      "detail": "2048"
+    },
+    {
+      "name": "upgrade.uiv.fullSolidCount.Hypogen Dust",
+      "passed": true,
+      "detail": "2048"
+    },
+    {
+      "name": "upgrade.uiv.shortSolidRejected",
+      "passed": true,
+      "detail": "One missing item must reject a complete batch"
+    },
+    {
+      "name": "upgrade.uiv.splitStacksConsume",
+      "passed": true,
+      "detail": "Native matcher consumes across ordinary 64-item stacks"
+    },
+    {
+      "name": "costs.helium",
+      "passed": true,
+      "detail": "16,384 L"
+    },
+    {
+      "name": "costs.americium",
+      "passed": true,
+      "detail": "16,384 L"
+    },
+    {
+      "name": "costs.infinityUHV",
+      "passed": true,
+      "detail": "17,856 L"
+    },
+    {
+      "name": "costs.infinityUEV",
+      "passed": true,
+      "detail": "17,856 L"
+    },
+    {
+      "name": "costs.spacetime",
+      "passed": true,
+      "detail": "17,856 L"
+    },
+    {
+      "name": "costs.universium",
+      "passed": true,
+      "detail": "124 L"
+    },
+    {
+      "name": "costs.mhdcsm",
+      "passed": true,
+      "detail": "124 L"
+    },
+    {
+      "name": "costs.rawStarMatter",
+      "passed": true,
+      "detail": "1,984 L"
+    },
+    {
+      "name": "costs.eternityNotScaled",
+      "passed": true,
+      "detail": "144 L"
+    },
+    {
+      "name": "costs.reusableCatalystNotScaled",
+      "passed": true,
+      "detail": "144 L"
+    },
+    {
+      "name": "star.LV.registered",
+      "passed": true,
+      "detail": "LV"
+    },
+    {
+      "name": "star.LV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.LV.component.0",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.1",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.2",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.3",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.4",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.5",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.6",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.component.7",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "star.LV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.LV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.LV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.LV.assemblerSlots",
+      "passed": true,
+      "detail": "native nine-slot assembler"
+    },
+    {
+      "name": "star.MV.registered",
+      "passed": true,
+      "detail": "MV"
+    },
+    {
+      "name": "star.MV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.MV.component.0",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.1",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.2",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.3",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.4",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.5",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.6",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.component.7",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "star.MV.previous",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.MV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.MV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.MV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.MV.assemblerSlots",
+      "passed": true,
+      "detail": "native nine-slot assembler"
+    },
+    {
+      "name": "star.HV.registered",
+      "passed": true,
+      "detail": "HV"
+    },
+    {
+      "name": "star.HV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.HV.component.0",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.1",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.2",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.3",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.4",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.5",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.6",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.component.7",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.HV.previous",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.HV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.HV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.HV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.HV.assemblerSlots",
+      "passed": true,
+      "detail": "native nine-slot assembler"
+    },
+    {
+      "name": "star.EV.registered",
+      "passed": true,
+      "detail": "EV"
+    },
+    {
+      "name": "star.EV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.EV.component.0",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.1",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.2",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.3",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.4",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.5",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.6",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.component.7",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "star.EV.previous",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.EV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.EV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.EV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.EV.assemblerSlots",
+      "passed": true,
+      "detail": "native nine-slot assembler"
+    },
+    {
+      "name": "star.IV.registered",
+      "passed": true,
+      "detail": "IV"
+    },
+    {
+      "name": "star.IV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.IV.component.0",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.1",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.2",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.3",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.4",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.5",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.6",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.component.7",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.previous",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.IV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.IV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.IV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.IV.assemblerSlots",
+      "passed": true,
+      "detail": "native nine-slot assembler"
+    },
+    {
+      "name": "star.LuV.registered",
+      "passed": true,
+      "detail": "LuV"
+    },
+    {
+      "name": "star.LuV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.LuV.component.0",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.1",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.2",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.3",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.4",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.5",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.6",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.component.7",
+      "passed": true,
+      "detail": "32"
+    },
+    {
+      "name": "star.LuV.previous",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "name": "star.LuV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.LuV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.LuV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.LuV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.LuV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.registered",
+      "passed": true,
+      "detail": "ZPM"
+    },
+    {
+      "name": "star.ZPM.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.ZPM.component.0",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.1",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.2",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.3",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.4",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.5",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.6",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.component.7",
+      "passed": true,
+      "detail": "64"
+    },
+    {
+      "name": "star.ZPM.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.ZPM.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.ZPM.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.ZPM.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.ZPM.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.ZPM.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.registered",
+      "passed": true,
+      "detail": "UV"
+    },
+    {
+      "name": "star.UV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UV.component.0",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.1",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.2",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.3",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.4",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.5",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.6",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.component.7",
+      "passed": true,
+      "detail": "128"
+    },
+    {
+      "name": "star.UV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.registered",
+      "passed": true,
+      "detail": "UHV"
+    },
+    {
+      "name": "star.UHV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UHV.component.0",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.1",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.2",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.3",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.4",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.5",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.6",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.component.7",
+      "passed": true,
+      "detail": "256"
+    },
+    {
+      "name": "star.UHV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UHV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UHV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UHV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UHV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UHV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.registered",
+      "passed": true,
+      "detail": "UEV"
+    },
+    {
+      "name": "star.UEV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UEV.component.0",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.1",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.2",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.3",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.4",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.5",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.6",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.component.7",
+      "passed": true,
+      "detail": "512"
+    },
+    {
+      "name": "star.UEV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UEV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UEV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UEV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UEV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UEV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.registered",
+      "passed": true,
+      "detail": "UIV"
+    },
+    {
+      "name": "star.UIV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UIV.component.0",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.1",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.2",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.3",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.4",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.5",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.6",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.component.7",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UIV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UIV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UIV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UIV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UIV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UIV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.registered",
+      "passed": true,
+      "detail": "UMV"
+    },
+    {
+      "name": "star.UMV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UMV.component.0",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.1",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.2",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.3",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.4",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.5",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.6",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.component.7",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UMV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UMV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UMV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UMV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UMV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UMV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.registered",
+      "passed": true,
+      "detail": "UXV"
+    },
+    {
+      "name": "star.UXV.count",
+      "passed": true,
+      "detail": "eight families"
+    },
+    {
+      "name": "star.UXV.component.0",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.1",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.2",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.3",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.4",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.5",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.6",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.component.7",
+      "passed": true,
+      "detail": "1024"
+    },
+    {
+      "name": "star.UXV.previous",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "star.UXV.process",
+      "passed": true,
+      "detail": "duration and voltage"
+    },
+    {
+      "name": "star.UXV.consume",
+      "passed": true,
+      "detail": "native consume"
+    },
+    {
+      "name": "star.UXV.shortRejected",
+      "passed": true,
+      "detail": "short component input"
+    },
+    {
+      "name": "star.UXV.nativeAssembly",
+      "passed": true,
+      "detail": "native registration with no invented fluid cost"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.0",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.1",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.2",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.3",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.4",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.5",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.6",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "star.UXV.assemblyAmount.7",
+      "passed": true,
+      "detail": "native AL ingredient quantity"
+    },
+    {
+      "name": "technology1.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "technology1.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d2"
+    },
+    {
+      "name": "technology1.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "technology2.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "technology2.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d4"
+    },
+    {
+      "name": "technology2.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "technology3.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "technology3.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d8"
+    },
+    {
+      "name": "technology3.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "technology4.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "technology4.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d16"
+    },
+    {
+      "name": "technology4.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "technology5.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "technology5.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d32"
+    },
+    {
+      "name": "technology5.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "magic1.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "magic1.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d2"
+    },
+    {
+      "name": "magic1.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "magic2.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "magic2.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d4"
+    },
+    {
+      "name": "magic2.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "magic3.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "magic3.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d6"
+    },
+    {
+      "name": "magic3.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "magic4.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "magic4.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d8"
+    },
+    {
+      "name": "magic4.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "magic5.baseCell",
+      "passed": true,
+      "detail": "1,000 L base fluid"
+    },
+    {
+      "name": "magic5.exponentItem",
+      "passed": true,
+      "detail": "exponent\u003d10"
+    },
+    {
+      "name": "magic5.fillAndDrain",
+      "passed": true,
+      "detail": "native cell recipes"
+    },
+    {
+      "name": "generator.full_tower_formed",
+      "passed": true,
+      "detail": "blocks\u003d15472 inputs\u003d3 dynamos\u003d1"
+    },
+    {
+      "name": "generator.four_inputs_rejected",
+      "passed": true,
+      "detail": "fourth input in otherwise legal front zone"
+    },
+    {
+      "name": "generator.bottom_row_input_rejected",
+      "passed": true,
+      "detail": "Y\u003d1"
+    },
+    {
+      "name": "generator.rear_input_rejected",
+      "passed": true,
+      "detail": "input in rear dynamo zone"
+    },
+    {
+      "name": "generator.front_dynamo_rejected",
+      "passed": true,
+      "detail": "dynamo on front"
+    },
+    {
+      "name": "generator.sixteen_dynamos_allowed",
+      "passed": true,
+      "detail": "16 physical dynamos"
+    },
+    {
+      "name": "generator.seventeen_dynamos_rejected",
+      "passed": true,
+      "detail": "17 physical dynamos"
+    },
+    {
+      "name": "generator.structure_restored",
+      "passed": true,
+      "detail": "3 inputs, 1 maintenance, 1 dynamo"
+    },
+    {
+      "name": "generator.active_light_meta_accepted",
+      "passed": true,
+      "detail": "metadata 1 remains a valid casing"
+    },
+    {
+      "name": "generator.idle_light_dark",
+      "passed": true,
+      "detail": "metadata 0"
+    },
+    {
+      "name": "generator.functional_coil_jacket",
+      "passed": true,
+      "detail": "coils\u003d1648"
+    },
+    {
+      "name": "generator.new_controller_default_one_parallel",
+      "passed": true,
+      "detail": "default configured parallel 1"
+    },
+    {
+      "name": "generator.cupronickel_limit_one",
+      "passed": true,
+      "detail": "1801 K -\u003e 1 parallel"
+    },
+    {
+      "name": "generator.default_one_parallel_starts",
+      "passed": true,
+      "detail": "abundant input, default cap 1"
+    },
+    {
+      "name": "generator.default_one_parallel_consumption",
+      "passed": true,
+      "detail": "burns 1000 mB fuel plus 1 mB per route"
+    },
+    {
+      "name": "generator.coil_valid_forced_check_keeps_batch",
+      "passed": true,
+      "detail": "valid forced recheck preserves paid batch"
+    },
+    {
+      "name": "generator.coil_caps_large_setting",
+      "passed": true,
+      "detail": "configured Integer.MAX_VALUE, coil 1"
+    },
+    {
+      "name": "generator.coil_cap_consumption",
+      "passed": true,
+      "detail": "only 1 parallel consumed"
+    },
+    {
+      "name": "generator.mixed_coil_tiers_rejected",
+      "passed": true,
+      "detail": "single Kanthal in Cupronickel jacket"
+    },
+    {
+      "name": "generator.missing_coil_rejected",
+      "passed": true,
+      "detail": "one of 1648 coils missing"
+    },
+    {
+      "name": "generator.coil_tier_LV",
+      "passed": true,
+      "detail": "1801 K -\u003e 1"
+    },
+    {
+      "name": "generator.coil_tier_MV",
+      "passed": true,
+      "detail": "2701 K -\u003e 4"
+    },
+    {
+      "name": "generator.coil_tier_HV",
+      "passed": true,
+      "detail": "3601 K -\u003e 16"
+    },
+    {
+      "name": "generator.coil_tier_EV",
+      "passed": true,
+      "detail": "4501 K -\u003e 64"
+    },
+    {
+      "name": "generator.coil_tier_IV",
+      "passed": true,
+      "detail": "5401 K -\u003e 256"
+    },
+    {
+      "name": "generator.coil_tier_LuV",
+      "passed": true,
+      "detail": "6301 K -\u003e 1024"
+    },
+    {
+      "name": "generator.coil_tier_ZPM",
+      "passed": true,
+      "detail": "7201 K -\u003e 4096"
+    },
+    {
+      "name": "generator.coil_tier_UV",
+      "passed": true,
+      "detail": "8101 K -\u003e 16384"
+    },
+    {
+      "name": "generator.coil_tier_UHV",
+      "passed": true,
+      "detail": "9001 K -\u003e 65536"
+    },
+    {
+      "name": "generator.coil_tier_UEV",
+      "passed": true,
+      "detail": "9901 K -\u003e 262144"
+    },
+    {
+      "name": "generator.coil_tier_UIV",
+      "passed": true,
+      "detail": "10801 K -\u003e 1048576"
+    },
+    {
+      "name": "generator.coil_tier_UMV",
+      "passed": true,
+      "detail": "11701 K -\u003e 4194304"
+    },
+    {
+      "name": "generator.coil_tier_UXV",
+      "passed": true,
+      "detail": "12601 K -\u003e 16777216"
+    },
+    {
+      "name": "generator.coil_tier_MAX",
+      "passed": true,
+      "detail": "13501 K -\u003e 67108864"
+    },
+    {
+      "name": "generator.kanthal_upgrade_reforms",
+      "passed": true,
+      "detail": "2701 K -\u003e 4 parallel"
+    },
+    {
+      "name": "generator.upgraded_coil_batch",
+      "passed": true,
+      "detail": "30 configured, 4 coil cap"
+    },
+    {
+      "name": "generator.upgraded_coil_consumption",
+      "passed": true,
+      "detail": "4 parallel at upgraded tier"
+    },
+    {
+      "name": "generator.parallel_setting_saved",
+      "passed": true,
+      "detail": "saved requested cap; effective cap is recalculated from structure"
+    },
+    {
+      "name": "generator.coil_jacket_restored",
+      "passed": true,
+      "detail": "Kanthal; enough parallel for subsequent multi-batch tests"
+    },
+    {
+      "name": "generator.fuel_cap_and_floor",
+      "passed": true,
+      "detail": "3 L from 3999 mB"
+    },
+    {
+      "name": "generator.exact_1_per_1000_boosters",
+      "passed": true,
+      "detail": "fuel\u003d999 tech\u003d0 magic\u003d0"
+    },
+    {
+      "name": "generator.multiplier_1_0201",
+      "passed": true,
+      "detail": "both Mk1"
+    },
+    {
+      "name": "generator.sub_litre_rejected",
+      "passed": true,
+      "detail": "999 mB; no partial deductions"
+    },
+    {
+      "name": "generator.insufficient_booster_atomic",
+      "passed": true,
+      "detail": "no fuel downscaling to fit booster shortage"
+    },
+    {
+      "name": "generator.missing_magic_rejected",
+      "passed": true,
+      "detail": "one route missing"
+    },
+    {
+      "name": "generator.first_invalid_no_fallback",
+      "passed": true,
+      "detail": "water before valid LuV fuel"
+    },
+    {
+      "name": "generator.mk5_start",
+      "passed": true,
+      "detail": "both Mk5"
+    },
+    {
+      "name": "generator.multiplier_1_43",
+      "passed": true,
+      "detail": "all exponents 1"
+    },
+    {
+      "name": "generator.first_small_batch",
+      "passed": true,
+      "detail": "1000 mB"
+    },
+    {
+      "name": "generator.no_booster_credit",
+      "passed": true,
+      "detail": "every whole-litre batch needs new 1 mB of each base"
+    },
+    {
+      "name": "generator.wireless_start",
+      "passed": true,
+      "detail": "100 tick batch"
+    },
+    {
+      "name": "generator.nbt_progress_preserved",
+      "passed": true,
+      "detail": "resume the next ungenerated tick"
+    },
+    {
+      "name": "generator.nbt_resume_no_double_energy",
+      "passed": true,
+      "detail": "resume tick37 without redraining fuel"
+    },
+    {
+      "name": "generator.bigint_accounting",
+      "passed": true,
+      "detail": "burned \u003d delivered + lost + remaining"
+    },
+    {
+      "name": "generator.integer_config_persisted",
+      "passed": true,
+      "detail": "GUI cap + wireless persisted"
+    },
+    {
+      "name": "generator.full_dynamo_start",
+      "passed": true,
+      "detail": "output full at start"
+    },
+    {
+      "name": "generator.full_output_tick_0",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_1",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_2",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_3",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_4",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_5",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_6",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_7",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_8",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_9",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_10",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_11",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_12",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_13",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_14",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_15",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_16",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_17",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_18",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_19",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_20",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_21",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_22",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_23",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_24",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_25",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_26",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_27",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_28",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_29",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_30",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_31",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_32",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_33",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_34",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_35",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_36",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_37",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_38",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_39",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_40",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_41",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_42",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_43",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_44",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_45",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_46",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_47",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_48",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_49",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_50",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_51",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_52",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_53",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_54",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_55",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_56",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_57",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_58",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_59",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_60",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_61",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_62",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_63",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_64",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_65",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_66",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_67",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_68",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_69",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_70",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_71",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_72",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_73",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_74",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_75",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_76",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_77",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_78",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_79",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_80",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_81",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_82",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_83",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_84",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_85",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_86",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_87",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_88",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_89",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_90",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_91",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_92",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_93",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_94",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_95",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_96",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_97",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_98",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_tick_99",
+      "passed": true,
+      "detail": "continues"
+    },
+    {
+      "name": "generator.full_output_entire_batch_lost",
+      "passed": true,
+      "detail": "no overfill and no overflow explosion"
+    },
+    {
+      "name": "generator.dynamo_not_overfilled",
+      "passed": true,
+      "detail": "capacity honored"
+    },
+    {
+      "name": "generator.force_check_start",
+      "passed": true,
+      "detail": "active batch"
+    },
+    {
+      "name": "generator.valid_force_check_preserves_run",
+      "passed": true,
+      "detail": "valid structure recheck does not stop generation"
+    },
+    {
+      "name": "generator.running_casings_lit",
+      "passed": true,
+      "detail": "active casings\u003d621"
+    },
+    {
+      "name": "generator.native_continuous_four_batches",
+      "passed": true,
+      "detail": "650 native controller ticks; 4 complete 100-tick batches"
+    },
+    {
+      "name": "generator.all_three_inputs_exhausted",
+      "passed": true,
+      "detail": "4000 mB fuel + 4 mB each base"
+    },
+    {
+      "name": "generator.starved_machine_idle",
+      "passed": true,
+      "detail": "native starvation result"
+    },
+    {
+      "name": "generator.idle_casings_reset",
+      "passed": true,
+      "detail": "active casings\u003d0"
+    },
+    {
+      "name": "generator.wired_empty_start",
+      "passed": true,
+      "detail": "empty native dynamo"
+    },
+    {
+      "name": "generator.wired_rate_clamped",
+      "passed": true,
+      "detail": "native voltage x amperes per tick"
+    },
+    {
+      "name": "generator.uxv_long_heat_started",
+      "passed": true,
+      "detail": "heat\u003d1296000000000 per native fluid unit"
+    },
+    {
+      "name": "generator.uxv_full_heat_wireless",
+      "passed": true,
+      "detail": "no int heat truncation"
+    },
+    {
+      "name": "generator.break_test_started",
+      "passed": true,
+      "detail": "prepaid fuel"
+    },
+    {
+      "name": "generator.broken_core_rejected",
+      "passed": true,
+      "detail": "removed internal core block"
+    },
+    {
+      "name": "generator.broken_structure_stops",
+      "passed": true,
+      "detail": "remaining prepaid energy lost, not refunded"
+    },
+    {
+      "name": "generator.core_repair_reforms",
+      "passed": true,
+      "detail": "replaced original core block"
+    },
+    {
+      "name": "generator.final_energy_conservation",
+      "passed": true,
+      "detail": "all successful fuel budgets accounted"
+    },
+    {
+      "name": "generator.native_gui_widgets_construct",
+      "passed": true,
+      "detail": "compact synchronized terminal"
+    },
+    {
+      "name": "generator.gui_cap_sync_registered",
+      "passed": true,
+      "detail": "server-authoritative integer cap"
+    },
+    {
+      "name": "generator.core_skip_rejected",
+      "passed": true,
+      "detail": "Mk2 cannot skip Mk1"
+    },
+    {
+      "name": "generator.foreign_core_rejected",
+      "passed": true,
+      "detail": "foreign items remain removable"
+    },
+    {
+      "name": "generator.core_tick_absorbs_one",
+      "passed": true,
+      "detail": "server controller slot, one core consumed"
+    },
+    {
+      "name": "generator.duplicate_core_preserved",
+      "passed": true,
+      "detail": "remaining duplicate not consumed"
+    },
+    {
+      "name": "generator.upgraded_batch_started",
+      "passed": true,
+      "detail": "tech e2 and magic e1, both Mk2 bases"
+    },
+    {
+      "name": "generator.first_core_changes_energy",
+      "passed": true,
+      "detail": "exact exponent energy"
+    },
+    {
+      "name": "generator.core_next_tier_absorbed",
+      "passed": true,
+      "detail": "tech Mk2 consumed"
+    },
+    {
+      "name": "generator.upgrade_does_not_reprice_active_batch",
+      "passed": true,
+      "detail": "new exponent applies to next batch"
+    },
+    {
+      "name": "generator.magic_core_mk1",
+      "passed": true,
+      "detail": "independent magic progression"
+    },
+    {
+      "name": "generator.magic_core_mk2",
+      "passed": true,
+      "detail": "independent magic progression"
+    },
+    {
+      "name": "generator.core_levels_and_batch_survive_reload",
+      "passed": true,
+      "detail": "stored level and frozen active multiplier"
+    },
+    {
+      "name": "generator.next_batch_uses_both_exponents",
+      "passed": true,
+      "detail": "both e4"
+    },
+    {
+      "name": "generator.both_routes_exact_energy",
+      "passed": true,
+      "detail": "two upgraded routes"
+    },
+    {
+      "name": "generator.display_delivery_is_100_percent",
+      "passed": true,
+      "detail": "wireless delivered/generated"
+    },
+    {
+      "name": "generator.compact_display_no_totals",
+      "passed": true,
+      "detail": "fractional rate, core name/tier, compact stats"
+    },
+    {
+      "name": "generator.core_upgrade_TECHNOLOGY_mk3",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.core_upgrade_MAGIC_mk3",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.core_upgrade_TECHNOLOGY_mk4",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.core_upgrade_MAGIC_mk4",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.core_upgrade_TECHNOLOGY_mk5",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.core_upgrade_MAGIC_mk5",
+      "passed": true,
+      "detail": "strict next tier"
+    },
+    {
+      "name": "generator.max_core_values",
+      "passed": true,
+      "detail": "route-specific maxima"
+    },
+    {
+      "name": "generator.downgrade_preserved",
+      "passed": true,
+      "detail": "old tier does not replace or consume"
+    },
+    {
+      "name": "generator.upgrades_survive_machine_item",
+      "passed": true,
+      "detail": "pickup stores upgrades/settings but no prepaid energy"
+    },
+    {
+      "name": "generator.old_save_defaults_exponents_one",
+      "passed": true,
+      "detail": "legacy saves default to no upgrades"
+    },
+    {
+      "name": "generator.gui_createLeftPanelGapRow",
+      "passed": true,
+      "detail": "independent controls construct without a client"
+    },
+    {
+      "name": "generator.gui_createRightPanelGapRow",
+      "passed": true,
+      "detail": "independent controls construct without a client"
+    },
+    {
+      "name": "generator.gui_side_panel_constructs",
+      "passed": true,
+      "detail": "separate synchronized numeric fuel cap"
+    }
+  ]
+}

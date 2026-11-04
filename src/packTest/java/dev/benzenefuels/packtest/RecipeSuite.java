@@ -108,6 +108,7 @@ public final class RecipeSuite {
         runtimeDependencies();
         fuelTooltips();
         DisplaySuite.run(this::check);
+        componentTextures();
         for (FuelStage stage : FuelStage.values()) {
             FluidStack fuel = FuelContent.stack(stage, 1000);
             check(stage.key + ".fluid", FluidRegistry.getFluid(stage.fluidId()) == fuel.getFluid(), stage.fluidId());
@@ -237,6 +238,44 @@ public final class RecipeSuite {
             String actual = mod == null ? "missing" : mod.getVersion();
             dependencies.put(expected[0], actual);
             check("runtime." + expected[0], expected[1].equals(actual), actual);
+        }
+    }
+
+    private void componentTextures() throws Exception {
+        for (Map.Entry<Integer, String> entry : dev.benzenefuels.ComponentTextures.all()
+            .entrySet()) {
+            String path = "/assets/benzenefuels/textures/items/" + entry.getValue()
+                .split(":")[1] + ".png";
+            try (java.io.InputStream png = getClass().getResourceAsStream(path)) {
+                check("component." + entry.getKey() + ".texture", png != null, path);
+            }
+        }
+        List<FluidStack> fluids = new ArrayList<>();
+        fluids.add(new FluidStack(FuelContent.uvActivator, 1));
+        for (GeneratorRoute route : GeneratorRoute.values())
+            for (int mk = 1; mk <= 5; mk++) fluids.add(FuelContent.baseFluid(route, mk, 1));
+        for (FluidStack fluid : fluids) {
+            String id = fluid.getFluid()
+                .getName();
+            String texture = "benzenefuels:fluids/" + id.replace("benzenefuels.", "")
+                .replace('.', '_');
+            check(
+                id + ".whiteTint",
+                fluid.getFluid()
+                    .getColor() == 0xFFFFFF,
+                "full-color sprite");
+            for (String property : new String[] { "stillIconResourceLocation", "flowingIconResourceLocation" }) {
+                Field field = fluid.getFluid()
+                    .getClass()
+                    .getDeclaredField(property);
+                field.setAccessible(true);
+                check(id + "." + property, texture.equals(String.valueOf(field.get(fluid.getFluid()))), texture);
+            }
+            String path = "/assets/benzenefuels/textures/blocks/" + texture.split(":")[1] + ".png";
+            try (java.io.InputStream png = getClass().getResourceAsStream(path);
+                java.io.InputStream metadata = getClass().getResourceAsStream(path + ".mcmeta")) {
+                check(id + ".animation", png != null && metadata != null, path);
+            }
         }
     }
 

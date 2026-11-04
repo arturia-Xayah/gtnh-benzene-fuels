@@ -10,7 +10,7 @@
 
 [简体中文](README.md) · **English** · [Releases](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.4--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.4-alpha-GTNH-2.9.0/benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.5--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.5-alpha-GTNH-2.9.0/benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -31,11 +31,11 @@ Upgrade Nitrobenzene through LuV–UXV, build a tall Resonance Fuel Generator, a
 
 ## Installation and upgrading
 
-1. Download `benzenefuels-0.4.4-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
+1. Download `benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
 2. Multiplayer clients and servers need the same version; install on the client for single-player. Replace the previous Benzene Fuels JAR instead of keeping duplicates.
 3. Use the dependencies included in **GTNH 2.9.0 stable**. No animation mod is needed.
 
-This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.4.4 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
+This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.4.5 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
 
 ## Eight benzene fuels
 
@@ -91,6 +91,8 @@ Both routes have Mk1–Mk5 base fluids and exponent cores. **Bases are consumed;
 
 Multiplier: `technology_base^technology_exponent × magic_base^magic_exponent`. Each unupgraded exponent is 1. Duplicate, skipped-tier and lower-tier cores are not consumed. Upgrades during a batch apply next batch and survive controller pickup.
 
+[Component artwork and animated previews](design/component-textures/README.md)
+
 ## Voltage stars
 
 Thirteen tiers from LV to UXV combine motors, pistons, pumps, conveyors, robot arms, emitters, sensors and field generators. Higher recipes also consume previous-tier stars.
@@ -102,7 +104,7 @@ LV–IV use the assembler; LuV onward use the assembly line. Stars are craftable
 ## Content availability and compatibility
 
 - Fuel upgrades, voltage stars and cell filling/emptying recipes are implemented.
-- Survival recipes for the generator controller, light casing, bases and exponent cores remain undecided; obtain them through creative/NEI. Some other items still use temporary icons.
+- Survival recipes for the generator controller, light casing, bases and exponent cores remain undecided; obtain them through creative/NEI. Catalysts, stars, exponent cores and base cells now have dedicated sprites.
 - Target: **GTNH 2.9.0 / GT5 5.09.54.265**, using the pack's GregTech, Good Generator, GT++, AE2, StructureLib, GTNHLib, ModularUI and UniMixins.
 - Settings live in `config/benzenefuels.cfg`. Default GT controller ID: **32240**. Both sides need the same ID; do not change it after placing controllers.
 

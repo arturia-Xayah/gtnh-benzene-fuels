@@ -1,5 +1,16 @@
 # 更新日志 / Changelog
 
+## 0.4.5-alpha · GTNH 2.9.0 · 2026-11-04
+
+- 补齐 35 种物品、11 种流体的独立材质：活化剂、量子催化剂、十三种之星、十种指数核心、十种底数单元及其流体、UV 活化液。
+- 统一像素金属外框和明暗；科技侧蓝白芯片、魔法侧紫色晶体；等级由颜色和几何标识区分。流体与底数单元使用原生 64 帧动画。
+- 移除末影之眼、下界之星、水桶和烈焰粉的占位引用；白色注册染色避免二次染色。保留原有燃料贴图及所有配方、ID 和发电参数。
+- Added dedicated artwork for 35 items and 11 fluids. Consistent pixel-metal frames, blue-white technology chips, purple magic crystals and tier markings replace vanilla placeholders. Fluids and base cells use native 64-frame animation. Existing fuel art and gameplay are unchanged.
+
+20 项单元测试及 967 项后台检查通过；未启动客户端。 / Passed 20 unit tests and 967 server checks; no game client launched.
+
+[材质与预览 / Artwork and previews](design/component-textures/README.md)
+
 ## 0.4.4-alpha · GTNH 2.9.0 · 2026-11-04
 
 ### 中文
