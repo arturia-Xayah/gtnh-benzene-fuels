@@ -7,6 +7,7 @@ import net.minecraftforge.common.config.Configuration;
 
 import org.apache.logging.log4j.Logger;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLLoadCompleteEvent;
@@ -14,13 +15,14 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkCheckHandler;
 import cpw.mods.fml.relauncher.Side;
+import dev.benzenefuels.quest.BenzeneQuestChapter;
 import gregtech.api.GregTechAPI;
 
 @Mod(
     modid = BenzeneFuels.ID,
     name = "Benzene Fuels",
     version = Tags.VERSION,
-    dependencies = "required-after:gregtech;required-after:GoodGenerator;required-after:miscutils;required-after:unimixins",
+    dependencies = "required-after:gregtech;required-after:GoodGenerator;required-after:miscutils;required-after:unimixins;after:betterquesting",
     acceptedMinecraftVersions = "[1.7.10]")
 public final class BenzeneFuels {
 
@@ -28,6 +30,7 @@ public final class BenzeneFuels {
     public static Logger LOG;
     public static int generatorMetaId;
     public static ItemStack generator;
+    private boolean enableQuestChapter;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -40,6 +43,11 @@ public final class BenzeneFuels {
             1,
             32766,
             "Stable GT meta-tile ID; change only before placing machines.");
+        enableQuestChapter = config.getBoolean(
+            "enableChapter",
+            "quests",
+            true,
+            "Add the bilingual benzene chapter to the GTNH 2.9 quest book. Existing quests and progress are preserved. Disabling stops insertion; it does not delete previously installed quests.");
         config.save();
         FuelContent.register();
     }
@@ -66,6 +74,7 @@ public final class BenzeneFuels {
     @Mod.EventHandler
     public void loadComplete(FMLLoadCompleteEvent event) {
         GeneratorRecipes.register();
+        if (enableQuestChapter && Loader.isModLoaded("betterquesting")) BenzeneQuestChapter.install();
     }
 
     @NetworkCheckHandler

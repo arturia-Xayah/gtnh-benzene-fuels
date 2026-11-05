@@ -10,7 +10,7 @@
 
 [简体中文](README.md) · **English** · [Releases](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.6--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.6-alpha-GTNH-2.9.0/benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.5.0--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.5.0-alpha-GTNH-2.9.0/benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -21,6 +21,7 @@ Upgrade Nitrobenzene through LuV–UXV, build a tall Resonance Fuel Generator, a
 ## Contents
 
 - [Installation and upgrading](#installation-and-upgrading)
+- [Quest book: Benzene Beyond the Horizon](#quest-book-benzene-beyond-the-horizon)
 - [Eight benzene fuels](#eight-benzene-fuels)
 - [Resonance Fuel Generator](#resonance-fuel-generator)
 - [Technology and magic boosts](#technology-and-magic-boosts)
@@ -31,13 +32,28 @@ Upgrade Nitrobenzene through LuV–UXV, build a tall Resonance Fuel Generator, a
 
 ## Installation and upgrading
 
-1. Download `benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
+1. Download `benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar` into your instance's `mods` folder.
 2. Multiplayer clients and servers need the same version; install on the client for single-player. Replace the previous Benzene Fuels JAR instead of keeping duplicates.
 3. Use the dependencies included in **GTNH 2.9.0 stable**. No animation mod is needed.
 
-This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.4.6 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
+This is separate from GTNH Modernization Upgrade / Structure Terminal. Version 0.5.0 retains existing fluid, item and controller IDs, recipes, heat values and generation settings.
 
-0.4.6 adds hatch replacement candidates in the structure preview, fixes the delivery readout at batch transitions, and uses colored status text and compact numbers. Hover over controller statistics for exact parallel/input values and dynamo buffers; right-click a hatch position in the structure preview to see replacements.
+0.5.0 adds **Benzene Beyond the Horizon**, a native BetterQuesting chapter localized in English and Simplified Chinese. Replace the JAR and restart; no manual import or quest reset is needed.
+
+## Quest book: Benzene Beyond the Horizon
+
+**46 new quests and 7 references to original quests**, placed after the native biofuel chapter. Item/fluid detection, checkbox guides and profession-coin rewards follow the existing quest book.
+
+![Chapter layout preview, not an in-game screenshot](docs/assets/quest-chapter.png)
+
+- **Fuel progression:** Nitrobenzene, assembly-line and fusion prerequisites lead through activators, refining and QFT to UXV. Each fuel milestone detects 16,000 mB in containers without consuming it and awards a few Chemist coins.
+- **Generator engineering:** After UV fuel, learn casing orders, coils, hatch positions, five-second batches and wired/wireless delivery. The material checklist is optional.
+- **Technology and magic:** Mk1–Mk5 base fluids and exponent cores are reference-only branches until recipes are defined. No unavailable items are requested or rewarded; these branches never gate fuel upgrades.
+- **Voltage stars:** A separate LV–UXV manufacturing branch detects stars without consuming them and awards a few Technician coins.
+
+Completed original prerequisites remain complete. Stable addon quest IDs preserve existing-world completion and claim history; native default-book reloads retain the chapter.
+
+[Design and administration](docs/features/QUESTS.md#english) · [Clickable bilingual layout preview](questbook/preview.html)
 
 ## Eight benzene fuels
 

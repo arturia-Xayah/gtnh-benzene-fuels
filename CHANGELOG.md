@@ -1,5 +1,16 @@
 # 更新日志 / Changelog
 
+## 0.5.0-alpha · GTNH 2.9.0 · 2026-11-05
+
+- 新增原生 BetterQuesting 双语章节「苯向星辰」：46 个新任务、7 个原版任务引用，涵盖 LuV～UXV 燃料、活化剂与催化剂、UV 发电塔工程、科技／魔法 Mk1～Mk5 说明，以及 LV～UXV 电压之星。
+- 沿用原版检测／勾选任务、可选备料清单和一次性职业硬币奖励；燃料与星星检测不消耗材料。尚无生存配方的材料仅作说明，不提交、不奖励，不阻挡燃料主线。
+- JAR 自动接入新世界与旧存档任务书，保留原版任务、已有进度和领奖状态；支持原版默认任务重载。增加配置开关、固定独立 UUID 和中英布局预览。
+- Added the bilingual native BetterQuesting chapter **Benzene Beyond the Horizon**: 46 quests plus seven original references, non-consuming milestones, one-time profession coins, generator engineering and reference-only pending upgrades. Installs additively into new and existing worlds, preserving completion and claim history across reloads.
+
+21 项单元测试、1,251 项后台检查通过；未启动 Minecraft 客户端。 / 21 unit tests and 1,251 dedicated-server checks passed; no Minecraft client launched.
+
+[章节说明 / Chapter guide](docs/features/QUESTS.md) · [验证 / Validation](docs/development/VALIDATION.md)
+
 ## 0.4.5-alpha · GTNH 2.9.0 · 2026-11-04
 
 - 补齐 35 种物品、11 种流体的独立材质：活化剂、量子催化剂、十三种之星、十种指数核心、十种底数单元及其流体、UV 活化液。

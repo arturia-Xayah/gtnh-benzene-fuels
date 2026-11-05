@@ -1,0 +1,3267 @@
+{
+  "schema": 1,
+  "chapter": {
+    "questLineIDHigh:4": 5235291124097308178,
+    "questLineIDLow:4": -7958754181259504433,
+    "properties:10": {
+      "betterquesting:10": {
+        "name:8": "Benzene Beyond the Horizon",
+        "desc:8": "Eight fuel upgrades, one very tall generator, and two routes to higher efficiency.",
+        "icon:10": {
+          "id:8": "benzenefuels:components",
+          "Damage:2": 1,
+          "Count:3": 1,
+          "OreDict:8": ""
+        },
+        "visibility:8": "ALWAYS",
+        "bg_image:8": "",
+        "bg_size:3": 256
+      }
+    }
+  },
+  "quests": [
+    {
+      "key": "welcome",
+      "quest": {
+        "questIDHigh:4": -7422629714016576420,
+        "questIDLow:4": -5864341177699463982,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Benzene Has Left the Building",
+            "desc:8": "You thought Nitrobenzene was the end of the line? Your tree farm has other plans. This chapter takes that familiar fuel through eight upgrades, from LuV to UXV. Every step keeps the same amount of fuel, but asks for increasingly expensive processing and additives.\n\nFollow the upper row for the fuel chain. The lower branches cover the Resonance Fuel Generator, its two upgrade routes, and Voltage Stars. Existing GTNH quests above the fuel row are real prerequisites, not additional copies to complete.\n\n[note]Fluid tasks detect containers in your inventory without consuming them. GT recipes call 1 mB one litre; this generator's parallel setting uses 1000 mB = 1 B. All recipe quantities here are written in mB to keep the two conventions apart.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 1,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {},
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -7422629714016576420,
+        "questIDLow:4": -5864341177699463982,
+        "x:3": 0,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "platinum_activator",
+      "quest": {
+        "questIDHigh:4": 8853202234473468082,
+        "questIDLow:4": -7938678253260433055,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§d§lA Very Noble Expense",
+            "desc:8": "Start with the Assembly Line and a steady supply of Helium Plasma. Scan Platinum Dust, then combine 1024 dust each of Platinum, Rhodium, Palladium, Iridium and Ruthenium with 16,384 mB of Helium Plasma. The line runs at LuV for 10 seconds to make one activator.\n\nThis little component is consumed. Each one upgrades 50,000 mB of Nitrobenzene, so an unautomated platinum-group line is going to make this fuel rather less renewable than your tree farm suggests.\n\n[note]Detect the activator before sending it to the reactor. This task does not consume it.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 0,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -7422629714016576420,
+            "questIDLow:4": -5864341177699463982
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 3133
+          },
+          "2:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 1412
+          },
+          "3:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 1212
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 8853202234473468082,
+        "questIDLow:4": -7938678253260433055,
+        "x:3": 192,
+        "y:3": 72,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "uv_activator",
+      "quest": {
+        "questIDHigh:4": -3860463945895227079,
+        "questIDLow:4": -5115275285168839983,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§2§l§nJust Add More Neutrons",
+            "desc:8": "In a Large Chemical Reactor, process 1024 Neutronium Dust, 1024 Cosmic Neutronium Dust and 16,384 mB of Americium Plasma at UV for 10 seconds. You receive 144 mB of UV Activator, exactly enough for one fuel-upgrade batch.\n\nThis intermediate is a fluid. Use a suitable fluid container to detect 144 mB, then send it on to fusion. Do not search for an activator cell that this mod does not register.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 3,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 8360871655137367915,
+            "questIDLow:4": -9084994396324016018
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uv_activator",
+                "Amount:3": 144
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -3860463945895227079,
+        "questIDLow:4": -5115275285168839983,
+        "x:3": 384,
+        "y:3": 72,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "quantum_catalyst",
+      "quest": {
+        "questIDHigh:4": 3479702438615733105,
+        "questIDLow:4": -5160056185456206149,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§5§l§nThis One Comes Back",
+            "desc:8": "An UEV Assembler combines 8 dust each of Platinum, Palladium and Iridium with one UEV Field Generator and 144 mB of Molten Infinity. After 10 seconds you have a Benzene Quantum Catalyst.\n\nPut it in the QFT Bulk Catalyst Housing, not into a normal input bus. You need one per parallel, but you do not need to remake it for every batch. UEV through UXV all use this same catalyst.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 30000,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 1578771698696478023,
+            "questIDLow:4": -9128895867444256772
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 3287
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 30000,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 2,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 3479702438615733105,
+        "questIDLow:4": -5160056185456206149,
+        "x:3": 576,
+        "y:3": 72,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "fuel_luv",
+      "quest": {
+        "questIDHigh:4": -5737658371434980900,
+        "questIDLow:4": -9101473803331010304,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§d§lLuV — Hyper-Enriched Platinum-Group Benzene",
+            "desc:8": "Feed one Platinum-Group Activator and 50,000 mB of Nitrobenzene into a Large Chemical Reactor. Ten seconds at LuV gives 50,000 mB of fuel. The activator is consumed; there is no second plasma payment at this step.\n\nYour tree farm now has a precious-metal dependency. Keep the activator production separate from the fuel buffer so a temporary shortage does not drain the fuel already available to your generators.\n\nFuel value: 13,940 EU/mB (13,940,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 1,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 8853202234473468082,
+            "questIDLow:4": -7938678253260433055
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.luv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 2,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -5737658371434980900,
+        "questIDLow:4": -9101473803331010304,
+        "x:3": 192,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_zpm",
+      "quest": {
+        "questIDHigh:4": 8360871655137367915,
+        "questIDLow:4": -9084994396324016018,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§b§lZPM — ZPM Benzene",
+            "desc:8": "Fuse 50,000 mB of LuV fuel with 163,840 mB of Tin Plasma. The recipe takes 10 seconds at ZPM and needs 280M EU of startup energy, so the ordinary Fusion Reactor must be MkII or better.\n\nNo Americium, Tritanium or Europium dust is used here. Tin Plasma is the entire additive bill, and it is a large one. Buffer enough for a complete recipe before feeding the reactor.\n\nFuel value: 136,200 EU/mB (136,200,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 2,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -5737658371434980900,
+            "questIDLow:4": -9101473803331010304
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 1197
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.zpm",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 2,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 8360871655137367915,
+        "questIDLow:4": -9084994396324016018,
+        "x:3": 288,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_uv",
+      "quest": {
+        "questIDHigh:4": -6663090826653311299,
+        "questIDLow:4": -6625645033225670778,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§2§l§nUV — Neutron-Supersaturated Benzene",
+            "desc:8": "Send 50,000 mB of ZPM Benzene and 144 mB of UV Activator into fusion. This is a 10-second UV recipe with a 500M EU startup requirement. A normal MkIII reactor can handle it.\n\nThis is still a gas-turbine fuel. Higher energy density does not mean that an old dynamo suddenly has more throughput, though. Check the fuel flow and the output rating before scaling the line.\n\nFuel value: 1,491,000 EU/mB (1,491,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 3,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -3860463945895227079,
+            "questIDLow:4": -5115275285168839983
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 1202
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 2,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -6663090826653311299,
+        "questIDLow:4": -6625645033225670778,
+        "x:3": 384,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_uhv",
+      "quest": {
+        "questIDHigh:4": 1578771698696478023,
+        "questIDLow:4": -9128895867444256772,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§4§l§nUHV — UHV Benzene",
+            "desc:8": "The Naquadah Fuel Refinery has found a second job. Combine 50,000 mB of UV fuel, 1024 Infinity Catalyst Dust, 1024 Atomic Separation Catalyst Dust and 17,856 mB of Molten Infinity. This takes 10 seconds at UHV and requires at least tier 1 refinery coils.\n\nBoth dust ingredients are consumed every batch. The word catalyst in an ingredient name is not a promise that you will get it back.\n\nFuel value: 18,290,000 EU/mB (18,290,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 4,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -6663090826653311299,
+            "questIDLow:4": -6625645033225670778
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 2959
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uhv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 3,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 1578771698696478023,
+        "questIDLow:4": -9128895867444256772,
+        "x:3": 480,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_uev",
+      "quest": {
+        "questIDHigh:4": -2391442291815655286,
+        "questIDLow:4": -6777342497388768980,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§5§l§nUEV — UEV Benzene",
+            "desc:8": "Use a tier 2 or better Quantum Force Transformer recipe setup. Each batch takes 50,000 mB of UHV fuel, 1024 Transcendent Metal Dust, 1024 Hypogen Dust and 17,856 mB of Molten Infinity, and runs for 10 seconds at UEV.\n\nKeep a Benzene Quantum Catalyst in a Bulk Catalyst Housing for each parallel. Unlike the refinery powders, this catalyst is reusable. The benzene recipe has one guaranteed fluid output; it does not inherit the random output split of unrelated QFT recipes.\n\nFuel value: 251,500,000 EU/mB (251,500,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 5,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 3479702438615733105,
+            "questIDLow:4": -5160056185456206149
+          },
+          "1:10": {
+            "questIDHigh:4": 0,
+            "questIDLow:4": 3287
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uev",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 3,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -2391442291815655286,
+        "questIDLow:4": -6777342497388768980,
+        "x:3": 576,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_uiv",
+      "quest": {
+        "questIDHigh:4": -6263605328981500491,
+        "questIDLow:4": -4864235856989846696,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§9§l§nUIV — Causal-Loop Benzene",
+            "desc:8": "Raise the QFT recipe tier to at least 3. Combine 50,000 mB of UEV fuel with 2048 Transcendent Metal Dust, 2048 Hypogen Dust and 17,856 mB of Molten Space-Time. The processing time is still 10 seconds, now at UIV. Keep the reusable Benzene Quantum Catalyst installed.\n\n[warn]UIV is the first fuel in this line that is not registered in the native GT gas-turbine fuel map: its heat value exceeds that map's integer limit. Producing it does not make a native gas turbine accept it. The resonance generator understands its full heat value, but its survival entry components remain pending.[/warn]\n\nFuel value: 3,876,000,000 EU/mB (3,876,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 6,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -2391442291815655286,
+            "questIDLow:4": -6777342497388768980
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uiv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 3,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -6263605328981500491,
+        "questIDLow:4": -4864235856989846696,
+        "x:3": 672,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_umv",
+      "quest": {
+        "questIDHigh:4": 4028626037513147530,
+        "questIDLow:4": -4898099475523195386,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§5§l§nUMV — Eternally Attuned Benzene",
+            "desc:8": "Tier 4 QFT processing is required now. One batch uses 50,000 mB of UIV fuel, 144 mB each of Molten Shirabon and Molten Eternity, plus 16 mB of Molten White Dwarf Matter. Ten seconds at UMV gives the same volume of upgraded fuel.\n\nThe additive amounts look small after the previous steps. The infrastructure needed to make them is not. Give these fluids their own filtered inputs and keep the shared catalyst in place.\n\nFuel value: 66,950,000,000 EU/mB (66,950,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 7,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -6263605328981500491,
+            "questIDLow:4": -4864235856989846696
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.umv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 3,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 4028626037513147530,
+        "questIDLow:4": -4898099475523195386,
+        "x:3": 768,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "fuel_uxv",
+      "quest": {
+        "questIDHigh:4": -7587196635428662811,
+        "questIDLow:4": -7818691664342945422,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§6§l§nUXV — Eigenbenzene Cosmic Fuel",
+            "desc:8": "Your tree farm has become a rather elaborate excuse to process stellar matter. In a tier 4 QFT, combine 50,000 mB of UMV fuel with 124 mB of Molten Universium, 124 mB of Molten Magnetohydrodynamically Constrained Star Matter, 1984 mB of Raw Star Matter and 144 mB of Molten Eternity. Supply UXV for 10 seconds and keep the reusable catalyst installed.\n\nThis is the last upgrade currently available. The task checks the fuel itself, not a promised generator output: generation still depends on a working generator, supplied base fluids and the installed upgrades.\n\nFuel value: 1,296,000,000,000 EU/mB (1,296,000,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 8,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 1,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4028626037513147530,
+            "questIDLow:4": -4898099475523195386
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:fluid",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "requiredFluids:9": {
+              "0:10": {
+                "FluidName:8": "benzenefuels.uxv",
+                "Amount:3": 16000
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinChemistIII",
+                "Damage:2": 0,
+                "Count:3": 8,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -7587196635428662811,
+        "questIDLow:4": -7818691664342945422,
+        "x:3": 864,
+        "y:3": 144,
+        "sizeX:3": 32,
+        "sizeY:3": 32
+      }
+    },
+    {
+      "key": "gas_generators",
+      "quest": {
+        "questIDHigh:4": 6426765950299101030,
+        "questIDLow:4": -6687451339817412935,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Read the Fine Print",
+            "desc:8": "LuV through UEV Benzene are registered as native GT gas-turbine fuels. That makes them fuel candidates, not a guarantee that every rotor or dynamo is suitable. Heat value, turbine efficiency, optimal flow and output capacity are different numbers.\n\nUIV, UMV and UXV are not on that native fuel map. Nor does a gas registration automatically make any fuel a rocket-engine fuel. Check the actual recipe category in NEI before designing your power plant.\n\n[note]A fuel upgrade keeps the fluid volume, not the processing cost. Include the electricity and additives used along the way when comparing a complete power line.[/note]",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Damage:2": 36,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -5737658371434980900,
+            "questIDLow:4": -9101473803331010304
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 6426765950299101030,
+        "questIDLow:4": -6687451339817412935,
+        "x:3": 192,
+        "y:3": 228,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "automation",
+      "quest": {
+        "questIDHigh:4": 6312418905574038174,
+        "questIDLow:4": -6576679659106828361,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "One Pipe, One Job",
+            "desc:8": "Keep a buffer between each fuel tier and reserve the lower-tier fuel you still burn. These recipes upgrade the entire 50,000 mB batch; a shared export bus with no limits can starve the old power plant while the new one is still being built.\n\nFor QFT, keep the reusable catalyst in its housing, request the consumable additives separately and filter the output back into its own tank. The eight fuel tasks are one-time milestones. They are not repeatable rewards for circulating the same fuel.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 30000,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -2391442291815655286,
+            "questIDLow:4": -6777342497388768980
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 6312418905574038174,
+        "questIDLow:4": -6576679659106828361,
+        "x:3": 672,
+        "y:3": 228,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower",
+      "quest": {
+        "questIDHigh:4": 4314013335322778967,
+        "questIDLow:4": -6356109657948533359,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§2§l§nA Power Plant with Altitude",
+            "desc:8": "Plan this project around UV progression. The complete tower is 33×33×129, so find a site before ordering the blocks. Its controller sits two blocks above the bottom; controller Y=2 through 129 keeps the whole structure within the normal world height.\n\nYou will need fusion infrastructure for fusion casings, quantum glass, a large collection of industrial casings and 1648 matching heating coils. UV is the intended entry stage, not a claim that the currently missing controller recipe can be crafted.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Damage:2": 32240,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -6663090826653311299,
+            "questIDLow:4": -6625645033225670778
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 4314013335322778967,
+        "questIDLow:4": -6356109657948533359,
+        "x:3": 288,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower_materials",
+      "quest": {
+        "questIDHigh:4": 2424480890757077227,
+        "questIDLow:4": -7585306628499749873,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Order the Casings First",
+            "desc:8": "The default structure contains 15,472 blocks. The largest orders are 3628 Quantum Glass, 1940 Clean Stainless Steel Machine Casings, 1648 heating coils, 1423 Fusion Machine Casings and 1215 Solid Steel Machine Casings. It also uses 621 Blue-White Resonance Light Casings.\n\nOther materials include frost-proof, grating, filter, chemically inert, magic and field-containing casings, cooling and PTFE pipes, superconducting coils and small decorative parts. Use the structure preview for the full arrangement. The list below is an optional planning checklist, not a demand to put an entire tower into your inventory.",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockcasings4",
+              "Damage:2": 6,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4314013335322778967,
+            "questIDLow:4": -6356109657948533359
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          },
+          "1:10": {
+            "taskID:8": "bq_standard:optional_retrieval",
+            "index:3": 1,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "tectech:tile.quantumGlass",
+                "Damage:2": 0,
+                "Count:3": 3628,
+                "OreDict:8": ""
+              },
+              "1:10": {
+                "id:8": "gregtech:gt.blockcasings4",
+                "Damage:2": 1,
+                "Count:3": 1940,
+                "OreDict:8": ""
+              },
+              "2:10": {
+                "id:8": "gregtech:gt.blockcasings4",
+                "Damage:2": 6,
+                "Count:3": 1423,
+                "OreDict:8": ""
+              },
+              "3:10": {
+                "id:8": "gregtech:gt.blockcasings2",
+                "Damage:2": 0,
+                "Count:3": 1215,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 2424480890757077227,
+        "questIDLow:4": -7585306628499749873,
+        "x:3": 384,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower_coils",
+      "quest": {
+        "questIDHigh:4": -1186040013559803480,
+        "questIDLow:4": -7962966259485485700,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "More Coils, More Batches",
+            "desc:8": "All 1648 coils must be the same tier. Cupronickel gives one parallel, Kanthal four, and Eternity 67,108,864. The limit is floor(4^((heat−901)/900−1)), using real division. A mixed jacket will not form.\n\nEach parallel burns 1000 mB once per five-second batch. Actual parallel is the smallest of the configured limit, the coil limit and the whole buckets of fuel available. Better coils are a ceiling, not a command to conjure more fuel.",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockcasings5",
+              "Damage:2": 0,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 2424480890757077227,
+            "questIDLow:4": -7585306628499749873
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -1186040013559803480,
+        "questIDLow:4": -7962966259485485700,
+        "x:3": 480,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower_hatches",
+      "quest": {
+        "questIDHigh:4": -7134136329501715364,
+        "questIDLow:4": -6406756207145661175,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Front Door, Back Door",
+            "desc:8": "Install one to three fluid input hatches and exactly one Maintenance Hatch in the permitted chemically inert casings on the controller face, at model Y=2 or 3. The lowest row is not a hatch row.\n\nThe two rear Solid Steel Machine Casing rows accept up to sixteen dynamo hatches. Wireless operation can use no dynamos. In the structure preview, right-click a permitted casing to see replacements. You still need to supply both base fluids as well as the fuel.",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Damage:2": 56,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -1186040013559803480,
+            "questIDLow:4": -7962966259485485700
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -7134136329501715364,
+        "questIDLow:4": -6406756207145661175,
+        "x:3": 576,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower_operation",
+      "quest": {
+        "questIDHigh:4": 9036705445105523082,
+        "questIDLow:4": -8739821313001165361,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Five Seconds at a Time",
+            "desc:8": "At the start of a batch, the tower checks only the first non-base fluid it reads. An invalid first fuel prevents startup; it does not search later tanks for something tastier. It consumes whole 1000 mB units up to its effective parallel limit, plus 1 mB of each base fluid per unit.\n\nBoth base fluids must cover the entire planned batch. With the default exponents of 1, fuel efficiency is technology base × magic base. The energy is then spread evenly across 100 ticks. Fuel is prepaid, so dismantling the machine mid-batch does not return it.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 3,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -7134136329501715364,
+            "questIDLow:4": -6406756207145661175
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 9036705445105523082,
+        "questIDLow:4": -8739821313001165361,
+        "x:3": 672,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "tower_output",
+      "quest": {
+        "questIDHigh:4": -6318500272162710660,
+        "questIDLow:4": -8578583623648652206,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Do Not Confuse Storage with Throughput",
+            "desc:8": "Wired mode inserts energy into dynamos within each hatch's voltage × amperage limit and free buffer space. The controller's delivered value measures this insertion, not energy already used by a distant machine. Hover over the statistics to inspect the real buffer. A disconnected hatch fills up, and the remaining generation is lost.\n\nWireless mode sends energy to the owner's wireless account. Mode changes take effect with the next batch. Neither mode pauses the fuel recipe to wait for somewhere to store excess power.",
+            "icon:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Damage:2": 15228,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 9036705445105523082,
+            "questIDLow:4": -8739821313001165361
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -6318500272162710660,
+        "questIDLow:4": -8578583623648652206,
+        "x:3": 768,
+        "y:3": 336,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_route",
+      "quest": {
+        "questIDHigh:4": 3769781280863378649,
+        "questIDLow:4": -5218784753916834877,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bSmall Base, Big Exponent",
+            "desc:8": "The technology route trades modest base multipliers for a large permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 200,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4314013335322778967,
+            "questIDLow:4": -6356109657948533359
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 3769781280863378649,
+        "questIDLow:4": -5218784753916834877,
+        "x:3": 288,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_mk1",
+      "quest": {
+        "questIDHigh:4": -4727532655517737584,
+        "questIDLow:4": -4813154943622452907,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bTechnology Mk1",
+            "desc:8": "Mk1 technology base fluid supplies a base of 1.01; the Mk1 core raises this route's exponent to 2. Together they contribute about 1.0201×, before the other route is multiplied in. The technology fluid is planned for LuV progression.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 200,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 3769781280863378649,
+            "questIDLow:4": -5218784753916834877
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -4727532655517737584,
+        "questIDLow:4": -4813154943622452907,
+        "x:3": 384,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_mk2",
+      "quest": {
+        "questIDHigh:4": 5019782496008886867,
+        "questIDLow:4": -8240445774248224283,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bTechnology Mk2",
+            "desc:8": "Mk2 technology base fluid supplies a base of 1.02; the Mk2 core raises this route's exponent to 4. Together they contribute about 1.0824×, before the other route is multiplied in. The technology fluid is planned for UV progression.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 201,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -4727532655517737584,
+            "questIDLow:4": -4813154943622452907
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 5019782496008886867,
+        "questIDLow:4": -8240445774248224283,
+        "x:3": 480,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_mk3",
+      "quest": {
+        "questIDHigh:4": 4759543191733098840,
+        "questIDLow:4": -8786705234879669950,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bTechnology Mk3",
+            "desc:8": "Mk3 technology base fluid supplies a base of 1.05; the Mk3 core raises this route's exponent to 8. Together they contribute about 1.4775×, before the other route is multiplied in. The technology fluid is planned for UEV progression.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 202,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 5019782496008886867,
+            "questIDLow:4": -8240445774248224283
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 4759543191733098840,
+        "questIDLow:4": -8786705234879669950,
+        "x:3": 576,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_mk4",
+      "quest": {
+        "questIDHigh:4": -6155009679454612181,
+        "questIDLow:4": -5954831168217341627,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bTechnology Mk4",
+            "desc:8": "Mk4 technology base fluid supplies a base of 1.07; the Mk4 core raises this route's exponent to 16. Together they contribute about 2.9522×, before the other route is multiplied in. The technology fluid is planned for UMV progression.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 203,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4759543191733098840,
+            "questIDLow:4": -8786705234879669950
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -6155009679454612181,
+        "questIDLow:4": -5954831168217341627,
+        "x:3": 672,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "technology_mk5",
+      "quest": {
+        "questIDHigh:4": -7877848589952329151,
+        "questIDLow:4": -5973797547550895376,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§bTechnology Mk5",
+            "desc:8": "Mk5 technology base fluid supplies a base of 1.1; the Mk5 core raises this route's exponent to 32. Together they contribute about 21.1138×, before the other route is multiplied in. The technology fluid is planned for UXV progression.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 204,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -6155009679454612181,
+            "questIDLow:4": -5954831168217341627
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -7877848589952329151,
+        "questIDLow:4": -5973797547550895376,
+        "x:3": 768,
+        "y:3": 456,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_route",
+      "quest": {
+        "questIDHigh:4": -7647332064024898626,
+        "questIDLow:4": -6201157220128686639,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dA Little More Magic",
+            "desc:8": "The magic route offers larger base multipliers with a smaller permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 210,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4314013335322778967,
+            "questIDLow:4": -6356109657948533359
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -7647332064024898626,
+        "questIDLow:4": -6201157220128686639,
+        "x:3": 288,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_mk1",
+      "quest": {
+        "questIDHigh:4": 6623563228143768409,
+        "questIDLow:4": -6918235766769913284,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dMagic Mk1",
+            "desc:8": "Mk1 magic base fluid supplies a base of 1.01; the Mk1 core raises this route's exponent to 2. Together they contribute about 1.0201×, before the other route is multiplied in. The magic fluid progression has no final recipe or independent unlock stage yet.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 210,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -7647332064024898626,
+            "questIDLow:4": -6201157220128686639
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 6623563228143768409,
+        "questIDLow:4": -6918235766769913284,
+        "x:3": 384,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_mk2",
+      "quest": {
+        "questIDHigh:4": -4389244479660073478,
+        "questIDLow:4": -5359460473698509612,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dMagic Mk2",
+            "desc:8": "Mk2 magic base fluid supplies a base of 1.05; the Mk2 core raises this route's exponent to 4. Together they contribute about 1.2155×, before the other route is multiplied in. The magic fluid progression has no final recipe or independent unlock stage yet.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 211,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 6623563228143768409,
+            "questIDLow:4": -6918235766769913284
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -4389244479660073478,
+        "questIDLow:4": -5359460473698509612,
+        "x:3": 480,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_mk3",
+      "quest": {
+        "questIDHigh:4": 3277126806690550281,
+        "questIDLow:4": -7316920465117877278,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dMagic Mk3",
+            "desc:8": "Mk3 magic base fluid supplies a base of 1.1; the Mk3 core raises this route's exponent to 6. Together they contribute about 1.7716×, before the other route is multiplied in. The magic fluid progression has no final recipe or independent unlock stage yet.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 212,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -4389244479660073478,
+            "questIDLow:4": -5359460473698509612
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 3277126806690550281,
+        "questIDLow:4": -7316920465117877278,
+        "x:3": 576,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_mk4",
+      "quest": {
+        "questIDHigh:4": 1974791777661180440,
+        "questIDLow:4": -6651812188628819035,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dMagic Mk4",
+            "desc:8": "Mk4 magic base fluid supplies a base of 1.2; the Mk4 core raises this route's exponent to 8. Together they contribute about 4.2998×, before the other route is multiplied in. The magic fluid progression has no final recipe or independent unlock stage yet.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 213,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 3277126806690550281,
+            "questIDLow:4": -7316920465117877278
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 1974791777661180440,
+        "questIDLow:4": -6651812188628819035,
+        "x:3": 672,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "magic_mk5",
+      "quest": {
+        "questIDHigh:4": -3059728376970455622,
+        "questIDLow:4": -5352525799873170161,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "§dMagic Mk5",
+            "desc:8": "Mk5 magic base fluid supplies a base of 1.3; the Mk5 core raises this route's exponent to 10. Together they contribute about 13.7858×, before the other route is multiplied in. The magic fluid progression has no final recipe or independent unlock stage yet.\n\nThe consumption remains 1 mB per 1000 mB of fuel, regardless of Mk. Bring this core only after installing the previous tiers; swapping base fluids does not install a core.\n\n[note]Reference only: no survival recipe, item submission or material reward is defined for this node.[/note]",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 214,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 1974791777661180440,
+            "questIDLow:4": -6651812188628819035
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": -3059728376970455622,
+        "questIDLow:4": -5352525799873170161,
+        "x:3": 768,
+        "y:3": 552,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "stars",
+      "quest": {
+        "questIDHigh:4": 3010194174461039716,
+        "questIDLow:4": -8668006561726428526,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "Stars Made in an Assembler",
+            "desc:8": "Voltage Stars package the eight basic component families of a voltage tier: Motor, Piston, Pump, Conveyor Module, Robot Arm, Emitter, Sensor and Field Generator. Start with one of each LV component in an LV Assembler for 8 seconds.\n\nThis is a separate collection and manufacturing branch. Stars are not currently ingredients of fuel, base-fluid or exponent-core recipes. In particular, a star does not upgrade the generator. The tasks below detect one star without consuming it, so it can go straight into the next recipe.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 100,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 0,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -7422629714016576420,
+            "questIDLow:4": -5864341177699463982
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:checkbox",
+            "index:3": 0
+          }
+        },
+        "rewards:9": {}
+      },
+      "entry": {
+        "questIDHigh:4": 3010194174461039716,
+        "questIDLow:4": -8668006561726428526,
+        "x:3": 0,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_0",
+      "quest": {
+        "questIDHigh:4": 6911500647913706952,
+        "questIDLow:4": -4943296236304994475,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "LV Star",
+            "desc:8": "Use 1 of each of the eight LV components in the Assembler. The recipe uses LV voltage for 8 seconds and makes one LV Star.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 100,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 3010194174461039716,
+            "questIDLow:4": -8668006561726428526
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 100,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianI",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 6911500647913706952,
+        "questIDLow:4": -4943296236304994475,
+        "x:3": 96,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_1",
+      "quest": {
+        "questIDHigh:4": 369040678516906162,
+        "questIDLow:4": -7312766964137341802,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "MV Star",
+            "desc:8": "Use 2 of each of the eight MV components and 16 stars of the previous voltage tier in the Assembler. The recipe uses MV voltage for 16 seconds and makes one MV Star.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 101,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 6911500647913706952,
+            "questIDLow:4": -4943296236304994475
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 101,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianI",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 369040678516906162,
+        "questIDLow:4": -7312766964137341802,
+        "x:3": 168,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_2",
+      "quest": {
+        "questIDHigh:4": 1217520999766712062,
+        "questIDLow:4": -7689818821898633295,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "HV Star",
+            "desc:8": "Use 4 of each of the eight HV components and 16 stars of the previous voltage tier in the Assembler. The recipe uses HV voltage for 32 seconds and makes one HV Star.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 102,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 369040678516906162,
+            "questIDLow:4": -7312766964137341802
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 102,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 1217520999766712062,
+        "questIDLow:4": -7689818821898633295,
+        "x:3": 240,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_3",
+      "quest": {
+        "questIDHigh:4": 2107365199370541690,
+        "questIDLow:4": -8076546006836081317,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "EV Star",
+            "desc:8": "Use 8 of each of the eight EV components and 16 stars of the previous voltage tier in the Assembler. The recipe uses EV voltage for 64 seconds and makes one EV Star.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 103,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 1217520999766712062,
+            "questIDLow:4": -7689818821898633295
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 103,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 2107365199370541690,
+        "questIDLow:4": -8076546006836081317,
+        "x:3": 312,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_4",
+      "quest": {
+        "questIDHigh:4": -4964131224281852773,
+        "questIDLow:4": -4812978724207663164,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "IV Star",
+            "desc:8": "Use 16 of each of the eight IV components and 16 stars of the previous voltage tier in the Assembler. The recipe uses IV voltage for 128 seconds and makes one IV Star.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 104,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 2107365199370541690,
+            "questIDLow:4": -8076546006836081317
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 104,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -4964131224281852773,
+        "questIDLow:4": -4812978724207663164,
+        "x:3": 384,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_5",
+      "quest": {
+        "questIDHigh:4": -6914819342631086618,
+        "questIDLow:4": -8342656687014041687,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "LuV Star",
+            "desc:8": "Use 32 of each of the eight LuV components and 16 stars of the previous voltage tier in the Assembly Line. The recipe uses LuV voltage for 256 seconds and makes one LuV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 105,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -4964131224281852773,
+            "questIDLow:4": -4812978724207663164
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 105,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -6914819342631086618,
+        "questIDLow:4": -8342656687014041687,
+        "x:3": 456,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_6",
+      "quest": {
+        "questIDHigh:4": -7939335895392691351,
+        "questIDLow:4": -5855831306114026790,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "ZPM Star",
+            "desc:8": "Use 64 of each of the eight ZPM components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses ZPM voltage for 512 seconds and makes one ZPM Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 106,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -6914819342631086618,
+            "questIDLow:4": -8342656687014041687
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 106,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -7939335895392691351,
+        "questIDLow:4": -5855831306114026790,
+        "x:3": 528,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_7",
+      "quest": {
+        "questIDHigh:4": -4918050920002727879,
+        "questIDLow:4": -8607281284267649935,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UV Star",
+            "desc:8": "Use 128 of each of the eight UV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UV voltage for 1,024 seconds and makes one UV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 107,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -7939335895392691351,
+            "questIDLow:4": -5855831306114026790
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 107,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -4918050920002727879,
+        "questIDLow:4": -8607281284267649935,
+        "x:3": 600,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_8",
+      "quest": {
+        "questIDHigh:4": 4868362728582567470,
+        "questIDLow:4": -5402816373831185889,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UHV Star",
+            "desc:8": "Use 256 of each of the eight UHV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UHV voltage for 2,048 seconds and makes one UHV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 108,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -4918050920002727879,
+            "questIDLow:4": -8607281284267649935
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 108,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 4868362728582567470,
+        "questIDLow:4": -5402816373831185889,
+        "x:3": 672,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_9",
+      "quest": {
+        "questIDHigh:4": -8384111145630082422,
+        "questIDLow:4": -5087023692754872136,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UEV Star",
+            "desc:8": "Use 512 of each of the eight UEV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UEV voltage for 4,096 seconds and makes one UEV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 109,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 4868362728582567470,
+            "questIDLow:4": -5402816373831185889
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 109,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -8384111145630082422,
+        "questIDLow:4": -5087023692754872136,
+        "x:3": 744,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_10",
+      "quest": {
+        "questIDHigh:4": 8443195416842886705,
+        "questIDLow:4": -6831474563969003772,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UIV Star",
+            "desc:8": "Use 1024 of each of the eight UIV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UIV voltage for 8,192 seconds and makes one UIV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 110,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -8384111145630082422,
+            "questIDLow:4": -5087023692754872136
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 110,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": 8443195416842886705,
+        "questIDLow:4": -6831474563969003772,
+        "x:3": 816,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_11",
+      "quest": {
+        "questIDHigh:4": -5574732518788541396,
+        "questIDLow:4": -5538086102316276934,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UMV Star",
+            "desc:8": "Use 1024 of each of the eight UMV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UMV voltage for 16,384 seconds and makes one UMV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 111,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": 8443195416842886705,
+            "questIDLow:4": -6831474563969003772
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 111,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -5574732518788541396,
+        "questIDLow:4": -5538086102316276934,
+        "x:3": 888,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    },
+    {
+      "key": "star_12",
+      "quest": {
+        "questIDHigh:4": -1364264563908782209,
+        "questIDLow:4": -6760846690948540955,
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "UXV Star",
+            "desc:8": "Use 1024 of each of the eight UXV components and 4 stars of the previous voltage tier in the Assembly Line. The recipe uses UXV voltage for 32,768 seconds and makes one UXV Star.\n\nScan the previous star at this tier for 60 seconds to obtain the Assembly Line research. The star recipe has no additional fluid input.\n\nThe task only detects the star. It does not consume it, grant another star or unlock a pending generator upgrade.",
+            "icon:10": {
+              "id:8": "benzenefuels:components",
+              "Damage:2": 112,
+              "Count:3": 1,
+              "OreDict:8": ""
+            },
+            "isMain:1": 0,
+            "questLogic:8": "AND",
+            "taskLogic:8": "AND",
+            "visibility:8": "NORMAL",
+            "repeatTime:3": -1,
+            "repeat_relative:1": 1,
+            "autoClaim:1": 0,
+            "lockedProgress:1": 0,
+            "simultaneous:1": 0,
+            "globalShare:1": 0,
+            "isSilent:1": 0,
+            "countAsQuest:1": 1,
+            "snd_complete:8": "random.levelup",
+            "snd_update:8": "random.levelup"
+          }
+        },
+        "preRequisites:9": {
+          "0:10": {
+            "questIDHigh:4": -5574732518788541396,
+            "questIDLow:4": -5538086102316276934
+          }
+        },
+        "tasks:9": {
+          "0:10": {
+            "taskID:8": "bq_standard:retrieval",
+            "index:3": 0,
+            "autoConsume:1": 0,
+            "consume:1": 0,
+            "groupDetect:1": 0,
+            "ignoreNBT:1": 1,
+            "partialMatch:1": 1,
+            "requireOnlyOneItem:1": 0,
+            "requiredItems:9": {
+              "0:10": {
+                "id:8": "benzenefuels:components",
+                "Damage:2": 112,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        },
+        "rewards:9": {
+          "0:10": {
+            "index:3": 0,
+            "rewardID:8": "bq_standard:item",
+            "ignoreDisabled:1": 0,
+            "rewards:9": {
+              "0:10": {
+                "id:8": "dreamcraft:CoinTechnicianIII",
+                "Damage:2": 0,
+                "Count:3": 1,
+                "OreDict:8": ""
+              }
+            }
+          }
+        }
+      },
+      "entry": {
+        "questIDHigh:4": -1364264563908782209,
+        "questIDLow:4": -6760846690948540955,
+        "x:3": 960,
+        "y:3": 696,
+        "sizeX:3": 24,
+        "sizeY:3": 24
+      }
+    }
+  ],
+  "anchors": [
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 3133,
+      "x:3": 0,
+      "y:3": 72,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 1412,
+      "x:3": 96,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 1212,
+      "x:3": 192,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 1197,
+      "x:3": 288,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 1202,
+      "x:3": 384,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 2959,
+      "x:3": 480,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    },
+    {
+      "questIDHigh:4": 0,
+      "questIDLow:4": 3287,
+      "x:3": 576,
+      "y:3": 0,
+      "sizeX:3": 24,
+      "sizeY:3": 24
+    }
+  ],
+  "insertAfter": "00000000-0000-0000-0000-000000000015",
+  "namespace": "a33e5c49-075f-4ed5-b0d2-c7505d348afe"
+}

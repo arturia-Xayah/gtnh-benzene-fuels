@@ -1,4 +1,4 @@
-version = '0.4.6-alpha'
+version = '0.5.0-alpha'
 ext.modVersion = version
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'

@@ -106,6 +106,7 @@ public final class RecipeSuite {
 
     private void run() throws Exception {
         runtimeDependencies();
+        QuestSuite.run(this::check);
         fuelTooltips();
         DisplaySuite.run(this::check);
         componentTextures();

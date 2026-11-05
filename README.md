@@ -10,7 +10,7 @@
 
 **简体中文** · [English](README.en.md) · [版本下载](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.6--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.6-alpha-GTNH-2.9.0/benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.5.0--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.5.0-alpha-GTNH-2.9.0/benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -21,6 +21,7 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 ## 目录
 
 - [安装与升级](#安装与升级)
+- [任务书：苯向星辰](#任务书苯向星辰)
 - [八级苯燃料](#八级苯燃料)
 - [共振燃料发电塔](#共振燃料发电塔)
 - [科技与魔法增益](#科技与魔法增益)
@@ -31,13 +32,28 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 
 ## 安装与升级
 
-1. 下载 `benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
+1. 下载 `benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
 2. 联机时客户端和服务端安装相同版本；单人游戏安装在客户端。替换旧版 Benzene Fuels JAR，不要重复安装。
 3. 使用 GTNH **2.9.0 正式版**自带的依赖，无需额外安装动画模组。
 
-本模组独立于 GTNH现代化升级／结构终端。升级至 0.4.6 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
+本模组独立于 GTNH现代化升级／结构终端。升级至 0.5.0 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
 
-0.4.6 修复结构预览的仓室替换候选和连续批次切换时的发送功率显示，增加彩色状态信息与大数缩写。悬停主机信息区可查看精确并行／输入及动力仓缓存；结构预览中右键仓室位置查看可替换方块。
+0.5.0 新增原生 BetterQuesting 章节「苯向星辰」，中英双语随游戏语言切换。更新 JAR 并重启后自动加入，无需手动导入或重置任务。
+
+## 任务书：苯向星辰
+
+**46 个新任务，7 个原版任务引用**。章节位于原版生物燃料章节之后，沿用原版实物／流体检测、勾选说明与职业硬币奖励。
+
+![任务布局预览（非游戏截图）](docs/assets/quest-chapter.png)
+
+- **燃料主线**：从硝基苯、装配线与聚变起步，经过活化剂、精炼厂和 QFT，逐级推进至 UXV。每级检测 16,000mB 燃料，不收走物品或流体；里程碑发少量化学家硬币。
+- **发电塔工程**：UV 燃料后展开，介绍结构备料、线圈、仓室、5 秒供料和有线／无线输出；材料清单为可选提示。
+- **科技／魔法**：分别讲解 Mk1～Mk5 底数和指数。按现有进度仅作说明，不提交、不发放暂无配方的材料，也不挡住燃料主线。
+- **电压之星**：独立的 LV～UXV 制造支线，检测成品后奖励少量技术员硬币，不收走星星。
+
+已完成的原版任务无需重做。新增任务使用独立固定编号，保留旧存档进度和领奖记录；原版默认任务书重载后仍保留本章。
+
+[任务设计、安装与管理](docs/features/QUESTS.md) · [可点击的中英布局预览](questbook/preview.html)
 
 ## 八级苯燃料
 

@@ -1,3 +1,21 @@
+# 0.5.0 · GTNH 2.9.0 验证 / Validation
+
+2026-11-05。21 项单元测试、1,251 项独立后台检查通过，服务端退出码 0。
+
+- 使用原版 BetterQuesting 3.8.92-GTNH 加载章节：46 个新任务、7 个原版引用；所有任务类型、物品、流体和奖励正常解析。
+- 真实 BQ 流体检测：八级燃料分别验证 15 个单元不足、16 个满足条件，检测后单元完整保留。
+- 原版前置解锁、一次性职业硬币、无配方材料的可选说明、双语键及文本格式检查通过。
+- 模拟旧存档补充任务，原任务实例、定义、完成与领奖记录保持；重复安装不产生副本、不覆盖管理员修改。
+- 真实存盘／读盘，以及原版默认任务重载后，新旧任务的领奖记录均保留；本章仍在任务书中。
+- 默认任务文件逐一与原包对照，除章节排序增加本章外，原有文件内容全部保持。生产包的运行时类与资源逐字节匹配执行过的夹具，且不包含测试代码。
+- 布局预览验证 53 个节点、节点点击、中英文切换、窄屏页面无横向溢出；截图明确为网页布局预览，不是游戏截图。
+
+[后台结果](verification/0.5.0/backend-tests.json) · [安装包与原文件验证](verification/0.5.0/distribution.json)
+
+No Minecraft client was launched. The native BQ database, fluid detection, prerequisites, reward claims, additive installation, administrator edits, disk persistence and default reloads were tested in a disposable full GTNH dedicated server. The browser preview uses the same authored coordinates and text; native in-game font wrapping and mouse interaction remain untested.
+
+---
+
 # 0.4.6 · GTNH 2.9.0 验证 / Validation
 
 2026-11-05。21 项单元测试、984 项独立后台检查通过，服务端退出码 0。
