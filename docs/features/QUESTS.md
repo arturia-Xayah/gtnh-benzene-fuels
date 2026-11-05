@@ -1,6 +1,28 @@
-# 苯向星辰 / Benzene Beyond the Horizon
+# 大苯环王 / The Great Lord of the Benzene Rings
 
 GTNH 2.9.0 原生 BetterQuesting 章节。共 46 个新任务，复用 7 个原版任务；共显示 53 个节点。任务文案跟随游戏语言，支持简体中文与英语。
+
+章节名为「大苯环王」，英文为 **The Great Lord of the Benzene Rings**。简介：“一环供众机，一环驭众机。”
+
+## 关键任务与人物点评
+
+| 节点 | 任务名 |
+|---|---|
+| 章节入门 | Greg，我们得炼苯了 |
+| 铂族活化剂 | 五等分的贵金属 |
+| LuV 燃料 | LuV — 这桶苯有点东西 |
+| ZPM 燃料 | ZPM — 锡望之花 |
+| 量子催化剂 | 催化剂没有败绩 |
+| 发电塔工程 | Benzene, son! |
+| 结构备料 | 我们仍未知道那天所需的外壳数量 |
+| 科技路线 | 科技侧，遥遥领先 |
+| 魔法路线 | 科学的尽头是玄学 |
+| 有线／无线输出 | 你的电，我的电，好像不一样 |
+| UXV 燃料 | UXV — 苯类补完计划 |
+
+任务正文保留实际燃料名称、配方、设备与操作说明。三位虚构角色只通过署名点评出现：**海森苯**讲燃料升级，**苯杰明·富兰克林**点评送电，**苯·帕克**提醒动力仓成本。没有新增实体 NPC。
+
+0.5.1 的改名沿用 0.5.0 的全部任务与章节 UUID。更新客户端语言资源后，已有任务也使用新名称和正文；无需重做任务或重新领取奖励。目录位置仍是默认第 30 章，在 **Bio for the Masses** 与 **Powerful Nuclear Physics** 之间。
 
 ## 安装与已有存档
 
@@ -42,6 +64,8 @@ python3 questbook/build_preview.py
 [可点击预览](../../questbook/preview.html) 读取同一套任务数据与坐标，支持切换语言和查看节点详情，并非游戏截图。直接下载源码后打开此文件即可离线查看。
 
 ## English
+
+The chapter is titled **The Great Lord of the Benzene Rings**. Key quests include **Greg, We Need to Cook Benzene**, **The Quintessential Noble Metals**, **Benzene, son!** and **UXV — The Benzene Instrumentality Project**. Heisenbenzene, Benzenjamin Franklin and Benz Parker appear as fictional signed commentary, not NPC entities. Actual fuel names and operating instructions remain explicit. Version 0.5.1 keeps every 0.5.0 quest/chapter UUID and all mechanics; updated client translations also apply to existing-world quests without resetting progress.
 
 Install the matching JAR on client and server and restart. The chapter appears after the native biofuel chapter. Single-player only needs the client installation. No separate JSON download or quest reset is required.
 

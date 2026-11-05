@@ -203,7 +203,7 @@ public final class BenzeneQuestChapter {
         int index = order.size();
         for (int i = 0; i < order.size(); i++) if (order.get(i)
             .startsWith(after + ":")) index = i + 1;
-        order.add(index, encoded + ": Benzene Beyond the Horizon");
+        order.add(index, encoded + ": The Great Lord of the Benzene Rings");
         Path backup = root.resolve("QuestLinesOrder.txt.before-benzenefuels");
         if (!Files.exists(backup)) Files.copy(orderPath, backup);
         Path temp = Files.createTempFile(root, "benzene-order-", ".tmp");

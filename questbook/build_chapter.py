@@ -3,6 +3,7 @@
 import base64
 import copy
 import json
+import re
 import uuid
 from pathlib import Path
 
@@ -12,6 +13,58 @@ QUESTS = []
 TEXT = {'en_US': {}, 'zh_CN': {}}
 ANCHORS = [(3133, 0, 72), (1412, 96, 0), (1212, 192, 0), (1197, 288, 0),
            (1202, 384, 0), (2959, 480, 0), (3287, 576, 0)]
+CHAPTER_EN = 'The Great Lord of the Benzene Rings'
+CHAPTER_ZH = '大苯环王'
+CHAPTER_DESC_EN = 'One ring to power them all. Eight fuel upgrades, one towering generator, and technology and magic to feed it.'
+CHAPTER_DESC_ZH = '一环供众机，一环驭众机。八级燃料，一座高塔，以及喂饱它的科技与魔法。'
+
+# Editorial names and fictional marginal notes; stable quest keys retain all existing progress.
+FLAVOR = {
+    'welcome': (
+        'Greg, We Need to Cook Benzene', 'Greg，我们得炼苯了',
+        'Greg, we need to cook benzene. The tree farm is ready; now all we need is a platinum-group refinery, fusion, a QFT and a modest amount of cosmic matter.',
+        'Greg，我们得炼苯了。树场已经准备好了，现在只差铂族处理线、聚变、QFT，以及一点点宇宙物质。'),
+    'platinum_activator': (
+        'The Quintessential Noble Metals', '五等分的贵金属',
+        'Five metals. Five equal portions. No choosing a favourite: this Assembly Line expects Platinum, Rhodium, Palladium, Iridium and Ruthenium, 1024 dust each.',
+        '五种贵金属，五份相同的用量。这里不能只选你最喜欢的那一位：铂、铑、钯、铱、钌，装配线全都要，各 1024 个。'),
+    'fuel_luv': (
+        'LuV — This Benzene Has Something in It', 'LuV — 这桶苯有点东西',
+        'Specifically, the inventories of five precious-metal production lines.\n\n§7§o“Say my name.”\n“Hyper-Enriched Platinum-Group Benzene.”\n“…I did not ask you to read NEI aloud.”§r\n§8— Heisenbenzene§r',
+        '具体来说，是你五条贵金属产线的库存。\n\n§7§o“说出我的名字。”\n“超富集铂族苯。”\n“……不是让你照着 NEI 念。”§r\n§8——海森苯§r'),
+    'fuel_zpm': (
+        'ZPM — The Flower of Tin', 'ZPM — 锡望之花',
+        'Do not stop moving forward. Especially the Tin Plasma supply. The next batch will not run on determination alone.',
+        '不要停下来啊——尤其是锡等离子体供应。下一批配方，可不会只靠你的意志运行。'),
+    'quantum_catalyst': (
+        'The Catalyst Remains Undefeated', '催化剂没有败绩',
+        'The additives are gone. The fuel has changed. The catalyst is still here. It has never lost a fight against a benzene recipe, provided you put it in the right housing.',
+        '添加物没了，燃料升级了，催化剂还在。只要放对仓室，它面对苯配方就没有败绩。'),
+    'tower': (
+        'Benzene, son!', 'Benzene, son!',
+        '“How can one bucket generate that much energy?”\n“Benzene, son!”\n\nThe fuel gets the credit. The coils, casings and two upgrade routes would like a word.',
+        '“为什么这一桶东西能发这么多电？”\n“Benzene, son!”\n\n功劳全归燃料了。线圈、外壳和两条强化路线表示有话要说。'),
+    'tower_materials': (
+        'We Still Do Not Know the Number of Casings We Needed That Day', '我们仍未知道那天所需的外壳数量',
+        'Actually, the bill of materials does know. Your autocrafting system simply wishes it did not.',
+        '其实材料清单知道。只是你的自动合成系统，希望自己不知道。'),
+    'technology_route': (
+        'Technology: Far Ahead', '科技侧，遥遥领先',
+        '“Only a tiny increase in the base?”\n“Look at the exponent.”\n\nThis route lets the permanent exponent do the talking. Compare the full multiplier before declaring victory.',
+        '“底数才涨这么一点？”\n“你再看看指数。”\n\n科技侧靠永久指数说话。宣布遥遥领先之前，记得把完整倍率算出来。'),
+    'magic_route': (
+        'At the End of Science Lies Magic', '科学的尽头是玄学',
+        'After building fusion and quantum machinery, you find yourself pouring magic into a fuel generator. The engineer calls it a second multiplier. The mage calls it overdue recognition.',
+        '造完聚变与量子机械后，你开始往发电机里倒魔法。工程师称之为第二个乘数，法师称之为迟来的尊重。'),
+    'tower_output': (
+        'Your Power, My Power... Something Is Different', '你的电，我的电，好像不一样',
+        'Check whose wireless account receives the energy before wondering where the power went.\n\n§7§o“I only had a kite string. You have sixteen dynamos. What is your excuse?”§r\n§8— Benzenjamin Franklin§r\n\n§7§o“With great power comes a great dynamo bill.”§r\n§8— Benz Parker§r',
+        '怀疑电去哪儿了之前，先确认无线账户属于谁。\n\n§7§o“当年我只有一根风筝线。你有十六个动力仓，怎么还送不出去？”§r\n§8——苯杰明·富兰克林§r\n\n§7§o“功率越大，仓室越贵。”§r\n§8——苯·帕克§r'),
+    'fuel_uxv': (
+        'UXV — The Benzene Instrumentality Project', 'UXV — 苯类补完计划',
+        'The platinum group was only the beginning. After infinity, spacetime and stellar matter, the final tank awaits. The tree farm would like to know what happened to its original business plan.',
+        '铂族只是开始。无尽、时空与恒星物质之后，最后一只储罐已经准备就绪。树场想问问，当初说好的普通燃料生意，怎么就变成补完计划了。'),
+}
 
 
 def uid(key):
@@ -57,6 +110,11 @@ def coin(job, count=1, tier='III'):
 
 
 def add(key, en, zh, en_text, zh_text, x, y, icon, parents=(), tasks=None, rewards=(), main=False):
+    if key in FLAVOR:
+        title_en, title_zh, intro_en, intro_zh = FLAVOR[key]
+        color = re.match(r'(?:§.)*', en).group()
+        en, zh = color + title_en, color + title_zh
+        en_text, zh_text = intro_en + '\n\n' + en_text, intro_zh + '\n\n' + zh_text
     qid = uid(key)
     tasks = copy.deepcopy(tasks if tasks is not None else [{'taskID:8': 'bq_standard:checkbox'}])
     for i, task in enumerate(tasks):
@@ -136,6 +194,8 @@ add('quantum_catalyst', '§5§l§nThis One Comes Back', '§5§l§n这次真的�
     576, 72, component(30000), ['fuel_uhv', 3287], [retrieval([component(30000)])], [coin('Chemist', 2)])
 
 for i, (key, tier, en, zh, heat, color, x, parents, en_text, zh_text) in enumerate(FUELS):
+    en_text = f'§7Fuel: {tier} — {en}§r\n\n' + en_text
+    zh_text = f'§7对应燃料：{tier} — {zh}§r\n\n' + zh_text
     en_text += f'\n\nFuel value: {heat:,} EU/mB ({heat*1000:,} EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.'
     zh_text += f'\n\n基础热值：{heat:,}EU/mB，即每 1000mB 为 {heat*1000:,}EU，尚未计算发电机效率。携带装有合计 16,000mB 燃料的容器进行检测，不会消耗燃料。'
     add('fuel_'+key, color+tier+' — '+en, color+tier+' — '+zh, en_text, zh_text,
@@ -268,10 +328,9 @@ def main():
     validate()
     chapter_id=uid('chapter')
     chapter={**identity(chapter_id,'questLineID'), 'properties:10':{'betterquesting:10':{
-        'name:8':'Benzene Beyond the Horizon','desc:8':'Eight fuel upgrades, one very tall generator, and two routes to higher efficiency.',
+        'name:8':CHAPTER_EN,'desc:8':CHAPTER_DESC_EN,
         'icon:10':component(1),'visibility:8':'ALWAYS','bg_image:8':'','bg_size:3':256}}}
-    for lang,name,desc in [('en_US','Benzene Beyond the Horizon','Eight fuel upgrades, one very tall generator, and two routes to higher efficiency.'),
-                          ('zh_CN','苯向星辰','八级燃料进阶，一座高耸的发电塔，以及科技与魔法两条效率路线。')]:
+    for lang,name,desc in [('en_US',CHAPTER_EN,CHAPTER_DESC_EN), ('zh_CN',CHAPTER_ZH,CHAPTER_DESC_ZH)]:
         prefix='betterquesting.questline.'+encoded(chapter_id).rstrip('=')
         TEXT[lang][prefix+'.name']=name;TEXT[lang][prefix+'.desc']=desc
     # Native anchors are references to existing quests, never cloned definitions.

@@ -13,7 +13,7 @@ chmod +x gradlew
 
 Gradle 使用 25，工具链可读取 17 / 8，运行时代码编译为 Java 8 字节码。`build` 包含格式、Checkstyle、单元测试及发行检查，不启动 Minecraft。GitHub Actions 使用同样的三套 JDK。
 
-玩家安装包为 `build/libs/benzenefuels-0.5.0-alpha.jar`。发布时额外加上 GTNH 版本，形成 `benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar`。`-dev`、`-sources` 和测试夹具不用于玩家安装。
+玩家安装包为 `build/libs/benzenefuels-0.5.1-alpha.jar`。发布时额外加上 GTNH 版本，形成 `benzenefuels-0.5.1-alpha-GTNH-2.9.0.jar`。`-dev`、`-sources` 和测试夹具不用于玩家安装。
 
 `tools/build_local.sh` 可复用本地工作区缓存，也支持 `BENZENE_JAVA25`、`BENZENE_JAVA8`、`BENZENE_JAVA17` 与 `BENZENE_GRADLE` 指定工具路径；标准构建不依赖原作者目录。
 
@@ -21,7 +21,7 @@ Gradle 使用 25，工具链可读取 17 / 8，运行时代码编译为 Java 8 �
 
 ```sh
 ./gradlew build -PbenzeneFuelsTests=true
-cp build/libs/benzenefuels-0.5.0-alpha.jar /tmp/benzenefuels-tests.jar
+cp build/libs/benzenefuels-0.5.1-alpha.jar /tmp/benzenefuels-tests.jar
 python3 tools/run_backend.py \
   --pack /path/to/official-GTNH-2.9.0-server \
   --java /path/to/java25/bin/java \

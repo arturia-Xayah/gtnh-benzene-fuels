@@ -1,5 +1,12 @@
 # 更新日志 / Changelog
 
+## 0.5.1-alpha · GTNH 2.9.0 · 2026-11-05
+
+- 章节更名为「大苯环王 / The Great Lord of the Benzene Rings」。采用已确认的 11 个关键任务梗名，包括「五等分的贵金属」「锡望之花」「Benzene, son!」与「苯类补完计划」。
+- 在任务正文加入海森苯、苯杰明·富兰克林、苯·帕克三位虚构角色的署名点评；保留实际燃料名称、等级、配方和操作说明，未新增 NPC 实体。
+- 更新中英文语言、网页预览及章节指南。沿用全部 46 个任务与章节 UUID，前置、检测、奖励、布局和发电参数不变；旧存档通过更新后的语言资源显示新文案。
+- Renamed the chapter to **The Great Lord of the Benzene Rings**, with eleven parody quest titles and signed commentary from Heisenbenzene, Benzenjamin Franklin and Benz Parker. Updated both languages and the preview; stable quest IDs, requirements, rewards, layout and gameplay are unchanged.
+
 ## 0.5.0-alpha · GTNH 2.9.0 · 2026-11-05
 
 - 新增原生 BetterQuesting 双语章节「苯向星辰」：46 个新任务、7 个原版任务引用，涵盖 LuV～UXV 燃料、活化剂与催化剂、UV 发电塔工程、科技／魔法 Mk1～Mk5 说明，以及 LV～UXV 电压之星。

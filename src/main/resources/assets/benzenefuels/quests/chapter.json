@@ -5,8 +5,8 @@
     "questLineIDLow:4": -7958754181259504433,
     "properties:10": {
       "betterquesting:10": {
-        "name:8": "Benzene Beyond the Horizon",
-        "desc:8": "Eight fuel upgrades, one very tall generator, and two routes to higher efficiency.",
+        "name:8": "The Great Lord of the Benzene Rings",
+        "desc:8": "One ring to power them all. Eight fuel upgrades, one towering generator, and technology and magic to feed it.",
         "icon:10": {
           "id:8": "benzenefuels:components",
           "Damage:2": 1,
@@ -27,8 +27,8 @@
         "questIDLow:4": -5864341177699463982,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "Benzene Has Left the Building",
-            "desc:8": "You thought Nitrobenzene was the end of the line? Your tree farm has other plans. This chapter takes that familiar fuel through eight upgrades, from LuV to UXV. Every step keeps the same amount of fuel, but asks for increasingly expensive processing and additives.\n\nFollow the upper row for the fuel chain. The lower branches cover the Resonance Fuel Generator, its two upgrade routes, and Voltage Stars. Existing GTNH quests above the fuel row are real prerequisites, not additional copies to complete.\n\n[note]Fluid tasks detect containers in your inventory without consuming them. GT recipes call 1 mB one litre; this generator's parallel setting uses 1000 mB = 1 B. All recipe quantities here are written in mB to keep the two conventions apart.[/note]",
+            "name:8": "Greg, We Need to Cook Benzene",
+            "desc:8": "Greg, we need to cook benzene. The tree farm is ready; now all we need is a platinum-group refinery, fusion, a QFT and a modest amount of cosmic matter.\n\nYou thought Nitrobenzene was the end of the line? Your tree farm has other plans. This chapter takes that familiar fuel through eight upgrades, from LuV to UXV. Every step keeps the same amount of fuel, but asks for increasingly expensive processing and additives.\n\nFollow the upper row for the fuel chain. The lower branches cover the Resonance Fuel Generator, its two upgrade routes, and Voltage Stars. Existing GTNH quests above the fuel row are real prerequisites, not additional copies to complete.\n\n[note]Fluid tasks detect containers in your inventory without consuming them. GT recipes call 1 mB one litre; this generator's parallel setting uses 1000 mB = 1 B. All recipe quantities here are written in mB to keep the two conventions apart.[/note]",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 1,
@@ -76,8 +76,8 @@
         "questIDLow:4": -7938678253260433055,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§d§lA Very Noble Expense",
-            "desc:8": "Start with the Assembly Line and a steady supply of Helium Plasma. Scan Platinum Dust, then combine 1024 dust each of Platinum, Rhodium, Palladium, Iridium and Ruthenium with 16,384 mB of Helium Plasma. The line runs at LuV for 10 seconds to make one activator.\n\nThis little component is consumed. Each one upgrades 50,000 mB of Nitrobenzene, so an unautomated platinum-group line is going to make this fuel rather less renewable than your tree farm suggests.\n\n[note]Detect the activator before sending it to the reactor. This task does not consume it.[/note]",
+            "name:8": "§d§lThe Quintessential Noble Metals",
+            "desc:8": "Five metals. Five equal portions. No choosing a favourite: this Assembly Line expects Platinum, Rhodium, Palladium, Iridium and Ruthenium, 1024 dust each.\n\nStart with the Assembly Line and a steady supply of Helium Plasma. Scan Platinum Dust, then combine 1024 dust each of Platinum, Rhodium, Palladium, Iridium and Ruthenium with 16,384 mB of Helium Plasma. The line runs at LuV for 10 seconds to make one activator.\n\nThis little component is consumed. Each one upgrades 50,000 mB of Nitrobenzene, so an unautomated platinum-group line is going to make this fuel rather less renewable than your tree farm suggests.\n\n[note]Detect the activator before sending it to the reactor. This task does not consume it.[/note]",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 0,
@@ -248,8 +248,8 @@
         "questIDLow:4": -5160056185456206149,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§5§l§nThis One Comes Back",
-            "desc:8": "An UEV Assembler combines 8 dust each of Platinum, Palladium and Iridium with one UEV Field Generator and 144 mB of Molten Infinity. After 10 seconds you have a Benzene Quantum Catalyst.\n\nPut it in the QFT Bulk Catalyst Housing, not into a normal input bus. You need one per parallel, but you do not need to remake it for every batch. UEV through UXV all use this same catalyst.",
+            "name:8": "§5§l§nThe Catalyst Remains Undefeated",
+            "desc:8": "The additives are gone. The fuel has changed. The catalyst is still here. It has never lost a fight against a benzene recipe, provided you put it in the right housing.\n\nAn UEV Assembler combines 8 dust each of Platinum, Palladium and Iridium with one UEV Field Generator and 144 mB of Molten Infinity. After 10 seconds you have a Benzene Quantum Catalyst.\n\nPut it in the QFT Bulk Catalyst Housing, not into a normal input bus. You need one per parallel, but you do not need to remake it for every batch. UEV through UXV all use this same catalyst.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 30000,
@@ -334,8 +334,8 @@
         "questIDLow:4": -9101473803331010304,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§d§lLuV — Hyper-Enriched Platinum-Group Benzene",
-            "desc:8": "Feed one Platinum-Group Activator and 50,000 mB of Nitrobenzene into a Large Chemical Reactor. Ten seconds at LuV gives 50,000 mB of fuel. The activator is consumed; there is no second plasma payment at this step.\n\nYour tree farm now has a precious-metal dependency. Keep the activator production separate from the fuel buffer so a temporary shortage does not drain the fuel already available to your generators.\n\nFuel value: 13,940 EU/mB (13,940,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "name:8": "§d§lLuV — This Benzene Has Something in It",
+            "desc:8": "Specifically, the inventories of five precious-metal production lines.\n\n§7§o“Say my name.”\n“Hyper-Enriched Platinum-Group Benzene.”\n“…I did not ask you to read NEI aloud.”§r\n§8— Heisenbenzene§r\n\n§7Fuel: LuV — Hyper-Enriched Platinum-Group Benzene§r\n\nFeed one Platinum-Group Activator and 50,000 mB of Nitrobenzene into a Large Chemical Reactor. Ten seconds at LuV gives 50,000 mB of fuel. The activator is consumed; there is no second plasma payment at this step.\n\nYour tree farm now has a precious-metal dependency. Keep the activator production separate from the fuel buffer so a temporary shortage does not drain the fuel already available to your generators.\n\nFuel value: 13,940 EU/mB (13,940,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 1,
@@ -412,8 +412,8 @@
         "questIDLow:4": -9084994396324016018,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§b§lZPM — ZPM Benzene",
-            "desc:8": "Fuse 50,000 mB of LuV fuel with 163,840 mB of Tin Plasma. The recipe takes 10 seconds at ZPM and needs 280M EU of startup energy, so the ordinary Fusion Reactor must be MkII or better.\n\nNo Americium, Tritanium or Europium dust is used here. Tin Plasma is the entire additive bill, and it is a large one. Buffer enough for a complete recipe before feeding the reactor.\n\nFuel value: 136,200 EU/mB (136,200,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "name:8": "§b§lZPM — The Flower of Tin",
+            "desc:8": "Do not stop moving forward. Especially the Tin Plasma supply. The next batch will not run on determination alone.\n\n§7Fuel: ZPM — ZPM Benzene§r\n\nFuse 50,000 mB of LuV fuel with 163,840 mB of Tin Plasma. The recipe takes 10 seconds at ZPM and needs 280M EU of startup energy, so the ordinary Fusion Reactor must be MkII or better.\n\nNo Americium, Tritanium or Europium dust is used here. Tin Plasma is the entire additive bill, and it is a large one. Buffer enough for a complete recipe before feeding the reactor.\n\nFuel value: 136,200 EU/mB (136,200,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 2,
@@ -495,7 +495,7 @@
         "properties:10": {
           "betterquesting:10": {
             "name:8": "§2§l§nUV — Neutron-Supersaturated Benzene",
-            "desc:8": "Send 50,000 mB of ZPM Benzene and 144 mB of UV Activator into fusion. This is a 10-second UV recipe with a 500M EU startup requirement. A normal MkIII reactor can handle it.\n\nThis is still a gas-turbine fuel. Higher energy density does not mean that an old dynamo suddenly has more throughput, though. Check the fuel flow and the output rating before scaling the line.\n\nFuel value: 1,491,000 EU/mB (1,491,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "desc:8": "§7Fuel: UV — Neutron-Supersaturated Benzene§r\n\nSend 50,000 mB of ZPM Benzene and 144 mB of UV Activator into fusion. This is a 10-second UV recipe with a 500M EU startup requirement. A normal MkIII reactor can handle it.\n\nThis is still a gas-turbine fuel. Higher energy density does not mean that an old dynamo suddenly has more throughput, though. Check the fuel flow and the output rating before scaling the line.\n\nFuel value: 1,491,000 EU/mB (1,491,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 3,
@@ -577,7 +577,7 @@
         "properties:10": {
           "betterquesting:10": {
             "name:8": "§4§l§nUHV — UHV Benzene",
-            "desc:8": "The Naquadah Fuel Refinery has found a second job. Combine 50,000 mB of UV fuel, 1024 Infinity Catalyst Dust, 1024 Atomic Separation Catalyst Dust and 17,856 mB of Molten Infinity. This takes 10 seconds at UHV and requires at least tier 1 refinery coils.\n\nBoth dust ingredients are consumed every batch. The word catalyst in an ingredient name is not a promise that you will get it back.\n\nFuel value: 18,290,000 EU/mB (18,290,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "desc:8": "§7Fuel: UHV — UHV Benzene§r\n\nThe Naquadah Fuel Refinery has found a second job. Combine 50,000 mB of UV fuel, 1024 Infinity Catalyst Dust, 1024 Atomic Separation Catalyst Dust and 17,856 mB of Molten Infinity. This takes 10 seconds at UHV and requires at least tier 1 refinery coils.\n\nBoth dust ingredients are consumed every batch. The word catalyst in an ingredient name is not a promise that you will get it back.\n\nFuel value: 18,290,000 EU/mB (18,290,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 4,
@@ -659,7 +659,7 @@
         "properties:10": {
           "betterquesting:10": {
             "name:8": "§5§l§nUEV — UEV Benzene",
-            "desc:8": "Use a tier 2 or better Quantum Force Transformer recipe setup. Each batch takes 50,000 mB of UHV fuel, 1024 Transcendent Metal Dust, 1024 Hypogen Dust and 17,856 mB of Molten Infinity, and runs for 10 seconds at UEV.\n\nKeep a Benzene Quantum Catalyst in a Bulk Catalyst Housing for each parallel. Unlike the refinery powders, this catalyst is reusable. The benzene recipe has one guaranteed fluid output; it does not inherit the random output split of unrelated QFT recipes.\n\nFuel value: 251,500,000 EU/mB (251,500,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "desc:8": "§7Fuel: UEV — UEV Benzene§r\n\nUse a tier 2 or better Quantum Force Transformer recipe setup. Each batch takes 50,000 mB of UHV fuel, 1024 Transcendent Metal Dust, 1024 Hypogen Dust and 17,856 mB of Molten Infinity, and runs for 10 seconds at UEV.\n\nKeep a Benzene Quantum Catalyst in a Bulk Catalyst Housing for each parallel. Unlike the refinery powders, this catalyst is reusable. The benzene recipe has one guaranteed fluid output; it does not inherit the random output split of unrelated QFT recipes.\n\nFuel value: 251,500,000 EU/mB (251,500,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 5,
@@ -741,7 +741,7 @@
         "properties:10": {
           "betterquesting:10": {
             "name:8": "§9§l§nUIV — Causal-Loop Benzene",
-            "desc:8": "Raise the QFT recipe tier to at least 3. Combine 50,000 mB of UEV fuel with 2048 Transcendent Metal Dust, 2048 Hypogen Dust and 17,856 mB of Molten Space-Time. The processing time is still 10 seconds, now at UIV. Keep the reusable Benzene Quantum Catalyst installed.\n\n[warn]UIV is the first fuel in this line that is not registered in the native GT gas-turbine fuel map: its heat value exceeds that map's integer limit. Producing it does not make a native gas turbine accept it. The resonance generator understands its full heat value, but its survival entry components remain pending.[/warn]\n\nFuel value: 3,876,000,000 EU/mB (3,876,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "desc:8": "§7Fuel: UIV — Causal-Loop Benzene§r\n\nRaise the QFT recipe tier to at least 3. Combine 50,000 mB of UEV fuel with 2048 Transcendent Metal Dust, 2048 Hypogen Dust and 17,856 mB of Molten Space-Time. The processing time is still 10 seconds, now at UIV. Keep the reusable Benzene Quantum Catalyst installed.\n\n[warn]UIV is the first fuel in this line that is not registered in the native GT gas-turbine fuel map: its heat value exceeds that map's integer limit. Producing it does not make a native gas turbine accept it. The resonance generator understands its full heat value, but its survival entry components remain pending.[/warn]\n\nFuel value: 3,876,000,000 EU/mB (3,876,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 6,
@@ -819,7 +819,7 @@
         "properties:10": {
           "betterquesting:10": {
             "name:8": "§5§l§nUMV — Eternally Attuned Benzene",
-            "desc:8": "Tier 4 QFT processing is required now. One batch uses 50,000 mB of UIV fuel, 144 mB each of Molten Shirabon and Molten Eternity, plus 16 mB of Molten White Dwarf Matter. Ten seconds at UMV gives the same volume of upgraded fuel.\n\nThe additive amounts look small after the previous steps. The infrastructure needed to make them is not. Give these fluids their own filtered inputs and keep the shared catalyst in place.\n\nFuel value: 66,950,000,000 EU/mB (66,950,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "desc:8": "§7Fuel: UMV — Eternally Attuned Benzene§r\n\nTier 4 QFT processing is required now. One batch uses 50,000 mB of UIV fuel, 144 mB each of Molten Shirabon and Molten Eternity, plus 16 mB of Molten White Dwarf Matter. Ten seconds at UMV gives the same volume of upgraded fuel.\n\nThe additive amounts look small after the previous steps. The infrastructure needed to make them is not. Give these fluids their own filtered inputs and keep the shared catalyst in place.\n\nFuel value: 66,950,000,000 EU/mB (66,950,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 7,
@@ -896,8 +896,8 @@
         "questIDLow:4": -7818691664342945422,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§6§l§nUXV — Eigenbenzene Cosmic Fuel",
-            "desc:8": "Your tree farm has become a rather elaborate excuse to process stellar matter. In a tier 4 QFT, combine 50,000 mB of UMV fuel with 124 mB of Molten Universium, 124 mB of Molten Magnetohydrodynamically Constrained Star Matter, 1984 mB of Raw Star Matter and 144 mB of Molten Eternity. Supply UXV for 10 seconds and keep the reusable catalyst installed.\n\nThis is the last upgrade currently available. The task checks the fuel itself, not a promised generator output: generation still depends on a working generator, supplied base fluids and the installed upgrades.\n\nFuel value: 1,296,000,000,000 EU/mB (1,296,000,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
+            "name:8": "§6§l§nUXV — The Benzene Instrumentality Project",
+            "desc:8": "The platinum group was only the beginning. After infinity, spacetime and stellar matter, the final tank awaits. The tree farm would like to know what happened to its original business plan.\n\n§7Fuel: UXV — Eigenbenzene Cosmic Fuel§r\n\nYour tree farm has become a rather elaborate excuse to process stellar matter. In a tier 4 QFT, combine 50,000 mB of UMV fuel with 124 mB of Molten Universium, 124 mB of Molten Magnetohydrodynamically Constrained Star Matter, 1984 mB of Raw Star Matter and 144 mB of Molten Eternity. Supply UXV for 10 seconds and keep the reusable catalyst installed.\n\nThis is the last upgrade currently available. The task checks the fuel itself, not a promised generator output: generation still depends on a working generator, supplied base fluids and the installed upgrades.\n\nFuel value: 1,296,000,000,000 EU/mB (1,296,000,000,000,000 EU per 1000 mB), before generator efficiency. Bring 16,000 mB in fluid containers for detection; nothing is consumed.",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 8,
@@ -1082,8 +1082,8 @@
         "questIDLow:4": -6356109657948533359,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§2§l§nA Power Plant with Altitude",
-            "desc:8": "Plan this project around UV progression. The complete tower is 33×33×129, so find a site before ordering the blocks. Its controller sits two blocks above the bottom; controller Y=2 through 129 keeps the whole structure within the normal world height.\n\nYou will need fusion infrastructure for fusion casings, quantum glass, a large collection of industrial casings and 1648 matching heating coils. UV is the intended entry stage, not a claim that the currently missing controller recipe can be crafted.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "name:8": "§2§l§nBenzene, son!",
+            "desc:8": "“How can one bucket generate that much energy?”\n“Benzene, son!”\n\nThe fuel gets the credit. The coils, casings and two upgrade routes would like a word.\n\nPlan this project around UV progression. The complete tower is 33×33×129, so find a site before ordering the blocks. Its controller sits two blocks above the bottom; controller Y=2 through 129 keeps the whole structure within the normal world height.\n\nYou will need fusion infrastructure for fusion casings, quantum glass, a large collection of industrial casings and 1648 matching heating coils. UV is the intended entry stage, not a claim that the currently missing controller recipe can be crafted.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
             "icon:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Damage:2": 32240,
@@ -1136,8 +1136,8 @@
         "questIDLow:4": -7585306628499749873,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "Order the Casings First",
-            "desc:8": "The default structure contains 15,472 blocks. The largest orders are 3628 Quantum Glass, 1940 Clean Stainless Steel Machine Casings, 1648 heating coils, 1423 Fusion Machine Casings and 1215 Solid Steel Machine Casings. It also uses 621 Blue-White Resonance Light Casings.\n\nOther materials include frost-proof, grating, filter, chemically inert, magic and field-containing casings, cooling and PTFE pipes, superconducting coils and small decorative parts. Use the structure preview for the full arrangement. The list below is an optional planning checklist, not a demand to put an entire tower into your inventory.",
+            "name:8": "We Still Do Not Know the Number of Casings We Needed That Day",
+            "desc:8": "Actually, the bill of materials does know. Your autocrafting system simply wishes it did not.\n\nThe default structure contains 15,472 blocks. The largest orders are 3628 Quantum Glass, 1940 Clean Stainless Steel Machine Casings, 1648 heating coils, 1423 Fusion Machine Casings and 1215 Solid Steel Machine Casings. It also uses 621 Blue-White Resonance Light Casings.\n\nOther materials include frost-proof, grating, filter, chemically inert, magic and field-containing casings, cooling and PTFE pipes, superconducting coils and small decorative parts. Use the structure preview for the full arrangement. The list below is an optional planning checklist, not a demand to put an entire tower into your inventory.",
             "icon:10": {
               "id:8": "gregtech:gt.blockcasings4",
               "Damage:2": 6,
@@ -1388,8 +1388,8 @@
         "questIDLow:4": -8578583623648652206,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "Do Not Confuse Storage with Throughput",
-            "desc:8": "Wired mode inserts energy into dynamos within each hatch's voltage × amperage limit and free buffer space. The controller's delivered value measures this insertion, not energy already used by a distant machine. Hover over the statistics to inspect the real buffer. A disconnected hatch fills up, and the remaining generation is lost.\n\nWireless mode sends energy to the owner's wireless account. Mode changes take effect with the next batch. Neither mode pauses the fuel recipe to wait for somewhere to store excess power.",
+            "name:8": "Your Power, My Power... Something Is Different",
+            "desc:8": "Check whose wireless account receives the energy before wondering where the power went.\n\n§7§o“I only had a kite string. You have sixteen dynamos. What is your excuse?”§r\n§8— Benzenjamin Franklin§r\n\n§7§o“With great power comes a great dynamo bill.”§r\n§8— Benz Parker§r\n\nWired mode inserts energy into dynamos within each hatch's voltage × amperage limit and free buffer space. The controller's delivered value measures this insertion, not energy already used by a distant machine. Hover over the statistics to inspect the real buffer. A disconnected hatch fills up, and the remaining generation is lost.\n\nWireless mode sends energy to the owner's wireless account. Mode changes take effect with the next batch. Neither mode pauses the fuel recipe to wait for somewhere to store excess power.",
             "icon:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Damage:2": 15228,
@@ -1442,8 +1442,8 @@
         "questIDLow:4": -5218784753916834877,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§bSmall Base, Big Exponent",
-            "desc:8": "The technology route trades modest base multipliers for a large permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "name:8": "§bTechnology: Far Ahead",
+            "desc:8": "“Only a tiny increase in the base?”\n“Look at the exponent.”\n\nThis route lets the permanent exponent do the talking. Compare the full multiplier before declaring victory.\n\nThe technology route trades modest base multipliers for a large permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 200,
@@ -1766,8 +1766,8 @@
         "questIDLow:4": -6201157220128686639,
         "properties:10": {
           "betterquesting:10": {
-            "name:8": "§dA Little More Magic",
-            "desc:8": "The magic route offers larger base multipliers with a smaller permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
+            "name:8": "§dAt the End of Science Lies Magic",
+            "desc:8": "After building fusion and quantum machinery, you find yourself pouring magic into a fuel generator. The engineer calls it a second multiplier. The mage calls it overdue recognition.\n\nThe magic route offers larger base multipliers with a smaller permanent exponent. Base fluids are consumed; exponent cores are installed once. The two routes multiply together, and neither replaces the other.\n\nThe controller begins at exponent 1. Feed the next core tier into its lower-right slot to permanently raise that route. You cannot skip tiers, install a duplicate for another bonus, or use a Voltage Star in place of a core.\n\n[note]This is a reference branch. Survival recipes for base fluids, exponent cores, the controller and its light casing are not yet defined. Read and check the box; no pending material is requested or awarded, and this branch does not gate the fuel chain.[/note]",
             "icon:10": {
               "id:8": "benzenefuels:components",
               "Damage:2": 210,

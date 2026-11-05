@@ -1,3 +1,19 @@
+# 0.5.1 · GTNH 2.9.0 验证 / Validation
+
+2026-11-05。21 项单元测试、1,251 项后台检查通过，服务端退出码 0。
+
+- 章节更名与 11 个关键任务梗名已生成到原生 JSON 和双语资源；三位虚构角色以署名点评出现。
+- 将完整章节与 0.5.0 对照：仅名称、正文变化，全部 UUID、前置、任务类型、检测数量、奖励、布局和设置一致。旧存档继续通过固定翻译键读取新文案。
+- 原生 BQ 检测、领奖、旧世界补充、存盘与默认任务重载回归通过；双语格式检查通过。
+- 网页检查覆盖中文／英文新章名、UXV 补完计划、三位角色正文、节点点击与窄屏布局。未启动 Minecraft 客户端。
+- 安装包包含 32 个 Java 8 类，不含测试代码；143 个运行时类／资源与执行过的夹具逐字节一致。
+
+[后台结果](verification/0.5.1/backend-tests.json) · [发行检查](verification/0.5.1/distribution.json)
+
+Passed 21 unit tests and 1,251 dedicated-server checks. Full data comparison against 0.5.0 confirms unchanged IDs, prerequisites, tasks, rewards, positions and settings. New bilingual text is resolved through the existing translation keys. Browser preview checked; no Minecraft client launched.
+
+---
+
 # 0.5.0 · GTNH 2.9.0 验证 / Validation
 
 2026-11-05。21 项单元测试、1,251 项独立后台检查通过，服务端退出码 0。

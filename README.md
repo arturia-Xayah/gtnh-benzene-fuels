@@ -10,7 +10,7 @@
 
 **简体中文** · [English](README.en.md) · [版本下载](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.5.0--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.5.0-alpha-GTNH-2.9.0/benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.5.1--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.5.1-alpha-GTNH-2.9.0/benzenefuels-0.5.1-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -21,7 +21,7 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 ## 目录
 
 - [安装与升级](#安装与升级)
-- [任务书：苯向星辰](#任务书苯向星辰)
+- [任务书：大苯环王](#任务书大苯环王)
 - [八级苯燃料](#八级苯燃料)
 - [共振燃料发电塔](#共振燃料发电塔)
 - [科技与魔法增益](#科技与魔法增益)
@@ -32,15 +32,15 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 
 ## 安装与升级
 
-1. 下载 `benzenefuels-0.5.0-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
+1. 下载 `benzenefuels-0.5.1-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
 2. 联机时客户端和服务端安装相同版本；单人游戏安装在客户端。替换旧版 Benzene Fuels JAR，不要重复安装。
 3. 使用 GTNH **2.9.0 正式版**自带的依赖，无需额外安装动画模组。
 
-本模组独立于 GTNH现代化升级／结构终端。升级至 0.5.0 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
+本模组独立于 GTNH现代化升级／结构终端。升级至 0.5.1 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
 
-0.5.0 新增原生 BetterQuesting 章节「苯向星辰」，中英双语随游戏语言切换。更新 JAR 并重启后自动加入，无需手动导入或重置任务。
+0.5.1 将章节命名为「大苯环王」，加入关键任务梗名与三位虚构角色的点评，中英双语随游戏语言切换。更新 JAR 并重启后自动加入，无需手动导入或重置任务。
 
-## 任务书：苯向星辰
+## 任务书：大苯环王
 
 **46 个新任务，7 个原版任务引用**。章节位于原版生物燃料章节之后，沿用原版实物／流体检测、勾选说明与职业硬币奖励。
 

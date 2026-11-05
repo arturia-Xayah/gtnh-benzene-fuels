@@ -1,0 +1,17 @@
+{
+  "version": "0.5.1-alpha",
+  "target": "GTNH 2.9.0",
+  "unitTests": 21,
+  "backendChecks": 1251,
+  "allPassed": true,
+  "java8Classes": 32,
+  "fixtureExcluded": true,
+  "productionEntriesMatchExecutedFixture": 143,
+  "questMechanicsUnchangedFrom": "0.5.0-alpha",
+  "stableQuestIDs": 46,
+  "renamedQuests": 11,
+  "clientLaunched": false,
+  "jar": "benzenefuels-0.5.1-alpha-GTNH-2.9.0.jar",
+  "bytes": 6560953,
+  "sha256": "9bb2a0d3f9bdb2cd121cc3ac1ea5a6ae2748c63a7f81c15644871ec83bde6819"
+}

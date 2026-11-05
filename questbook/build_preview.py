@@ -12,13 +12,13 @@ ids = {chapter.uid(row['key']): row['key'] for row in chapter.QUESTS}
 ids.update({uuid.UUID(int=q): f'native_{q}' for q, _, _ in chapter.ANCHORS})
 rows = []
 shorts = {
-    'welcome': ('启程', 'Begin'), 'platinum_activator': ('铂族活化剂', 'PG activator'),
-    'uv_activator': ('UV 活化液', 'UV activator'), 'quantum_catalyst': ('量子催化剂', 'QFT catalyst'),
+    'welcome': ('Greg，炼苯了', 'Greg, cook!'), 'platinum_activator': ('五等分贵金属', 'Quintuplets'),
+    'uv_activator': ('UV 活化液', 'UV activator'), 'quantum_catalyst': ('催化剂不败', 'Undefeated'),
     'gas_generators': ('燃气发电', 'Gas power'), 'automation': ('产线自动化', 'Automation'),
-    'tower': ('发电塔前置', 'UV generator'), 'tower_materials': ('外壳备料', 'Casings'),
+    'tower': ('Benzene, son!', 'Benzene, son!'), 'tower_materials': ('未闻外壳数', 'Ano-casings'),
     'tower_coils': ('线圈并行', 'Coils'), 'tower_hatches': ('仓室位置', 'Hatches'),
-    'tower_operation': ('燃料投喂', 'Operation'), 'tower_output': ('电力发送', 'Delivery'),
-    'technology_route': ('科技路线', 'Technology'), 'magic_route': ('魔法路线', 'Magic'),
+    'tower_operation': ('燃料投喂', 'Operation'), 'tower_output': ('你的电，我的电', 'Your power'),
+    'technology_route': ('遥遥领先', 'Far ahead'), 'magic_route': ('科学尽头是玄学', 'Beyond science'),
     'stars': ('电压之星', 'Voltage stars')}
 tiers = ['LV','MV','HV','EV','IV','LuV','ZPM','UV','UHV','UEV','UIV','UMV','UXV']
 for row in chapter.QUESTS:
