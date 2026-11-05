@@ -123,7 +123,7 @@ tooltip.benzenefuels.flavor.umv=§b§l§oEven fuel needs tuning. This one is a l
 tooltip.benzenefuels.flavor.uxv=§b§l§oThe benzential nature of the universe, finally bucketable.
 tooltip.benzenefuels.reference.excited_uranium=Excited Uranium-Based Liquid Fuel
 gui.benzenefuels.coil=Coils: %s K / max %s parallel
-gui.benzenefuels.parallel=Parallel: %s / configured %s
+gui.benzenefuels.parallel=Parallel: %s
 
 tooltip.benzenefuels.tower.batch=Each batch lasts 5 s; 1 parallel burns 1000 mB fuel; default: 1 parallel
 tooltip.benzenefuels.tower.coils=Requires 1648 heating coils of the same tier around the central axis
@@ -148,3 +148,9 @@ nei.benzenefuels.energy=Batch energy: %s EU
 nei.benzenefuels.power=Mean output: %s EU/t
 nei.benzenefuels.exponents=Shown with both exponents = 1
 nei.benzenefuels.upgrades=Exponent cores increase efficiency
+
+gui.benzenefuels.parallel_limits=Set: %s / effective cap: %s
+
+gui.benzenefuels.dynamo_buffer=Dynamos: %s / buffer: %s / %s EU
+gui.benzenefuels.dynamo_rate=Rated dynamo output limit: %s EU/t
+gui.benzenefuels.dynamo_help=Wired delivery measures energy inserted into dynamos; excess generation is lost when full.

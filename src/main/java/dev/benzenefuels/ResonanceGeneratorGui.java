@@ -50,8 +50,10 @@ public final class ResonanceGeneratorGui extends MTEMultiBlockBaseGui<ResonanceG
     @Override
     protected ListWidget<IWidget, ?> createTerminalTextWidget(PanelSyncManager sync, ModularPanel parent) {
         StringSyncValue info = sync.findSyncHandler("bf.info", StringSyncValue.class);
-        return super.createTerminalTextWidget(sync, parent)
-            .child(new TextWidget<>(IKey.dynamic(() -> GeneratorDisplay.text(info.getValue()))).fullWidth());
+        return super.createTerminalTextWidget(sync, parent).child(
+            new TextWidget<>(IKey.dynamic(() -> GeneratorDisplay.text(info.getValue()))).color(0xFFFFFFFF)
+                .fullWidth()
+                .tooltipBuilder(t -> t.addLine(IKey.dynamic(() -> GeneratorDisplay.details(info.getValue())))));
     }
 
     @Override

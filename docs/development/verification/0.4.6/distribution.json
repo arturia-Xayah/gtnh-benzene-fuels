@@ -1,0 +1,14 @@
+{
+  "version": "0.4.6-alpha",
+  "target": "GTNH 2.9.0",
+  "artifact": "benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar",
+  "bytes": 6523611,
+  "sha256": "8333e4fa400943b218274fb620e050cd68850b6a0ccaa5e5c315716eb9e8e636",
+  "productionClasses": 31,
+  "fixtureProductionClassesAndAssetsIdentical": true,
+  "unitTests": 21,
+  "clientLaunched": false,
+  "serverChecks": 984,
+  "serverPassed": true,
+  "serverExitCode": 0
+}

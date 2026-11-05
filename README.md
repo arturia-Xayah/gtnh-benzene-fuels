@@ -10,7 +10,7 @@
 
 **简体中文** · [English](README.en.md) · [版本下载](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases)
 
-[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.5--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.5-alpha-GTNH-2.9.0/benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar)
+[![Download JAR](https://img.shields.io/badge/Download_JAR-0.4.6--alpha-4aa8e8?logo=github)](https://github.com/arturia-Xayah/gtnh-benzene-fuels/releases/download/v0.4.6-alpha-GTNH-2.9.0/benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar)
 
 Minecraft **1.7.10** · GTNH **2.9.0**
 
@@ -31,11 +31,13 @@ Minecraft **1.7.10** · GTNH **2.9.0**
 
 ## 安装与升级
 
-1. 下载 `benzenefuels-0.4.5-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
+1. 下载 `benzenefuels-0.4.6-alpha-GTNH-2.9.0.jar`，放入实例的 `mods` 目录。
 2. 联机时客户端和服务端安装相同版本；单人游戏安装在客户端。替换旧版 Benzene Fuels JAR，不要重复安装。
 3. 使用 GTNH **2.9.0 正式版**自带的依赖，无需额外安装动画模组。
 
-本模组独立于 GTNH现代化升级／结构终端。升级至 0.4.5 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
+本模组独立于 GTNH现代化升级／结构终端。升级至 0.4.6 保留原有燃料、物品和主机注册 ID；原有燃料热值、配方及发电设置不变。
+
+0.4.6 修复结构预览的仓室替换候选和连续批次切换时的发送功率显示，增加彩色状态信息与大数缩写。悬停主机信息区可查看精确并行／输入及动力仓缓存；结构预览中右键仓室位置查看可替换方块。
 
 ## 八级苯燃料
 

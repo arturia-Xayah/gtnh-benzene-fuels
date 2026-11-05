@@ -123,7 +123,7 @@ tooltip.benzenefuels.flavor.umv=§b§l§o燃料也需要调音，只是它的音
 tooltip.benzenefuels.flavor.uxv=§b§l§o宇宙的苯质，终于可以装桶了。
 tooltip.benzenefuels.reference.excited_uranium=激发铀基燃料
 gui.benzenefuels.coil=线圈：%sK / 上限%s并行
-gui.benzenefuels.parallel=当前并行：%s / 设定%s
+gui.benzenefuels.parallel=当前并行：%s
 
 tooltip.benzenefuels.tower.batch=每批运行5秒；1并行消耗1000mB燃料，默认1并行
 tooltip.benzenefuels.tower.coils=中轴周围需要1648个同等级线圈
@@ -148,3 +148,9 @@ nei.benzenefuels.energy=每批发电：%s EU
 nei.benzenefuels.power=平均功率：%s EU/t
 nei.benzenefuels.exponents=此处按两侧指数均为1计算
 nei.benzenefuels.upgrades=升级指数核心可提高实际效率
+
+gui.benzenefuels.parallel_limits=设定：%s / 有效上限：%s
+
+gui.benzenefuels.dynamo_buffer=动力仓：%s个 / 缓存：%s / %s EU
+gui.benzenefuels.dynamo_rate=动力仓额定输出上限：%s EU/t
+gui.benzenefuels.dynamo_help=有线发送量指注入动力仓的能量；满仓后多余发电会浪费。

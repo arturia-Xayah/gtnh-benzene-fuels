@@ -39,6 +39,19 @@ public final class GeneratorFormat {
             .toPlainString();
     }
 
+    public static String compact(long units, long divisor) {
+        BigDecimal value = BigDecimal.valueOf(Math.max(0, units))
+            .divide(BigDecimal.valueOf(divisor));
+        String[] suffix = { "", "K", "M", "G", "T" };
+        int i = 0;
+        while (i < suffix.length - 1 && value.compareTo(BigDecimal.valueOf(1000)) >= 0) {
+            value = value.movePointLeft(3);
+            i++;
+        }
+        return (i == 0 ? value : value.setScale(2, RoundingMode.DOWN)).stripTrailingZeros()
+            .toPlainString() + suffix[i];
+    }
+
     public static String percentage(BigInteger delivered, BigInteger generated) {
         if (generated.signum() <= 0) return "0.00";
         return new BigDecimal(

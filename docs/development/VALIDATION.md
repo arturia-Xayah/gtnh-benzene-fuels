@@ -1,3 +1,20 @@
+# 0.4.6 · GTNH 2.9.0 验证 / Validation
+
+2026-11-05。21 项单元测试、984 项独立后台检查通过，服务端退出码 0。
+
+- 结构预览：使用与 BlockRenderer 替换列表相同的 `getBlocksToPlace` 谓词，验证输入仓、维护仓、普通动力仓、UXV 64A 动力仓及两种回退外壳，并排除前后分区不允许的仓室。
+- 连续发电：4 个 100 tick 无线批次，逐 tick 对照真实无线到账与 GUI 快照，批次边界没有虚假的 0 功率；缺料后正常停机。
+- UXV 64A 动力仓：直接连接同级能源仓，经过原生仓室 tick，累计接收 2,748,779,069,440 EU。移除接收端后，缓存达到 137,438,953,984 EU，满仓后的多余能量正确作废；主机快照展示实际缓存和容量。
+- 显示：大数字缩写、分离设置/有效上限、悬停精确数值、彩色信息。断开动力仓的“实际发送”指主机注入仓室缓存的能量，不代表下游已消费。
+
+未启动 Minecraft 客户端。结构候选和显示数据通过后台接口验证；未声称完成客户端点击、字体布局或渲染实测。生产 JAR 不含测试夹具，Java 8 类与资源和已执行夹具对应部分逐字节一致。
+
+[后台结果](verification/0.4.6/backend-tests.json) · [安装包验证](verification/0.4.6/distribution.json)
+
+21 unit tests and 984 dedicated-server checks passed. Native replacement predicates, wireless tick-by-tick display continuity, real UXV 64A dynamo-to-energy-hatch transfer, disconnected buffer saturation and overflow accounting were checked. The controller now exposes real dynamo storage in its synchronized tooltip data. Production classes/assets match the executed fixture. No Minecraft client was launched; client clicks, fonts and rendering were not tested.
+
+---
+
 # 0.4.5 · GTNH 2.9.0 验证 / Validation
 
 2026-11-04。20 项单元测试、967 项独立后台检查通过，服务端退出码 0。新增检查覆盖全部 43 个物品图标映射、35 个新图标与 11 种流体资源、原生动画元数据、动画帧差异、固定外壳与等级标记、透明轮廓，以及流体实际注册的仍图／流动图路径与白色染色。

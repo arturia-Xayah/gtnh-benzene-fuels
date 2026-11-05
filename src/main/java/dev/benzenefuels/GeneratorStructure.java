@@ -1,8 +1,8 @@
 package dev.benzenefuels;
 
 import static com.gtnewhorizon.structurelib.structure.StructureUtility.*;
+import static gregtech.api.util.GTStructureUtility.buildHatchAdder;
 import static gregtech.api.util.GTStructureUtility.ofCoil;
-import static gregtech.api.util.GTStructureUtility.ofHatchAdder;
 
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -132,14 +132,20 @@ public final class GeneratorStructure {
         builder.addShape("tower", strings);
         builder.addElement(
             'H',
-            ofChain(
-                ofHatchAdder(ResonanceGenerator::addFrontHatch, 176, 1),
-                ofBlock(gregtech.api.GregTechAPI.sBlockCasings8, 0)));
+            buildHatchAdder(ResonanceGenerator.class).adder(ResonanceGenerator::addFrontHatch)
+                .hatchClasses(
+                    gregtech.api.metatileentity.implementations.MTEHatchInput.class,
+                    gregtech.api.metatileentity.implementations.MTEHatchMaintenance.class)
+                .casingIndex(176)
+                .hint(1)
+                .buildAndChain(gregtech.api.GregTechAPI.sBlockCasings8, 0));
         builder.addElement(
             'D',
-            ofChain(
-                ofHatchAdder(ResonanceGenerator::addRearDynamo, 16, 2),
-                ofBlock(gregtech.api.GregTechAPI.sBlockCasings2, 0)));
+            buildHatchAdder(ResonanceGenerator.class).adder(ResonanceGenerator::addRearDynamo)
+                .hatchClass(gregtech.api.metatileentity.implementations.MTEHatchDynamo.class)
+                .casingIndex(16)
+                .hint(2)
+                .buildAndChain(gregtech.api.GregTechAPI.sBlockCasings2, 0));
         definition = builder.build();
         return definition;
     }

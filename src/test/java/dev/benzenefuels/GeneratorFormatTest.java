@@ -30,6 +30,15 @@ public class GeneratorFormatTest {
     }
 
     @Test
+    public void largeInputsAndParallelsRemainCompact() {
+        assertEquals("2.14M", GeneratorFormat.compact(2147483647L, 1000));
+        assertEquals("429.49K", GeneratorFormat.compact(2147483000L, 5000));
+        assertEquals("67.1M", GeneratorFormat.compact(67108864, 1));
+        assertEquals("2.14G", GeneratorFormat.compact(Integer.MAX_VALUE, 1));
+        assertEquals("0.2", GeneratorFormat.compact(1000, 5000));
+    }
+
+    @Test
     public void upgradedEnergyUsesExactPowersAndRoundsOnlyOnce() {
         assertEquals(new BigInteger("49042831400"), GeneratorMath.energy(1491000, 25000, 102, 4, 105, 4));
         BigInteger max = GeneratorMath.energy(1296000000000L, 2147483000L, 110, 32, 130, 10);

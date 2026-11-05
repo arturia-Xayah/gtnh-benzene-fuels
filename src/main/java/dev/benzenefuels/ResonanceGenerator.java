@@ -269,8 +269,7 @@ public class ResonanceGenerator extends MTEEnhancedMultiBlockBase<ResonanceGener
             getExponent(GeneratorRoute.TECHNOLOGY),
             percent(GeneratorRoute.MAGIC, m),
             getExponent(GeneratorRoute.MAGIC));
-        lastGenerated = ZERO;
-        lastDelivered = ZERO;
+        // Keep the last measured tick through a seamless batch transition.
         fuelName = fuel.getLocalizedName();
         batchEnergy = energy;
         remainingEnergy = energy;
@@ -344,7 +343,12 @@ public class ResonanceGenerator extends MTEEnhancedMultiBlockBase<ResonanceGener
 
     @Override
     public void onPostTick(IGregTechTileEntity tile, long tick) {
-        if (tile.isServerSide()) absorbExponentCore();
+        if (tile.isServerSide()) {
+            absorbExponentCore();
+            // These values describe this server tick; a new recipe must not erase them.
+            lastGenerated = ZERO;
+            lastDelivered = ZERO;
+        }
         super.onPostTick(tile, tick);
         if (tile.isServerSide()) {
             if (!mMachine && mStartUpCheck < 0 && mMaxProgresstime > 0)
@@ -488,6 +492,20 @@ public class ResonanceGenerator extends MTEEnhancedMultiBlockBase<ResonanceGener
         state.technologyExponentMk = technologyExponentMk;
         state.magicExponentMk = magicExponentMk;
         state.wireless = active ? batchWireless : wireless;
+        BigInteger stored = ZERO, capacity = ZERO, rate = ZERO;
+        for (MTEHatchDynamo hatch : mDynamoHatches) {
+            if (!hatch.isValid()) continue;
+            state.dynamoCount++;
+            IGregTechTileEntity tile = hatch.getBaseMetaTileEntity();
+            stored = stored.add(BigInteger.valueOf(Math.max(0, tile.getStoredEU())));
+            capacity = capacity.add(BigInteger.valueOf(Math.max(0, tile.getEUCapacity())));
+            rate = rate.add(
+                BigInteger.valueOf(Math.max(0, hatch.maxEUOutput()))
+                    .multiply(BigInteger.valueOf(Math.max(0, hatch.maxAmperesOut()))));
+        }
+        state.dynamoStored = stored.toString();
+        state.dynamoCapacity = capacity.toString();
+        state.dynamoRate = rate.toString();
         return state;
     }
 

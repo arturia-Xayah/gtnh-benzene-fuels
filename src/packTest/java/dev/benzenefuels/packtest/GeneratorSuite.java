@@ -104,6 +104,7 @@ public final class GeneratorSuite {
             "blocks=" + GeneratorStructure.CELLS
                 .size() + " inputs=" + generator.mInputHatches.size() + " dynamos=" + generator.mDynamoHatches.size());
         generator.fixAllIssues();
+        previewCandidates();
         placementRules();
         coilRules();
         fuelRules();
@@ -111,9 +112,63 @@ public final class GeneratorSuite {
         continuity();
         additionalChecks();
         exponentAndDisplay();
+        uxvDynamoNetwork();
         base.disableWorking();
         generator.stopMachine(ShutDownReasonRegistry.NONE);
         Files.write(Paths.get("benzene-generator-ticks.csv"), csv, StandardCharsets.UTF_8);
+    }
+
+    private void previewCandidates() {
+        com.gtnewhorizon.structurelib.structure.StructureDefinition<ResonanceGenerator> structure = (com.gtnewhorizon.structurelib.structure.StructureDefinition<ResonanceGenerator>) generator
+            .getStructureDefinition();
+        com.gtnewhorizon.structurelib.structure.IStructureElement.BlocksToPlace front = structure.getElements()
+            .get('H')
+            .getBlocksToPlace(generator, world, 0, 0, 0, new ItemStack(Items.stick), null);
+        com.gtnewhorizon.structurelib.structure.IStructureElement.BlocksToPlace rear = structure.getElements()
+            .get('D')
+            .getBlocksToPlace(generator, world, 0, 0, 0, new ItemStack(Items.stick), null);
+        check(
+            "preview_front_input_candidate",
+            front != null && front.getPredicate()
+                .test(ItemList.Hatch_Input_LuV.get(1)),
+            "native replacement picker predicate");
+        check(
+            "preview_front_maintenance_candidate",
+            front != null && front.getPredicate()
+                .test(ItemList.Hatch_Maintenance.get(1)),
+            "maintenance replacement");
+        check(
+            "preview_front_rejects_dynamo",
+            front != null && !front.getPredicate()
+                .test(ItemList.Hatch_Dynamo_LuV.get(1)),
+            "no illegal front dynamos");
+        check(
+            "preview_rear_normal_dynamo_candidate",
+            rear != null && rear.getPredicate()
+                .test(ItemList.Hatch_Dynamo_LuV.get(1)),
+            "native dynamo replacement");
+        check(
+            "preview_rear_uxv64_candidate",
+            rear != null && rear.getPredicate()
+                .test(
+                    GregTechAPI.METATILEENTITIES[gregtech.api.enums.MetaTileEntityIDs.UXV64ADynamoHatch.ID]
+                        .getStackForm(1)),
+            "UXV 64A dynamo replacement");
+        check(
+            "preview_rear_rejects_input",
+            rear != null && !rear.getPredicate()
+                .test(ItemList.Hatch_Input_LuV.get(1)),
+            "no illegal rear inputs");
+        check(
+            "preview_front_casing_candidate",
+            front != null && front.getPredicate()
+                .test(new ItemStack(GregTechAPI.sBlockCasings8, 1, 0)),
+            "casing remains accepted");
+        check(
+            "preview_rear_casing_candidate",
+            rear != null && rear.getPredicate()
+                .test(new ItemStack(GregTechAPI.sBlockCasings2, 1, 0)),
+            "casing remains accepted");
     }
 
     private boolean formed() {
@@ -444,8 +499,13 @@ public final class GeneratorSuite {
         csv.add("tick,progress,duration,input_fuel_mB,network_EU,remaining_EU");
         BigInteger before = WirelessNetworkManager.getUserEU(owner);
         BigInteger one = GeneratorMath.energy(FuelStage.LUV.euPerLiter, 1000, 101, 101);
+        int falseZeroTicks = 0;
         for (int tick = 0; tick < 650; tick++) {
+            BigInteger networkBeforeTick = WirelessNetworkManager.getUserEU(owner);
             generator.onPostTick(base, tick);
+            if (generator.mMaxProgresstime > 0 && WirelessNetworkManager.getUserEU(owner)
+                .compareTo(networkBeforeTick) > 0
+                && new BigInteger(generator.getDisplayState().delivered).signum() == 0) falseZeroTicks++;
             csv.add(
                 tick + ","
                     + generator.mProgresstime
@@ -466,6 +526,7 @@ public final class GeneratorSuite {
                 check("running_casings_lit", lit == 621, "active casings=" + lit);
             }
         }
+        check("no_false_zero_during_batch_transition", falseZeroTicks == 0, "false zero ticks=" + falseZeroTicks);
         check(
             "native_continuous_four_batches",
             WirelessNetworkManager.getUserEU(owner)
@@ -483,6 +544,81 @@ public final class GeneratorSuite {
             if (world.getBlockMetadata(p[0], p[1], p[2]) == 1) lit++;
         }
         check("idle_casings_reset", lit == 0, "active casings=" + lit);
+    }
+
+    private void uxvDynamoNetwork() {
+        clear();
+        GeneratorStructure.Cell slot = GeneratorStructure.CELLS.stream()
+            .filter(c -> c.role.equals("output_port"))
+            .findFirst()
+            .get();
+        IGregTechTileEntity dynamo = placeAt(gregtech.api.enums.MetaTileEntityIDs.UXV64ADynamoHatch.ID, slot);
+        dynamo.setFrontFacing(ForgeDirection.SOUTH);
+        int[] p = generator.worldPosition(slot);
+        net.minecraft.block.Block old = world.getBlock(p[0], p[1], p[2] + 1);
+        int oldMeta = world.getBlockMetadata(p[0], p[1], p[2] + 1);
+        IGregTechTileEntity receiver = place(
+            gregtech.api.enums.MetaTileEntityIDs.UXV64AEnergyHatch.ID,
+            p[0],
+            p[1],
+            p[2] + 1);
+        receiver.setFrontFacing(ForgeDirection.NORTH);
+        require("uxv_64a_dynamo_forms", formed(), "native UXV 64A dynamo at rear");
+        generator.setWireless(false);
+        generator.setMaximumLitres(1);
+        input(1000, 1, 1, 5);
+        generator.mInputHatches.get(0)
+            .setFillableStack(null);
+        fill(0, FuelContent.stack(FuelStage.UXV, 1000));
+        require("uxv_64a_wired_start", start(), "UXV fuel, wired mode");
+        long received = 0;
+        for (int tick = 0; tick < 100; tick++) {
+            ((net.minecraft.tileentity.TileEntity) receiver).updateEntity();
+            ((net.minecraft.tileentity.TileEntity) dynamo).updateEntity();
+            received += receiver.getStoredEU();
+            receiver.decreaseStoredEnergyUnits(receiver.getStoredEU(), true);
+            generator.mProgresstime = tick;
+            generator.onRunningTick(null);
+        }
+        check(
+            "uxv_64a_outputs_to_native_receiver",
+            received > 0,
+            "received=" + received + "; buffer=" + dynamo.getStoredEU() + "; capacity=" + dynamo.getEUCapacity());
+        world.setBlockToAir(p[0], p[1], p[2] + 1);
+        clear();
+        input(1000, 1, 1, 5);
+        generator.mInputHatches.get(0)
+            .setFillableStack(null);
+        fill(0, FuelContent.stack(FuelStage.UXV, 1000));
+        require("uxv64_disconnected_starts", start(), "no receiver, wired mode");
+        BigInteger wastedBefore = generator.getLifetimeWasted();
+        for (int tick = 0; tick < 100; tick++) {
+            ((net.minecraft.tileentity.TileEntity) dynamo).updateEntity();
+            generator.mProgresstime = tick;
+            generator.onRunningTick(null);
+        }
+        check(
+            "uxv64_disconnected_buffer_fills",
+            dynamo.getStoredEU() == dynamo.getEUCapacity(),
+            "stored=" + dynamo.getStoredEU() + "; capacity=" + dynamo.getEUCapacity());
+        check(
+            "uxv64_disconnected_overflow_wasted",
+            generator.getLifetimeWasted()
+                .compareTo(wastedBefore) > 0,
+            "full buffer does not stall generation");
+        dev.benzenefuels.GeneratorDisplay.State display = generator.getDisplayState();
+        check(
+            "dynamo_buffer_visible_in_snapshot",
+            display.dynamoCount == 1 && display.dynamoStored.equals(Long.toString(dynamo.getStoredEU()))
+                && display.dynamoCapacity.equals(Long.toString(dynamo.getEUCapacity())),
+            "native 64A cache exposed in controller tooltip");
+        world.setBlock(p[0], p[1], p[2] + 1, old, oldMeta, 2);
+        placeAt(
+            ItemList.Hatch_Dynamo_LuV.get(1)
+                .getItemDamage(),
+            slot);
+        require("restore_default_dynamo", formed(), "native LuV hatch restored");
+        clear();
     }
 
     private void additionalChecks() throws Exception {

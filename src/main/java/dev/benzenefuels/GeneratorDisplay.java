@@ -21,6 +21,8 @@ public final class GeneratorDisplay {
         public int parallelLimit, configuredParallel;
         public int technologyMk, magicMk, technologyExponentMk, magicExponentMk;
         public boolean wireless;
+        public int dynamoCount;
+        public String dynamoStored = "0", dynamoCapacity = "0", dynamoRate = "0";
     }
 
     private static final Gson GSON = new Gson();
@@ -33,7 +35,35 @@ public final class GeneratorDisplay {
     }
 
     public static String text(String encoded) {
-        return String.join("\n", lines(GSON.fromJson(encoded, State.class)));
+        State state = GSON.fromJson(encoded, State.class);
+        String[] lines = lines(state);
+        String[] colors = { "b", "6", "a", "7", "b", "e", "6", "a", "b", "b", "d", "d", "f" };
+        if (new BigInteger(state.delivered).compareTo(new BigInteger(state.generated)) < 0) colors[7] = "6";
+        for (int i = 0; i < lines.length; i++) lines[i] = "\u00a7" + colors[i] + lines[i] + "\u00a7r";
+        return String.join("\n", lines);
+    }
+
+    public static String details(String encoded) {
+        State s = GSON.fromJson(encoded, State.class);
+        return tr("parallel", String.format(java.util.Locale.ROOT, "%,d", s.activeParallel)) + "\n"
+            + tr("coil", s.coilHeat, String.format(java.util.Locale.ROOT, "%,d", s.parallelLimit))
+            + "\n"
+            + tr(
+                "parallel_limits",
+                String.format(java.util.Locale.ROOT, "%,d", s.configuredParallel),
+                String.format(java.util.Locale.ROOT, "%,d", Math.min(s.configuredParallel, s.parallelLimit)))
+            + "\n"
+            + tr("input", GeneratorFormat.volume(s.fuelUnits, 1000), GeneratorFormat.volume(s.fuelUnits, 5000))
+            + "\n"
+            + tr(
+                "dynamo_buffer",
+                s.dynamoCount,
+                GeneratorFormat.power(new BigInteger(s.dynamoStored)),
+                GeneratorFormat.power(new BigInteger(s.dynamoCapacity)))
+            + "\n"
+            + tr("dynamo_rate", GeneratorFormat.power(new BigInteger(s.dynamoRate)))
+            + "\n"
+            + tr("dynamo_help");
     }
 
     private static String tr(String key, Object... args) {
@@ -56,9 +86,14 @@ public final class GeneratorDisplay {
     }
 
     public static String[] lines(State state) {
-        return new String[] { tr("fuel", fluidName(state.fuelId)), tr("coil", state.coilHeat, state.parallelLimit),
-            tr("parallel", state.activeParallel, state.configuredParallel),
-            tr("input", GeneratorFormat.volume(state.fuelUnits, 1000), GeneratorFormat.volume(state.fuelUnits, 5000)),
+        return new String[] { tr("fuel", fluidName(state.fuelId)),
+            tr("coil", state.coilHeat, GeneratorFormat.compact(state.parallelLimit, 1)),
+            tr("parallel", GeneratorFormat.compact(state.activeParallel, 1)),
+            tr(
+                "parallel_limits",
+                GeneratorFormat.compact(state.configuredParallel, 1),
+                GeneratorFormat.compact(Math.min(state.configuredParallel, state.parallelLimit), 1)),
+            tr("input", GeneratorFormat.compact(state.fuelUnits, 1000), GeneratorFormat.compact(state.fuelUnits, 5000)),
             tr(
                 "efficiency",
                 new BigDecimal(state.multiplier).setScale(4, RoundingMode.DOWN)
